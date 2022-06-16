@@ -320,11 +320,12 @@ p {
     left: 0;
     width: 100%;
     background-color: #fff;
+    border-radius: 20px;
     z-index: 9;
     -webkit-box-shadow: 0px 15px 20px 0px rgba(0, 0, 0, 0.1);
     -moz-box-shadow: 0px 15px 20px 0px rgba(0, 0, 0, 0.1);
     box-shadow: 0px 15px 20px 0px rgba(0, 0, 0, 0.1);
-    padding: 5px 12px;
+    padding: 10px 15px;
   }
 }
 
@@ -337,6 +338,7 @@ p {
 @media (max-width: 767px) {
   .navbar-collapse {
     position: absolute;
+    border-radius: 20px;
     top: 100%;
     left: 0;
     width: 100%;
@@ -350,7 +352,7 @@ p {
 }
 
 .navbar-nav .nav-item {
-  margin-right: 45px;
+  margin-right: 2rem;
   position: relative;
 }
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
@@ -706,11 +708,18 @@ p {
     height: auto;
   }
 }
-.single-solutions .solutions-icon {
-  display: inline-block;
-  position: relative;
+.solutions-icon {
+  margin-bottom: 1rem;
 }
-.single-solutions .solutions-icon img {
+
+.solutions-icon i {
+  padding: 10px;
+  background: linear-gradient(#ff4000 0%, #f9b71a 100%);
+  border-radius: 50%;
+  color: white;
+  margin-right: 5px;
+}
+/* .single-solutions .solutions-icon img {
   -webkit-transition: all 0.4s ease-out 0s;
   -moz-transition: all 0.4s ease-out 0s;
   -ms-transition: all 0.4s ease-out 0s;
@@ -738,7 +747,7 @@ p {
   transform: translate(-50%, -50%);
   font-size: 24px;
   color: #fff;
-}
+} */
 .single-solutions .solutions-content .solutions-title a {
   font-size: 26px;
   font-weight: 700;
@@ -770,22 +779,17 @@ p {
     margin-top: 20px;
   }
 }
-.single-solutions .solutions-content .more {
-  margin-top: 30px;
+a.more {
+  margin-top: 20px;
   font-size: 16px;
-  font-weight: 400;
-  color: #2e2e2e;
-  -webkit-transition: all 0.3s ease-out 0s;
-  -moz-transition: all 0.3s ease-out 0s;
-  -ms-transition: all 0.3s ease-out 0s;
-  -o-transition: all 0.3s ease-out 0s;
-  transition: all 0.3s ease-out 0s;
+  font-weight: 600;
+  color: #14499e;
 }
-.single-solutions .solutions-content .more i {
+.more i {
   margin-left: 10px;
 }
-.single-solutions .solutions-content .more:hover {
-  color: #14499e;
+.more:hover {
+  color: #ff4000;
 }
 .single-solutions:hover {
   -webkit-box-shadow: 0px 5px 30px 0px rgba(167, 167, 167, 0.6);
@@ -1428,11 +1432,18 @@ p {
   background-color: #ff40002f;
   border-radius: 10px;
   font-size: 0.75rem;
+  color: #ff4000;
 }
 
 .ptable-link a {
-  color: #ff4000;
+  color: inherit;
 }
+
+.ptable-link:hover {
+  background-color: #14499e2f;
+  color: #14499e;
+}
+
 .pricing {
   background: linear-gradient(to right, #14499e 0%, #2e82ef 100%);
   background: -webkit-linear-gradient(left, #14499e 0%, #2e82ef 100%);
