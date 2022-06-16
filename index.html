@@ -25,7 +25,7 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-12">
-              <nav class="navbar navbar-expand-lg">
+              <nav class="navbar navbar-expand-xl">
                 <a class="navbar-brand" href="#home">
                   <img
                     class="user-select-none"
@@ -35,10 +35,10 @@
                   />
                 </a>
                 <button
-                  class="navbar-toggler"
+                  class="navbar-toggler border-0"
                   type="button"
-                  data-toggle="collapse"
-                  data-target="#navbarSupportedContent"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarSupportedContent"
                   aria-controls="navbarSupportedContent"
                   aria-expanded="false"
                   aria-label="Toggle navigation"
@@ -52,22 +52,30 @@
                   class="collapse navbar-collapse sub-menu-bar"
                   id="navbarSupportedContent"
                 >
-                  <ul id="nav" class="navbar-nav ms-auto">
-                    <li class="nav-item active">
-                      <a class="page-scroll" href="#solutii">Solutii</a>
+                  <ul id="nav" class="navbar-nav ms-auto gap-2">
+                    <li class="nav-item">
+                      <a class="page-scroll nav-link" href="#solutii"
+                        >Soluții</a
+                      >
                     </li>
                     <li class="nav-item">
-                      <a class="page-scroll" href="#despre">De ce noi</a>
+                      <a class="page-scroll nav-link" href="#despre"
+                        >Despre noi</a
+                      >
                     </li>
                     <li class="nav-item">
-                      <a class="page-scroll" href="#hardware">Hardware</a>
+                      <a class="page-scroll nav-link" href="#hardware"
+                        >Hardware</a
+                      >
                     </li>
                     <li class="nav-item">
-                      <a class="page-scroll" href="#pachete">Pachete</a>
+                      <a class="page-scroll nav-link" href="#pachete"
+                        >Pachete</a
+                      >
                     </li>
                     <li class="nav-item">
-                      <a class="page-scroll" href="#documentatie"
-                        >Documentatie</a
+                      <a class="page-scroll nav-link" href="#documentatie"
+                        >Documentație</a
                       >
                     </li>
 
@@ -75,10 +83,20 @@
                       <a class="page-scroll" href="#contact">Contact</a>
                     </li>
                   </ul>
-                </div>
-
-                <div class="navbar-btn d-none d-sm-inline-block">
-                  <a class="main-btn" data-scroll-nav="0" href="">Înscrie-te</a>
+                  <ul class="d-flex my-2 align-items-center">
+                    <div>
+                      <a class="main-btn free" data-scroll-nav="0" href=""
+                        >Înscrie-te</a
+                      >
+                    </div>
+                    <div>
+                      <a
+                        class="text-white ps-4 login fw-bold"
+                        href="https://backend.netopia-retail.ro/"
+                        >Login
+                      </a>
+                    </div>
+                  </ul>
                 </div>
               </nav>
             </div>
@@ -89,7 +107,7 @@
       <div
         id="home"
         class="header-hero bg_cover"
-        style="background-image: url(assets/img/Group\ 114.svg)"
+        style="background-image: url(assets/img/header-bg.svg)"
       >
         <div class="container">
           <div class="row justify-content-center">
@@ -148,17 +166,17 @@
       </div>
     </header>
 
-    <section id="solutii" class="services-area my-5">
+    <section id="solutii" class="solutions-area my-5">
       <div class="d-flex pb-5 row m-auto container">
         <div class="py-5 row justify-content-center">
           <div class="col-lg-10">
             <div class="text-center pb-5">
               <div class="line m-auto"></div>
               <h3 class="title">
-                Softul de gestiune NETOPIA Retail
+                Softul de gestiune și administrare vânzări NETOPIA Retail
                 <span>
-                  conține soluții și programe IT de tip SaaS, On Cloud și
-                  Android pentru:
+                  conține soluții și programe IT de tip On Cloud și Android
+                  pentru:
                 </span>
               </h3>
             </div>
@@ -168,25 +186,25 @@
         <div class="row mb-4 justify-content-center">
           <div class="col-lg-4 col-md-7 col-sm-8">
             <div
-              class="single-services text-center pt-3 wow fadeIn"
+              class="single-solutions text-center pt-3 wow fadeIn"
               data-wow-duration="1s"
               data-wow-delay="0.2s"
             >
-              <div class="services-icon">
+              <div class="solutions-icon">
                 <img
                   class="shape user-select-none"
-                  src="assets/img/services-shape.svg"
+                  src="assets/img/solutions-shape.svg"
                   alt="shape"
                 />
                 <img
                   class="shape-1"
-                  src="assets/img/services-shape-1.svg"
+                  src="assets/img/solutions-shape-1.svg"
                   alt="shape"
                 />
                 <i class="fa-solid fa-cart-shopping"></i>
               </div>
-              <div class="services-content pt-3">
-                <h4 class="services-title"><a href="#">Supermarket</a></h4>
+              <div class="solutions-content pt-3">
+                <h4 class="solutions-title"><a href="#">Supermarket</a></h4>
                 <p class="text">
                   Soluția noastră este foarte bună atât pentru lanțuri, cât și
                   pentru supermarketuri singulare. Administrezi fiecare magazin
@@ -200,25 +218,25 @@
           </div>
           <div class="col-lg-4 col-md-7 col-sm-8">
             <div
-              class="single-services text-center pt-3 wow fadeIn"
+              class="single-solutions text-center pt-3 wow fadeIn"
               data-wow-duration="1s"
               data-wow-delay="0.5s"
             >
-              <div class="services-icon">
+              <div class="solutions-icon">
                 <img
                   class="shape"
-                  src="assets/img/services-shape.svg"
+                  src="assets/img/solutions-shape.svg"
                   alt="shape"
                 />
                 <img
                   class="shape-1"
-                  src="assets/img/services-shape-1.svg"
+                  src="assets/img/solutions-shape-1.svg"
                   alt="shape"
                 />
                 <i class="fa-solid fa-basket-shopping"></i>
               </div>
-              <div class="services-content pt-3">
-                <h4 class="services-title"><a href="#">Minimarket</a></h4>
+              <div class="solutions-content pt-3">
+                <h4 class="solutions-title"><a href="#">Minimarket</a></h4>
                 <p class="text">
                   Acoperim nevoile imediate și automatizăm procesele de
                   facturare și administrare pentru francizele care sunt
@@ -232,25 +250,25 @@
           </div>
           <div class="col-lg-4 col-md-7 col-sm-8">
             <div
-              class="single-services text-center pt-3 wow fadeIn"
+              class="single-solutions text-center pt-3 wow fadeIn"
               data-wow-duration="1s"
               data-wow-delay="0.8s"
             >
-              <div class="services-icon">
+              <div class="solutions-icon">
                 <img
                   class="shape"
-                  src="assets/img/services-shape.svg"
+                  src="assets/img/solutions-shape.svg"
                   alt="shape"
                 />
                 <img
                   class="shape-1"
-                  src="assets/img/services-shape-1.svg"
+                  src="assets/img/solutions-shape-1.svg"
                   alt="shape"
                 />
                 <i class="fa-solid fa-bag-shopping"></i>
               </div>
-              <div class="services-content pt-3">
-                <h4 class="services-title">
+              <div class="solutions-content pt-3">
+                <h4 class="solutions-title">
                   <a href="#">Magazin individual</a>
                 </h4>
                 <p class="text">
@@ -268,25 +286,25 @@
         <div class="row justify-content-center">
           <div class="col-lg-4 col-md-7 col-sm-8">
             <div
-              class="single-services text-center pt-3 wow fadeIn"
+              class="single-solutions text-center pt-3 wow fadeIn"
               data-wow-duration="1s"
               data-wow-delay="0.2s"
             >
-              <div class="services-icon">
+              <div class="solutions-icon">
                 <img
                   class="shape"
-                  src="assets/img/services-shape.svg"
+                  src="assets/img/solutions-shape.svg"
                   alt="shape"
                 />
                 <img
                   class="shape-1"
-                  src="assets/img/services-shape-1.svg"
+                  src="assets/img/solutions-shape-1.svg"
                   alt="shape"
                 />
                 <i class="fa-solid fa-mug-saucer"></i>
               </div>
-              <div class="services-content pt-3">
-                <h4 class="services-title"><a href="#">Cafenea</a></h4>
+              <div class="solutions-content pt-3">
+                <h4 class="solutions-title"><a href="#">Cafenea</a></h4>
                 <p class="text">
                   În acest tip de business, sunt vitale automatizările instante
                   cu privire la stocuri, în funcție de fiecare materie primă din
@@ -300,25 +318,27 @@
           </div>
           <div class="col-lg-4 col-md-7 col-sm-8">
             <div
-              class="single-services text-center pt-3 wow fadeIn"
+              class="single-solutions text-center pt-3 wow fadeIn"
               data-wow-duration="1s"
               data-wow-delay="0.5s"
             >
-              <div class="services-icon">
+              <div class="solutions-icon">
                 <img
                   class="shape"
-                  src="assets/img/services-shape.svg"
+                  src="assets/img/solutions-shape.svg"
                   alt="shape"
                 />
                 <img
                   class="shape-1"
-                  src="assets/img/services-shape-1.svg"
+                  src="assets/img/solutions-shape-1.svg"
                   alt="shape"
                 />
                 <i class="fa-solid fa-shirt"></i>
               </div>
-              <div class="services-content pt-3">
-                <h4 class="services-title"><a href="#">Magazin de haine</a></h4>
+              <div class="solutions-content pt-3">
+                <h4 class="solutions-title">
+                  <a href="#">Magazin de haine</a>
+                </h4>
                 <p class="text">
                   În acest tip de business, te ajută să ai funcția de căutare în
                   stoc după criteriile cât mai specifice ale unui produs dintr-o
@@ -332,25 +352,25 @@
           </div>
           <div class="col-lg-4 col-md-7 col-sm-8">
             <div
-              class="single-services text-center pt-3 wow fadeIn"
+              class="single-solutions text-center pt-3 wow fadeIn"
               data-wow-duration="1s"
               data-wow-delay="0.8s"
             >
-              <div class="services-icon">
+              <div class="solutions-icon">
                 <img
                   class="shape"
-                  src="assets/img/services-shape.svg"
+                  src="assets/img/solutions-shape.svg"
                   alt="shape"
                 />
                 <img
                   class="shape-1"
-                  src="assets/img/services-shape-1.svg"
+                  src="assets/img/solutions-shape-1.svg"
                   alt="shape"
                 />
                 <i class="fa-solid fa-ice-cream"></i>
               </div>
-              <div class="services-content pt-3">
-                <h4 class="services-title">
+              <div class="solutions-content pt-3">
+                <h4 class="solutions-title">
                   <a href="#">Cofetării, gelaterie și altele </a>
                 </h4>
                 <p class="text">
@@ -368,21 +388,21 @@
       </div>
     </section>
 
-    <section id="" class="about-area my-5">
+    <section class="section-area my-5">
       <div class="container">
         <div class="row">
           <div class="col-lg-6">
             <div
-              class="about-image text-center mt-50 wow fadeInRightBig"
+              class="section-image text-center mt-50 wow fadeInRightBig"
               data-wow-duration="1s"
               data-wow-delay="0.5s"
             >
-              <img src="assets/img/about1.svg" alt="about" />
+              <img src="assets/img/section1.svg" alt="section" />
             </div>
           </div>
           <div class="col-lg-6">
             <div
-              class="about-content mt-50 wow fadeInLeftBig"
+              class="section-content mt-50 wow fadeInLeftBig"
               data-wow-duration="1s"
               data-wow-delay="0.5s"
             >
@@ -404,12 +424,12 @@
           </div>
         </div>
       </div>
-      <div class="about-shape-1">
-        <img src="assets/img/about-shape-1.svg" alt="shape" />
+      <div class="section-shape-1">
+        <img src="assets/img/section-shape-1.svg" alt="shape" />
       </div>
     </section>
 
-    <section id="" class="about-area py-5">
+    <section id="" class="section-area py-5">
       <div class="container">
         <div class="text-center pb-40">
           <div class="line m-auto"></div>
@@ -439,9 +459,9 @@
                           <i class="fa-solid fa-user-gear"></i> Administrare
                         </h4>
                         <div>
-                          Poți administra întreaga activitate a companiei,
-                          dintr-o singură pagină web. În același timp, poți crea
-                          conturi de casier, cu drepturi limitate.
+                          Poți administra întreaga activitate a companiei
+                          dintr-o singură pagină web. Creezi conturi de Casier
+                          și Manager cu drepturi limitate.
                         </div>
                       </div>
                     </div>
@@ -454,35 +474,31 @@
                   >
                     <div class="accordion-body">
                       <p>
-                        Contul de Casier este pentru persoana care
-                        interacționează cu clienții și care înregistrează
-                        produsele în casă sau face facturi, atunci când un
-                        client o cere. Nu poate să adauge sau să elimine
+                        <b>Contul de Casier</b> este destinat angajatului care
+                        interacționează cu clienții și care scanează produsele,
+                        le înregistrează în casă sau face facturi, atunci când
+                        un client o cere. Nu poate să adauge sau să elimine
                         produse, sau orice alte tipuri de informații despre
                         companie.
                       </p>
                       <p class="py-3">
-                        Contul de Utilizator poate să adauge sau să scoată
-                        produse din platformă, dar și să creeze noi categorii.
-                        În același timp, administratorul poate să:
+                        <b>Contul de Manager</b> poate să adauge sau să scoată
+                        produse din platformă, dar și să creeze noi categorii de
+                        produse. În același timp, poate să:
                       </p>
                       <ul class="ps-4">
                         <li>genereze facturi către contabilitate;</li>
                         <li>
-                          să administreze toate facturile emise și încasate
-                          pentru fiecare furnizor sau partener în parte;
+                          administreze toate facturile emise și încasate pentru
+                          fiecare furnizor sau partener în parte;
                         </li>
-                        <li>
-                          să vadă vânzările pe oră, zi, săptămână sau lună;
-                        </li>
-                        <li>să analizeze rapoartele;</li>
+                        <li>vadă vânzările pe oră, zi, săptămână sau lună;</li>
+                        <li>vizualizeze toate rapoartele;</li>
                       </ul>
                       <p class="pt-3">
-                        Contul de Administrator are aceleași drepturi ca cel de
-                        Utilizator și, în plus, poate să adauge sau să șteargă
-                        companii. Are drepturi depline asupra întregii
-                        activități și poate să șteargă sau să adauge conturi de
-                        Casier și Utilizator.
+                        <b>Contul de Admin</b> are aceleași drepturi ca cel de
+                        <b>Manager</b> și, în plus, poate să adauge sau atât
+                        conturi de Casier și Manager, cât și companii.
                       </p>
                     </div>
                   </div>
@@ -504,8 +520,8 @@
                         </h4>
                         <div>
                           Poți să adaugi un număr nelimitat de produse și
-                          categorii, indiferent de specificul magazinului. Ai
-                          funcția de SKU, căutare în funcție de caracteristici.
+                          categorii, indiferent de specificul magazinului sau de
+                          pachetul ales. Ai funcția de SKU integrată.
                         </div>
                       </div>
                     </div>
@@ -518,12 +534,25 @@
                   >
                     <div class="accordion-body">
                       <p>
-                        Contul de Casier este pentru persoana care
-                        interacționează cu clienții și care înregistrează
-                        produsele în casă sau face facturi, atunci când un
-                        client o cere. Nu poate să adauge sau să elimine
-                        produse, sau orice alte tipuri de informații despre
-                        companie.
+                        <b>Contul de Manager</b> poate să adauge un număr
+                        nelimitat de produse și de categorii, în funcție de
+                        specificul businessului tău.
+                      </p>
+                      <p class="pb-2">
+                        Ai integrată funcția de SKU. Poți căuta orice produs și
+                        vei vedea care este cantitatea rămasă sau categoria din
+                        care face parte.
+                      </p>
+                      <p>
+                        Dacă alegi pachetul standard, funcția de SKU îți va
+                        returna rezultate suplimentare, precum cantitatea unui
+                        produs din fiecare locație.
+                      </p>
+                      <p>
+                        Un alt beneficiu este că obții acces la baza de date
+                        universală de Barcode EAN. Astfel, nu va trebui să
+                        introduci manual codurile de bară și stocul se
+                        actualizează automat în funcție de produs.
                       </p>
                     </div>
                   </div>
@@ -543,9 +572,9 @@
                           <i class="fa-solid fa-chart-line"></i> Rapoarte
                         </h4>
                         <div>
-                          Îți punem la dispoziție un dashboard cu informații
-                          complete despre afacerea ta, disponibil atât pe
-                          desktop, cât și pe mobile.
+                          Indiferent de pachetul ales vei avea informații
+                          complete despre afacerea ta, actualizate instant,
+                          disponibile atât pe desktop, cât și pe mobile.
                         </div>
                       </div>
                     </div>
@@ -558,12 +587,22 @@
                   >
                     <div class="accordion-body">
                       <p>
-                        Contul de Casier este pentru persoana care
-                        interacționează cu clienții și care înregistrează
-                        produsele în casă sau face facturi, atunci când un
-                        client o cere. Nu poate să adauge sau să elimine
-                        produse, sau orice alte tipuri de informații despre
-                        companie.
+                        Trebuie să îți refaci stocul? Folosește rapoartele
+                        actualizate instant pe care ți le punem la dispoziție și
+                        analizează care produse s-au vândut mai bine.
+                      </p>
+                      <p class="py-2">
+                        Dacă lucrezi în HoReCa vei scădea costurile cu produsele
+                        la care trebuie să renunți, din cauza termenelor de
+                        valabilitate, deoarece știi dinainte ce tip de produs
+                        este preferat de clienții tăi.
+                      </p>
+                      <p>
+                        Dacă lucrezi în Retail ai oportunitatea de a înțelege
+                        comportamentul de consum și ce categorii de produse se
+                        vând mai repede, astfel încât să îți aprovizionezi,
+                        constant, businessul, cu produse care te ajută să ai
+                        profit.
                       </p>
                     </div>
                   </div>
@@ -596,9 +635,9 @@
                           <i class="fa-regular fa-file-lines"></i> Facturare
                         </h4>
                         <div>
-                          Automatizează procesul de facturare către parteneri și
-                          administrează facturile emise și încasate pentru
-                          fiecare furnzior sau partener în parte.
+                          Automatizează procesul de facturare și administrează
+                          facturile emise și încasate pentru fiecare furnizor
+                          sau partener în parte.
                         </div>
                       </div>
                     </div>
@@ -611,12 +650,16 @@
                   >
                     <div class="accordion-body">
                       <p>
-                        Contul de Casier este pentru persoana care
-                        interacționează cu clienții și care înregistrează
-                        produsele în casă sau face facturi, atunci când un
-                        client o cere. Nu poate să adauge sau să elimine
-                        produse, sau orice alte tipuri de informații despre
-                        companie.
+                        Facturarea este una dintre cele mai importante
+                        activități ale unei afaceri. De aceea, am conceput un
+                        mecanism de facturare extrem de ușor de folosit și care
+                        îți oferă cele mai relevante informații din câteva
+                        click-uri.
+                      </p>
+                      <p class="py-2">
+                        Îți înțelegi și calculezi mult mai bine cash flow-ul
+                        prin funcția de Calcul Automat de Sold, care îți spune
+                        în orice moment cât trebuie să încasezi sau să achiți.
                       </p>
                     </div>
                   </div>
@@ -637,9 +680,9 @@
                         </h4>
                         <div>
                           Casierii pot emite un număr nelimitat de facturi
-                          pentru clienții persoană fizică, în câteva secunde. În
-                          același timp, Utilizatorii pot administra chitanțele
-                          fiscale pentru plățile cash.
+                          pentru clienți, în doar câteva secunde. Managerii pot
+                          administra bonurile fiscale și chitanțele pentru
+                          plățile cash.
                         </div>
                       </div>
                     </div>
@@ -652,17 +695,19 @@
                   >
                     <div class="accordion-body">
                       <p>
-                        Contul de Casier este pentru persoana care
-                        interacționează cu clienții și care înregistrează
-                        produsele în casă sau face facturi, atunci când un
-                        client o cere. Nu poate să adauge sau să elimine
-                        produse, sau orice alte tipuri de informații despre
-                        companie.
+                        Lipsa banilor este principalul motiv pentru care
+                        întreprinderile mici și mijlocii intră în faliment. Ai
+                        nevoie de un aport regulat de numerar, care să-ți
+                        permită să plătești facturi, salarii și să investești în
+                        dezvoltarea afacerii.
                       </p>
-                      <p class="py-3">
-                        Contul de Utilizator poate să adauge sau să scoată
-                        produse din platformă, dar și să creeze noi categorii.
-                        În același timp, administratorul poate să:
+                      <p class="py-2">
+                        Prin funcționalitățile noastre vezi în timp real cum
+                        evoluează fluxul de numerar. Astfel,
+                        <b>Managerul</b> poate analiza în fiecare lună fluxul de
+                        numerar și să ia decizii pentru îmbunătățirea acestuia,
+                        astfel încât în fiecare lună afacerea să aibă mai multe
+                        intrări (de numerar) decât ieșiri (de numerar).
                       </p>
                     </div>
                   </div>
@@ -680,12 +725,13 @@
                       <div class="pe-2">
                         <h4 class="fw-normal pb-2">
                           <i class="fa-solid fa-cash-register"></i>
-                          POS
+                          Plata cu cardul
                         </h4>
                         <div>
-                          Îți oferim un POS digital pe care casierul îl poate
-                          instala pe telefonul său și se sincronizează instant
-                          cu: platforma de retail, cântarul și casa de marcat.
+                          Terminalul de plată se integrează direct cu NETOPIA
+                          Retail, casa de marcat și cântarul. Ai posibilitatea
+                          de a folosi o aplicație de terminal de plată pentru
+                          smartphone.
                         </div>
                       </div>
                     </div>
@@ -697,13 +743,28 @@
                     data-bs-parent="#accordionFlushExample2"
                   >
                     <div class="accordion-body">
+                      <p class="py-3">
+                        Dacă folosești NETOPIA Retail îți oferim și o aplicație
+                        de smartphone, doar pentru Android, care să funcționeze
+                        ca un terminal de plată.
+                      </p>
                       <p>
-                        Contul de Casier este pentru persoana care
-                        interacționează cu clienții și care înregistrează
-                        produsele în casă sau face facturi, atunci când un
-                        client o cere. Nu poate să adauge sau să elimine
-                        produse, sau orice alte tipuri de informații despre
-                        companie.
+                        Dacă alegi pachetul standard îți oferim, gratuit,
+                        dispozitive care să te ajute în administrarea
+                        magazinului și în vânzare.
+                      </p>
+                      <ul class="ps-4">
+                        Îți oferim:
+                        <li>;</li>
+                        <li>;</li>
+                        <li>;</li>
+                        <li>;</li>
+                      </ul>
+                      <p class="pt-3">
+                        Indiferent de pachetul ales, platforma noastră se va
+                        conecta cu orice dispozitiv și vei avea casa de marcat
+                        și cântarul integrate direct, pentru a avea o viziune de
+                        ansamblu a tot ceea ce vinzi.
                       </p>
                     </div>
                   </div>
@@ -715,21 +776,21 @@
       </div>
     </section>
 
-    <section id="despre" class="about-area py-5">
-      <div class="about-shape-2">
-        <img src="assets/img/about-shape-2.svg" alt="shape" />
+    <section id="despre" class="section-area py-5">
+      <div class="section-shape-2">
+        <img src="assets/img/section-shape-2.svg" alt="shape" />
       </div>
       <div class="container">
         <div class="row">
           <div class="col-lg-6 order-lg-first">
             <div
-              class="about-content mt-5 wow fadeInLeftBig"
+              class="section-content mt-5 wow fadeInLeftBig"
               data-wow-duration="1s"
               data-wow-delay="0.5s"
             >
               <div>
                 <div class="line"></div>
-                <h3 class="title">De ce noi?</h3>
+                <h3 class="title">Despre noi</h3>
               </div>
               <p class="text">
                 NETOPIA Retail face parte din NETOPIA Group, un conglomerat de
@@ -745,11 +806,11 @@
           </div>
           <div class="col-lg-6 order-lg-last">
             <div
-              class="about-image text-center mt-50 wow fadeInRightBig"
+              class="section-image text-center mt-50 wow fadeInRightBig"
               data-wow-duration="1s"
               data-wow-delay="0.5s"
             >
-              <img src="assets/img/about2.svg" alt="about" />
+              <img src="assets/img/section2.svg" alt="section" />
             </div>
           </div>
         </div>
@@ -795,13 +856,12 @@
                 </div>
 
                 <p class="text">
-                  Am creat un soft de gestiune care nu are nevoie de training
-                  special. Fiecare angajat va putea să vândă într-un timp extrem
-                  de scurt, platforma noastră fiind creată pentru optimizarea
-                  maximă a procesului de onboarding. Am folosit pictograme ușor
-                  de înțeles și am gândit un flow al procesului de vânzare care
-                  poate fi urmărit și finalizat cu succes de orice persoană cu
-                  un minim de cunoștințe.
+                  Am dezvoltat un soft de gestiune și vânzare care nu are nevoie
+                  de training special. Platforma noastră este creată pentru
+                  optimizarea maximă a procesului de învățare, astfel încât
+                  orice angajat va putea să vândă într-un timp foarte scurt.
+                  Procesul de vânzare este ușor de urmărit și rapid, astfel
+                  încât timpul de așteptare al clienților să fie cât mai mic.
                 </p>
               </div>
 
@@ -849,12 +909,12 @@
       </div>
     </section>
 
-    <section class="about-area py-5">
+    <section class="section-area py-5">
       <div class="container">
         <div class="row">
           <div class="col-lg-6">
             <div
-              class="about-content mt-5 wow fadeInLeftBig"
+              class="section-content mt-5 wow fadeInLeftBig"
               data-wow-duration="1s"
               data-wow-delay="0.5s"
             >
@@ -877,31 +937,30 @@
               </p>
               <p class="text">
                 Cele mai importante informații îți vor fi prezentate,
-                întotdeauna, atunci când te loghezi, iar meniul din partea
-                stângă îți permite să ajungi instant în secțiunea de care ai
-                nevoie.
+                întotdeauna, atunci când te loghezi, iar meniul îți permite să
+                ajungi instant în secțiunea de care ai nevoie.
               </p>
               <a href="#" class="main-btn">Începe gratuit</a>
             </div>
           </div>
           <div class="col-lg-6">
             <div
-              class="about-image text-center mt-5 wow fadeInRightBig"
+              class="section-image text-center mt-5 wow fadeInRightBig"
               data-wow-duration="1s"
               data-wow-delay="0.5s"
             >
-              <img src="assets/img/about3.svg" alt="about" />
+              <img src="assets/img/section3.svg" alt="section" />
             </div>
           </div>
         </div>
       </div>
 
-      <div class="about-shape-1">
-        <img src="assets/img/about-shape-1.svg" alt="shape" />
+      <div class="section-shape-1">
+        <img src="assets/img/section-shape-1.svg" alt="shape" />
       </div>
     </section>
 
-    <section id="features" class="services-area py-5">
+    <section id="features" class="solutions-area py-5">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-10">
@@ -915,62 +974,61 @@
         <div class="row justify-content-center">
           <div class="col-lg-6 col-sm-8 my-4">
             <div
-              class="single-services text-center wow fadeIn"
+              class="single-solutions text-center wow fadeIn"
               data-wow-duration="1s"
               data-wow-delay="0.2s"
             >
               <div class="benefits-image">
                 <img src="assets/img/automatizare.svg" alt="shape" />
               </div>
-              <div class="services-content mt-3">
-                <h4 class="services-title">
+              <div class="solutions-content mt-3">
+                <h4 class="solutions-title">
                   Automatizarea proceselor de lucru
                 </h4>
                 <p class="text">
-                  Adaugă un plus important de eficiență afacerii tale cu NETOPIA
-                  Retail, printr-un control total asupra activităților de
-                  vânzare cu amănuntul: de la gestionarea stocurilor și a
-                  aprovizionării, efectuarea inventarelor, definirea politicii
-                  comerciale până la soluții de fidelizare a clienților și
-                  crearea diverselor promoții.
+                  Eficientizează afacerea ta cu NETOPIA Retail, printr-un
+                  control total asupra activităților de vânzare cu amănuntul: de
+                  la gestionarea stocurilor, efectuarea inventarului sau
+                  definirea politicii comerciale, până la soluții de fidelizare
+                  a clienților și crearea diverselor promoții.
                 </p>
               </div>
             </div>
           </div>
           <div class="col-lg-6 col-sm-8 my-4">
             <div
-              class="single-services text-center wow fadeIn"
+              class="single-solutions text-center wow fadeIn"
               data-wow-duration="1s"
               data-wow-delay="0.5s"
             >
               <div class="benefits-image">
                 <img src="assets/img/analize.svg" alt="shape" />
               </div>
-              <div class="services-content mt-3">
-                <h4 class="services-title">Analize avansate în timp real</h4>
+              message
+              <div class="solutions-content mt-3">
+                <h4 class="solutions-title">Analize avansate în timp real</h4>
                 <p class="text">
-                  Prin NETOPIA Retail, cataloagele de produse și politicile
-                  comerciale sunt administrate centralizat. Responsabilii vor
-                  putea defini și gestiona în timp real caracteristicile
-                  produselor, codurile de bare, etichetele, unitățile de măsură
-                  multiple, listele de prețuri generale, listele de
-                  discount-uri, promoțiile și altele, pentru a fi întotdeauna
-                  aproape de cerințele clientilor tăi.
+                  Prin NETOPIA Retail, cataloagele de produse sunt administrate
+                  centralizat. Responsabilii vor putea defini și gestiona în
+                  timp real caracteristicile produselor, codurile de bare,
+                  etichetele, listele de prețuri generale, listele de
+                  discounturi, promoțiile și altele; pentru a fi întotdeauna
+                  aproape de cerințele clienților tăi.
                 </p>
               </div>
             </div>
           </div>
           <div class="col-lg-6 col-sm-8 my-4">
             <div
-              class="single-services text-center wow fadeIn"
+              class="single-solutions text-center wow fadeIn"
               data-wow-duration="1s"
               data-wow-delay="0.8s"
             >
               <div class="benefits-image">
                 <img src="assets/img/fidelizare.svg" alt="shape" />
               </div>
-              <div class="services-content mt-3">
-                <h4 class="services-title">Soluții de fidelizare clienți</h4>
+              <div class="solutions-content mt-3">
+                <h4 class="solutions-title">Administrare de stocuri</h4>
                 <p class="text">
                   Inventarierea cantitativă a tuturor categoriilor de stoc este
                   automatizată. Poți avea o imagine de ansamblu asupra
@@ -982,15 +1040,15 @@
           </div>
           <div class="col-lg-6 col-sm-8 my-4">
             <div
-              class="single-services text-center wow fadeIn"
+              class="single-solutions text-center wow fadeIn"
               data-wow-duration="1s"
               data-wow-delay="0.8s"
             >
               <div class="benefits-image">
                 <img src="assets/img/rapoarte.svg" alt="shape" />
               </div>
-              <div class="services-content mt-30">
-                <h4 class="services-title">
+              <div class="solutions-content mt-30">
+                <h4 class="solutions-title">
                   Rapoarte avansate și identificarea comportamentului de consum
                 </h4>
                 <p class="text">
@@ -1063,7 +1121,7 @@
       </div>
     </section>
 
-    <section class="about-area py-5">
+    <section class="section-area py-5">
       <div class="container mt-5">
         <div class="row justify-content-center">
           <div class="col-lg-10">
@@ -1077,15 +1135,17 @@
         <div class="row justify-content-center">
           <div class="col-lg-3 col-sm-8 my-4">
             <div
-              class="single-services text-center wow fadeIn"
+              class="single-solutions text-center wow fadeIn"
               data-wow-duration="1s"
               data-wow-delay="0.2s"
             >
               <div class="advantages-image">
                 <img src="assets/img/automatizare.svg" alt="shape" />
               </div>
-              <div class="services-content mt-3">
-                <h4 class="services-title">Integrare cu NETOPIA Payments</h4>
+              <div class="solutions-content mt-3">
+                <h4 class="solutions-title">
+                  Integrare cu metoda de plată NETOPIA Payments
+                </h4>
                 <p class="text">
                   Iți oferim acces la o paletă largă de servicii de plată,
                   inovație constantă și standarde internaționale de siguranță și
@@ -1098,16 +1158,16 @@
           </div>
           <div class="col-lg-3 col-sm-8 my-4">
             <div
-              class="single-services text-center wow fadeIn"
+              class="single-solutions text-center wow fadeIn"
               data-wow-duration="1s"
               data-wow-delay="0.5s"
             >
               <div class="advantages-image">
                 <img src="assets/img/analize.svg" alt="shape" />
               </div>
-              <div class="services-content mt-3">
-                <h4 class="services-title">
-                  Gestionează facturile. Simplu, ușor, rapid.
+              <div class="solutions-content mt-3">
+                <h4 class="solutions-title">
+                  Gestionează vânzările. Simplu, ușor, rapid.
                 </h4>
                 <p class="text">
                   NETOPIA Retail a dezvoltat funcția de Calcul Automat de Sold
@@ -1119,15 +1179,15 @@
           </div>
           <div class="col-lg-3 col-sm-8 my-4">
             <div
-              class="single-services text-center wow fadeIn"
+              class="single-solutions text-center wow fadeIn"
               data-wow-duration="1s"
               data-wow-delay="0.8s"
             >
               <div class="advantages-image">
                 <img src="assets/img/fidelizare.svg" alt="shape" />
               </div>
-              <div class="services-content mt-3">
-                <h4 class="services-title">
+              <div class="solutions-content mt-3">
+                <h4 class="solutions-title">
                   Personalizezi platforma după propriile nevoi﻿
                 </h4>
                 <p class="text">
@@ -1141,16 +1201,26 @@
           </div>
           <div class="col-lg-3 col-sm-8 my-4">
             <div
-              class="single-services text-center wow fadeIn"
+              class="single-solutions text-center wow fadeIn"
               data-wow-duration="1s"
               data-wow-delay="0.8s"
             >
               <div class="advantages-image">
                 <img src="assets/img/rapoarte.svg" alt="shape" />
               </div>
-              <div class="services-content mt-30">
-                <h4 class="services-title">Card</h4>
-                <p class="text">TBD</p>
+              <div class="solutions-content mt-30">
+                <h4 class="solutions-title">
+                  Card bancar tip business NETOPIA
+                </h4>
+                <p class="text">
+                  Cardul de business NETOPIA este instrumentul modern și elegant
+                  al oamenilor de afaceri din România. <br />
+                  Optimizează costurile afacerii tale prin beneficiile unice
+                  oferite de cardul de business NETOPIA.
+                </p>
+                <a class="more" href="#"
+                  >Află mai multe<i class="fa-solid fa-angle-right"></i
+                ></a>
               </div>
             </div>
           </div>
@@ -1306,32 +1376,43 @@
       </div>
     </section> -->
 
-    <section id="pachete" class="mt-70 about-area py-5">
-      <div class="pricing">
-        <div class="container">
+    <section id="pachete" class="mt-70 section-area py-5">
+      <div class="container">
+        <div class="pricing">
           <div class="pricing-table table-responsive">
             <table class="table text-center">
               <thead>
                 <tr>
                   <th class="text-start align-middle">
-                    <h2 class="title">Pachete</h2>
+                    <div class="fs-1">Pachete</div>
                   </th>
-                  <th>
-                    Gratis<br />
+                  <th style="border-top-left-radius: 20px">
+                    <span class="fw-normal">Gratis</span><br />
                     <span class="ptable-price">0.0 &euro;</span>
                     <span class="ptable-period">/luna</span>
+                    <br />
+                    <span class="ptable-link"
+                      ><a href="">Alege pachetul</a></span
+                    >
                   </th>
                   <th class="highlight">
-                    Standard<br />
+                    <span class="fw-normal">Standard</span><br />
                     <span class="ptable-price">10.0 &euro;</span>
                     <span class="ptable-period">/luna</span>
+                    <br />
+                    <span class="ptable-link"
+                      ><a href="">Alege pachetul</a></span
+                    >
                   </th>
-                  <th>
-                    Premium
-
+                  <th style="border-top-right-radius: 20px">
+                    <span class="fw-normal">Premium</span>
                     <br />
                     <span class="ptable-price">20.0 &euro;</span>
                     <span class="ptable-period">/luna</span>
+                    <br />
+                    <span class="ptable-link"
+                      ><a href="">Alege pachetul</a></span
+                    >
                   </th>
                 </tr>
               </thead>
@@ -1348,7 +1429,7 @@
                   <td class="ptable-title">
                     Creare cont Casier (aplicație/user)
                   </td>
-                  <td>Poți crea doar X conturi de Casier</td>
+                  <td>X conturi de Casier</td>
                   <td>număr nelimitat de Casier</td>
                   <td>număr nelimitat de Casier</td>
                 </tr>
@@ -1356,9 +1437,24 @@
                   <td class="ptable-title">
                     Creare cont de Administrator/Francizat (user backend)
                   </td>
-                  <td>Poți crea doar X conturi de Administrator</td>
+                  <td>X conturi de Administrator</td>
                   <td>număr nelimitat de Administrator</td>
                   <td>număr nelimitat de Administrator (per companie)</td>
+                </tr>
+                <tr>
+                  <td class="ptable-title">Număr de locații</td>
+                  <td>o singură locație</td>
+                  <td>număr nelimitat de locații</td>
+                  <td>
+                    număr nelimitat de locații de la mai multe companii (parte a
+                    aceluiași grup)
+                  </td>
+                </tr>
+                <tr>
+                  <td class="ptable-title">Număr de conturi de administrare</td>
+                  <td>o singură entitate de administrare a contului</td>
+                  <td>nelimitat entități de administrare a contului</td>
+                  <td>nelimitat entități de administrare a contului</td>
                 </tr>
 
                 <tr>
@@ -1375,13 +1471,13 @@
                     administra
                   </td>
                   <td>
-                    <i class="fa fa-times"></i>
+                    <i class="fa-solid fa-check"></i>
                   </td>
                   <td>
-                    <i class="fa fa-times"></i>
+                    <i class="fa-solid fa-check"></i>
                   </td>
                   <td>
-                    <i class="fa fa-times"></i>
+                    <i class="fa-solid fa-check"></i>
                   </td>
                 </tr>
                 <tr>
@@ -1390,55 +1486,511 @@
                     rezultate totale precum - cantitate, locație sau categorie
                   </td>
                   <td>
-                    <i class="fa fa-times"></i>
+                    <i class="fa-solid fa-check"></i>
                   </td>
                   <td>
-                    <i class="fa fa-times"></i>
+                    <i class="fa-solid fa-check"></i>
                   </td>
                   <td>
-                    <i class="fa fa-times"></i>
+                    <i class="fa-solid fa-check"></i>
                   </td>
                 </tr>
 
-                <tr>
-                  <td class="ptable-title">
-                    Management categorii proprii de produse
-                  </td>
-                  <td>
-                    <i class="fa fa-times"></i>
-                  </td>
-                  <td>
-                    <i class="fa fa-times"></i>
-                  </td>
-                  <td>
-                    <i class="fa fa-times"></i>
-                  </td>
-                </tr>
                 <tr>
                   <td class="ptable-title">
                     Acces la baza de date universală Barcode EAN
                   </td>
                   <td>
-                    <i class="fa fa-times"></i>
+                    <i class="fa-solid fa-minus"></i>
                   </td>
                   <td>
-                    <i class="fa fa-times"></i>
+                    <i class="fa-solid fa-check"></i>
                   </td>
                   <td>
-                    <i class="fa fa-times"></i>
+                    <i class="fa-solid fa-check"></i>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="ptable-title">
+                    <span>Dashboard / Rapoarte</span>
+                  </td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+
+                <tr>
+                  <td class="ptable-title">Interogare încasări în timp real</td>
+                  <td>
+                    <i class="fa-solid fa-check"></i>
+                  </td>
+                  <td>
+                    <i class="fa-solid fa-check"></i>
+                  </td>
+                  <td>
+                    <i class="fa-solid fa-check"></i>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="ptable-title">
+                    Interogare încasări pe intervale de timp: zi, săptămână,
+                    lună
+                  </td>
+                  <td>
+                    <i class="fa-solid fa-check"></i>
+                  </td>
+                  <td>
+                    <i class="fa-solid fa-check"></i>
+                  </td>
+                  <td>
+                    <i class="fa-solid fa-check"></i>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="ptable-title">
+                    Interogare produse vândute în timp real
+                  </td>
+                  <td>
+                    <i class="fa-solid fa-check"></i>
+                  </td>
+                  <td>
+                    <i class="fa-solid fa-check"></i>
+                  </td>
+                  <td>
+                    <i class="fa-solid fa-check"></i>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="ptable-title">
+                    Interogare produse vândute pe intervale de timp: zi,
+                    săptămână, lună
+                  </td>
+                  <td>
+                    <i class="fa-solid fa-check"></i>
+                  </td>
+                  <td>
+                    <i class="fa-solid fa-check"></i>
+                  </td>
+                  <td>
+                    <i class="fa-solid fa-check"></i>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="ptable-title">
+                    Top 10 cele mai vândute produse pe lună
+                  </td>
+                  <td>
+                    <i class="fa-solid fa-check"></i>
+                  </td>
+                  <td>
+                    <i class="fa-solid fa-check"></i>
+                  </td>
+                  <td>
+                    <i class="fa-solid fa-check"></i>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="ptable-title">
+                    Top 10 cele mai vândute categorii de produse
+                  </td>
+                  <td>
+                    <i class="fa-solid fa-check"></i>
+                  </td>
+                  <td>
+                    <i class="fa-solid fa-check"></i>
+                  </td>
+                  <td>
+                    <i class="fa-solid fa-check"></i>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="ptable-title">
+                    Top 10 cele mai profitabile locații
+                  </td>
+                  <td>
+                    <i class="fa-solid fa-minus"></i>
+                  </td>
+                  <td>
+                    <i class="fa-solid fa-check"></i>
+                  </td>
+                  <td>
+                    <i class="fa-solid fa-check"></i>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="ptable-title">
+                    Top 10 clienți (care au avut cele mai multe achiziții de
+                    produse)
+                  </td>
+                  <td>
+                    <i class="fa-solid fa-check"></i>
+                  </td>
+                  <td>
+                    <i class="fa-solid fa-check"></i>
+                  </td>
+                  <td>
+                    <i class="fa-solid fa-check"></i>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="ptable-title">
+                    Rapoarte complete de vânzări, pe produse sau pe categorii
+                  </td>
+                  <td>
+                    <i class="fa-solid fa-check"></i>
+                  </td>
+                  <td>
+                    <i class="fa-solid fa-check"></i>
+                  </td>
+                  <td>
+                    <i class="fa-solid fa-check"></i>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="ptable-title">Registru de casă</td>
+                  <td>Un singur registru de casă</td>
+                  <td>număr nelimitat</td>
+                  <td>număr nelimitat</td>
+                </tr>
+                <tr>
+                  <td class="ptable-title">Registru de casă în lei</td>
+                  <td>
+                    <i class="fa-solid fa-check"></i>
+                  </td>
+                  <td>
+                    <i class="fa-solid fa-check"></i>
+                  </td>
+                  <td>
+                    <i class="fa-solid fa-check"></i>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="ptable-title">Registru de casă în valută</td>
+                  <td>
+                    <i class="fa-solid fa-minus"></i>
+                  </td>
+                  <td>
+                    <i class="fa-solid fa-minus"></i>
+                  </td>
+                  <td>
+                    <i class="fa-solid fa-check"></i>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="ptable-title">
+                    <span>Parteneri</span>
+                  </td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td class="ptable-title">Emitere facturi</td>
+                  <td>
+                    <i class="fa-solid fa-check"></i>
+                  </td>
+                  <td>
+                    <i class="fa-solid fa-check"></i>
+                  </td>
+                  <td>
+                    <i class="fa-solid fa-check"></i>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="ptable-title">
+                    Administrare facturi (emise și încasate pentru fiecare
+                    furnizor sau partener în parte)
+                  </td>
+                  <td>
+                    <i class="fa-solid fa-check"></i>
+                  </td>
+                  <td>
+                    <i class="fa-solid fa-check"></i>
+                  </td>
+                  <td>
+                    <i class="fa-solid fa-check"></i>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="ptable-title">Istoric facturi</td>
+                  <td>
+                    <i class="fa-solid fa-check"></i>
+                  </td>
+                  <td>
+                    <i class="fa-solid fa-check"></i>
+                  </td>
+                  <td>
+                    <i class="fa-solid fa-check"></i>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="ptable-title">
+                    Calcul automat de sold (pentru a ști cât trebuie să încasezi
+                    sau să achiți)
+                  </td>
+                  <td>
+                    <i class="fa-solid fa-check"></i>
+                  </td>
+                  <td>
+                    <i class="fa-solid fa-check"></i>
+                  </td>
+                  <td>
+                    <i class="fa-solid fa-check"></i>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="ptable-title">
+                    <span>Vanzari</span>
+                  </td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td class="ptable-title">
+                    Număr nelimitat de facturi pe care le poți emite pentru
+                    clienții persoană fizică
+                  </td>
+                  <td>
+                    <i class="fa-solid fa-check"></i>
+                  </td>
+                  <td>
+                    <i class="fa-solid fa-check"></i>
+                  </td>
+                  <td>
+                    <i class="fa-solid fa-check"></i>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="ptable-title">
+                    Administrare de chitanțe fiscale pentru plățile cash
+                  </td>
+                  <td>
+                    <i class="fa-solid fa-check"></i>
+                  </td>
+                  <td>
+                    <i class="fa-solid fa-check"></i>
+                  </td>
+                  <td>
+                    <i class="fa-solid fa-check"></i>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="ptable-title">
+                    <span>POS</span>
+                  </td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr></tr>
+
+                <tr>
+                  <td class="ptable-title">POS Fizic</td>
+                  <td>
+                    <i class="fa-solid fa-minus"></i>
+                  </td>
+                  <td>
+                    <i class="fa-solid fa-check"></i>
+                  </td>
+                  <td>
+                    <i class="fa-solid fa-check"></i>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="ptable-title">
+                    Aplicație POS pentru smartphone (android)
+                  </td>
+                  <td>
+                    <i class="fa-solid fa-check"></i>
+                  </td>
+                  <td>
+                    <i class="fa-solid fa-check"></i>
+                  </td>
+                  <td>
+                    <i class="fa-solid fa-check"></i>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="ptable-title">
+                    Sincronizare instantă cu platforma de retail, casa de
+                    marcat, cântar, prin aplicația POS pentru smartphone
+                  </td>
+                  <td>
+                    <i class="fa-solid fa-check"></i>
+                  </td>
+                  <td>
+                    <i class="fa-solid fa-check"></i>
+                  </td>
+                  <td>
+                    <i class="fa-solid fa-check"></i>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="ptable-title">
+                    <span>Marketing</span>
+                  </td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr></tr>
+                <tr>
+                  <td class="ptable-title">Integrare cu serviciul web2sms</td>
+                  <td>
+                    <i class="fa-solid fa-check"></i>
+                  </td>
+                  <td>
+                    <i class="fa-solid fa-check"></i>
+                  </td>
+                  <td>
+                    <i class="fa-solid fa-check"></i>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="ptable-title">
+                    <span>Procesare de card</span>
+                  </td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr></tr>
+                <tr>
+                  <td class="ptable-title">
+                    Posibilitatea integrării pentru plata cu cardul
+                  </td>
+                  <td>
+                    <i class="fa-solid fa-check"></i>
+                  </td>
+                  <td>
+                    <i class="fa-solid fa-check"></i>
+                  </td>
+                  <td>
+                    <i class="fa-solid fa-check"></i>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="ptable-title">
+                    Procesarea tranzacțiilor cu cardul preintegrat cu NETOPIA
+                    Payments
+                  </td>
+                  <td>
+                    <i class="fa-solid fa-minus"></i>
+                  </td>
+                  <td>
+                    <i class="fa-solid fa-check"></i>
+                  </td>
+                  <td>
+                    <i class="fa-solid fa-check"></i>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="ptable-title">
+                    Comision 0 până depășești X număr de vânzări pe lună
+                  </td>
+                  <td>
+                    <i class="fa-solid fa-minus"></i>
+                  </td>
+                  <td>
+                    <i class="fa-solid fa-check"></i>
+                  </td>
+                  <td>
+                    <i class="fa-solid fa-minus"></i>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="ptable-title">
+                    Comision 0 pe toată durata contractului
+                  </td>
+                  <td>
+                    <i class="fa-solid fa-minus"></i>
+                  </td>
+                  <td>
+                    <i class="fa-solid fa-minus"></i>
+                  </td>
+                  <td>
+                    <i class="fa-solid fa-check"></i>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="ptable-title">
+                    <span>Suport</span>
+                  </td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr></tr>
+
+                <tr>
+                  <td class="ptable-title">Suport tehnic</td>
+                  <td>
+                    <i class="fa-solid fa-minus"></i>
+                  </td>
+                  <td>
+                    <i class="fa-solid fa-check"></i>
+                  </td>
+                  <td>
+                    <i class="fa-solid fa-check"></i>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="ptable-title">
+                    <span>Integrare custom</span>
+                  </td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr></tr>
+
+                <tr>
+                  <td class="ptable-title">
+                    Personalizarea soluției NETOPIA Retail pentru propriile
+                    nevoi de business
+                  </td>
+                  <td>
+                    <i class="fa-solid fa-minus"></i>
+                  </td>
+                  <td>
+                    <i class="fa-solid fa-minus"></i>
+                  </td>
+                  <td>
+                    <i class="fa-solid fa-check"></i>
                   </td>
                 </tr>
 
                 <tr>
                   <td>&nbsp;</td>
-                  <td class="bg-red">
-                    <a class="btn" href="#">Începe gratuit</a>
+                  <td class="bg-red" style="border-bottom-left-radius: 20px">
+                    <a class="main-btn" href="#">Începe gratuit</a>
                   </td>
                   <td class="bg-green">
-                    <a class="btn" href="#">Înscrie-te</a>
+                    <a class="main-btn" href="#">Înscrie-te</a>
                   </td>
-                  <td class="bg-lblue">
-                    <a class="btn" href="#">Contactează-ne </a>
+                  <td class="bg-lblue" style="border-bottom-right-radius: 20px">
+                    <a class="main-btn" href="#">Contactează-ne </a>
                   </td>
                 </tr>
               </tbody>
@@ -1482,7 +2034,7 @@
           <div class="row">
             <div class="col-lg-4 col-md-6 col-sm-8">
               <div
-                class="footer-about mt-5 wow fadeIn"
+                class="footer-section mt-5 wow fadeIn"
                 data-wow-duration="1s"
                 data-wow-delay="0.2s"
               >
