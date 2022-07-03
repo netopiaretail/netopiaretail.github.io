@@ -1,0 +1,184 @@
+@media (max-width: 767px) {
+  input[type="radio"]:checked ~ table#pricing-table tr > :nth-of-type(2),
+  input[type="radio"]:checked ~ table#pricing-table tr > :nth-of-type(3),
+  input[type="radio"]:checked ~ table#pricing-table tr > :nth-of-type(4) {
+    display: none;
+  }
+
+  input[type="radio"]#free:checked ~ table#pricing-table tr > :nth-of-type(2) {
+    display: table-cell;
+  }
+
+  input[type="radio"]#standard:checked
+    ~ table#pricing-table
+    tr
+    > :nth-of-type(3) {
+    display: table-cell;
+  }
+
+  input[type="radio"]#premium:checked
+    ~ table#pricing-table
+    tr
+    > :nth-of-type(4) {
+    display: table-cell;
+  }
+}
+#free,
+#standard,
+#premium,
+#free ~ label,
+#standard ~ label,
+#premium ~ label {
+  display: none;
+}
+
+.ptable-title {
+  text-align: left;
+  font-size: 1rem;
+}
+
+.ptable-title span {
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+.ptable-price {
+  font-size: 2rem;
+}
+
+.ptable-period {
+  font-size: 0.75rem;
+  color: #6a6972;
+}
+
+.ptable-link {
+  font-weight: 600;
+  padding: 0.5rem 0.75rem;
+  background-color: #ff40002f;
+  border-radius: 8px;
+  font-size: 0.75rem;
+  color: #ff4000;
+}
+
+.ptable-link a {
+  color: inherit;
+}
+
+.ptable-link:hover {
+  background-color: #14499e2f;
+  color: #14499e;
+}
+
+.pricing {
+  background: linear-gradient(to right, #14499e 0%, #2e82ef 100%);
+  background: -webkit-linear-gradient(left, #14499e 0%, #2e82ef 100%);
+  background: -o-linear-gradient(left, #14499e 0%, #2e82ef 100%);
+  border-radius: 8px;
+  padding: 2rem;
+}
+
+.pricing-mobile .main-btn {
+  padding: 0 16px;
+}
+
+.table {
+  margin-bottom: 0 !important;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+td:not(:first-child) {
+  background-color: #fff;
+  font-size: 1rem;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+th:not(:first-child) {
+  background-color: #fff;
+  font-size: 1rem;
+  font-family: "Nunito", sans-serif;
+}
+
+td:first-child,
+th:first-child {
+  color: #fff;
+  width: 35%;
+}
+
+td i {
+  color: #fff;
+  font-size: 0.5rem;
+  padding: 10px 12px;
+  border-radius: 100%;
+}
+
+td i.fa-check {
+  background-color: #ff4000;
+}
+
+td i.fa-minus {
+  background-color: #b9b9b9;
+}
+
+@media (max-width: 767px) {
+  .pricing {
+    padding: 0.5rem;
+  }
+
+  .ptable-title,
+  td:not(:first-child) {
+    font-size: 0.75rem;
+  }
+
+  .ptable-title span {
+    font-weight: 600;
+    font-size: 1rem;
+  }
+
+  .ptable-price {
+    font-size: 1.2rem;
+  }
+
+  td:first-child,
+  th:first-child {
+    width: 60%;
+  }
+
+  #free,
+  #standard,
+  #premium,
+  #free ~ label,
+  #standard ~ label,
+  #premium ~ label {
+    display: inline;
+  }
+}
+
+#free-th {
+  border-top-left-radius: 8px;
+}
+
+#premium-th {
+  border-top-right-radius: 8px;
+}
+
+#first-th {
+  border-bottom-left-radius: 8px;
+}
+#third-th {
+  border-bottom-right-radius: 8px;
+}
+
+@media (max-width: 767px) {
+  #free-th,
+  #standard-th,
+  #premium-th {
+    border-radius: 8px 8px 0 0;
+  }
+
+  #frirst-th,
+  #second-th,
+  #third-th {
+    border-radius: 0 0 8px 8px;
+  }
+}
