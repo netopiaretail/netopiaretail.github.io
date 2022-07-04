@@ -1,15 +1,15 @@
-import "./App.css";
+import "./App.scss";
 import Header from "./header/Header";
-import SectionOne from "./sections/SectionOne";
-import SectionTwo from "./sections/SectionTwo";
+import SectionFeatures from "./sections/SectionFeatures";
+import SectionCustom from "./sections/SectionCustom";
 import image1 from "./img/Group 1 (8).png";
 import image2 from "./img/section2.svg";
 import image3 from "./img/angajati.png";
 import image4 from "./img/section3.png";
-import SectionThree from "./sections/SectionThree";
-import SectionFour from "./sections/SectionFour";
-import SectionFive from "./sections/SectionFive";
-import SectionSix from "./sections/SectionSix";
+import SectionFunctionalities from "./sections/SectionFunctionalities";
+import SectionBenefits from "./sections/SectionBenefits";
+import SectionHardware from "./sections/SectionHardware";
+import SectionAdvantages from "./sections/SectionAdvantages";
 import FooterArea from "./footer/FooterArea";
 import PricingTable from "./sections/PricingTable";
 import WizardStep from "./sections/Wizard";
@@ -18,8 +18,8 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <SectionOne />
-      <SectionTwo
+      <SectionFeatures />
+      <SectionCustom
         id={"onePlatform"}
         image={image1}
         imageTitle={"Dashboard"}
@@ -31,8 +31,8 @@ function App() {
         btnLink={""}
         btnText={"Începe gratuit"}
       />
-      <SectionThree />
-      <SectionTwo
+      <SectionFunctionalities />
+      <SectionCustom
         id={"about"}
         image={image2}
         imageTitle={"Despre noi"}
@@ -44,7 +44,7 @@ function App() {
         btnText={"Începe gratuit"}
         order={"order-2"}
       />
-      <SectionTwo
+      <SectionCustom
         id={"employee"}
         image={image3}
         imageTitle={"Angajați"}
@@ -54,8 +54,8 @@ function App() {
           "Am dezvoltat un soft de gestiune și vânzare care nu are nevoie de training special. Platforma noastră este creată pentru optimizarea maximă a procesului de învățare, astfel încât orice angajat va putea să vândă într-un timp foarte scurt. Procesul de vânzare este ușor de urmărit și rapid, astfel încât timpul de așteptare al clienților să fie cât mai mic."
         }
       />
-      <SectionTwo
-        id={"employee"}
+      <SectionCustom
+        id={"managers"}
         image={image4}
         imageTitle={"Angajați"}
         title={"Pentru manager:"}
@@ -67,9 +67,9 @@ function App() {
         btnText={"Începe gratuit"}
         order={"order-2"}
       />
-      <SectionFour />
-      <SectionFive />
-      <SectionSix />
+      <SectionBenefits />
+      <SectionHardware />
+      <SectionAdvantages />
       <PricingTable />
       <WizardStep />
       <FooterArea />

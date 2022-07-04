@@ -1,6 +1,6 @@
 import Accordion from "react-bootstrap/Accordion";
 
-const SectionThree = () => {
+const SectionFunctionalities = () => {
   return (
     <section id="functionalitati" className="section-area py-5">
       <div className="container">
@@ -49,7 +49,7 @@ const SectionThree = () => {
                     <b>Manager</b> și, în plus, poate să adauge atât conturi de
                     Casier și Manager, cât și companii.
                   </p>
-                  <a className="more" href="#pachete">
+                  <a className="more" href="#pricing">
                     Află mai multe<i className="fa-solid fa-angle-right"></i>
                   </a>
                 </Accordion.Body>
@@ -82,7 +82,7 @@ const SectionThree = () => {
                     manual codurile de bară și stocul se actualizează automat în
                     funcție de produs.
                   </p>
-                  <a className="more" href="#pachete">
+                  <a className="more" href="#pricing">
                     Află mai multe<i className="fa-solid fa-angle-right"></i>
                   </a>
                 </Accordion.Body>
@@ -116,7 +116,7 @@ const SectionThree = () => {
                     mai repede, astfel încât să îți aprovizionezi businessul,
                     constant, cu produse care te ajută să ai profit.
                   </p>
-                  <a className="more" href="#pachete">
+                  <a className="more" href="#pricing">
                     Află mai multe<i className="fa-solid fa-angle-right"></i>
                   </a>
                 </Accordion.Body>
@@ -145,7 +145,7 @@ const SectionThree = () => {
                     funcția de Calcul Automat de Sold, care îți spune în orice
                     moment cât trebuie să încasezi sau să achiți.
                   </p>
-                  <a className="more" href="#pachete">
+                  <a className="more" href="#pricing">
                     Află mai multe<i className="fa-solid fa-angle-right"></i>
                   </a>
                 </Accordion.Body>
@@ -178,7 +178,7 @@ const SectionThree = () => {
                     astfel încât în fiecare lună afacerea să aibă mai multe
                     intrări (de numerar) decât ieșiri (de numerar).
                   </p>
-                  <a className="more" href="#pachete">
+                  <a className="more" href="#pricing">
                     Află mai multe<i className="fa-solid fa-angle-right"></i>
                   </a>
                 </Accordion.Body>
@@ -212,7 +212,7 @@ const SectionThree = () => {
                     <li>;</li>
                     <li>;</li>
                   </ul>
-                  <a className="more" href="#pachete">
+                  <a className="more" href="#pricing">
                     Află mai multe<i className="fa-solid fa-angle-right"></i>
                   </a>
                 </Accordion.Body>
@@ -225,4 +225,4 @@ const SectionThree = () => {
   );
 };
 
-export default SectionThree;
+export default SectionFunctionalities;

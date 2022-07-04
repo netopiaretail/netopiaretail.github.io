@@ -1,0 +1,99 @@
+.card {
+  height: 100%;
+  background-color: #fff;
+  -webkit-box-shadow: 0 5px 30px 0 rgba(167, 167, 167, 0.16);
+  -moz-box-shadow: 0 5px 30px 0 rgba(167, 167, 167, 0.16);
+  box-shadow: 0 5px 30px 0 rgba(167, 167, 167, 0.16);
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+  padding: 50px 30px;
+  border: 2px solid transparent;
+  border-radius: 8px;
+
+  &:hover {
+    -webkit-box-shadow: 0 5px 30px 0 rgba(167, 167, 167, 0.6);
+    -moz-box-shadow: 0 5px 30px 0 rgba(167, 167, 167, 0.6);
+    box-shadow: 0 5px 30px 0 rgba(167, 167, 167, 0.6);
+
+    .card-icon .shape {
+      -webkit-transform: rotate(25deg);
+      -moz-transform: rotate(25deg);
+      -ms-transform: rotate(25deg);
+      -o-transform: rotate(25deg);
+      transform: rotate(25deg);
+    }
+  }
+
+  .card-content {
+    .text {
+      margin-top: 30px;
+    }
+
+    .card-title a {
+      font-size: 26px;
+      font-weight: 700;
+      color: #2e2e2e;
+      -webkit-transition: all 0.3s ease-out 0s;
+      -moz-transition: all 0.3s ease-out 0s;
+      -ms-transition: all 0.3s ease-out 0s;
+      -o-transition: all 0.3s ease-out 0s;
+      transition: all 0.3s ease-out 0s;
+
+      &:hover {
+        color: #14499e;
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .card {
+    padding: 20px 20px 30px;
+    height: auto;
+  }
+}
+
+.card-icon {
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(#ff4000 0%, #f9b71a 100%);
+  border-radius: 50%;
+
+  i {
+    color: white;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .card .card-content .card-title a {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 767px) {
+  .card .card-content .card-title a {
+    font-size: 20px;
+  }
+  .card .card-content .text {
+    margin-top: 20px;
+  }
+}
+
+a.more {
+  font-weight: 600;
+  color: #14499e;
+
+  i {
+    margin-left: 10px;
+  }
+
+  &:hover {
+    color: #ff4000;
+  }
+}

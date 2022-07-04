@@ -1,6 +1,6 @@
 import img from "../img/contact.svg";
 import logo from "../img/logo-blank.svg";
-import "./FooterArea.css";
+import "./FooterArea.scss";
 import Particles from "react-tsparticles";
 
 const FooterArea = () => {
@@ -86,7 +86,7 @@ const FooterArea = () => {
                       value="telefon"
                       id="telefon"
                     />
-                    <label className="form-check-label" for="telefon">
+                    <label className="form-check-label" htmlFor="telefon">
                       Telefon
                     </label>
                   </div>
@@ -97,7 +97,7 @@ const FooterArea = () => {
                       value="Email"
                       id="email"
                     />
-                    <label className="form-check-label" for="email">
+                    <label className="form-check-label" htmlFor="email">
                       Email
                     </label>
                   </div>

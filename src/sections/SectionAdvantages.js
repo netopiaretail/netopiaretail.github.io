@@ -1,15 +1,15 @@
 import img1 from "../img/E800.jpg";
 import Card from "../components/Card";
 
-const SectionSix = () => {
+const SectionAdvantages = () => {
   return (
     <section id="avantaje" className="section-area py-5">
       <div className="container">
         <div className="text-center pb-40">
           <h3 className="title">Principalele avantaje</h3>
         </div>
-        <div class="row justify-content-center">
-          <div class="col-lg-3 col-sm-8 my-4">
+        <div className="row justify-content-center">
+          <div className="col-lg-3 col-sm-8 my-4">
             <Card
               image={img1}
               imageTitle={"NETOPIA Payments"}
@@ -19,7 +19,7 @@ const SectionSix = () => {
               }
             />
           </div>
-          <div class="col-lg-3 col-sm-8 my-4">
+          <div className="col-lg-3 col-sm-8 my-4">
             <Card
               image={img1}
               imageTitle={"Vanzari"}
@@ -29,7 +29,7 @@ const SectionSix = () => {
               }
             />
           </div>
-          <div class="col-lg-3 col-sm-8 my-4">
+          <div className="col-lg-3 col-sm-8 my-4">
             <Card
               image={img1}
               imageTitle={"Personalizeaza"}
@@ -39,7 +39,7 @@ const SectionSix = () => {
               }
             />
           </div>
-          <div class="col-lg-3 col-sm-8 my-4">
+          <div className="col-lg-3 col-sm-8 my-4">
             <Card
               image={img1}
               imageTitle={"NETOPIA Card"}
@@ -55,4 +55,4 @@ const SectionSix = () => {
   );
 };
 
-export default SectionSix;
+export default SectionAdvantages;

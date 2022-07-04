@@ -1,4 +1,4 @@
-const SectionTwo = ({
+const SectionCustom = ({
   id,
   image,
   imageTitle,
@@ -10,7 +10,7 @@ const SectionTwo = ({
   order,
 }) => {
   return (
-    <section className="bg-color my-5" id={id}>
+    <section className="bg-color py-5" id={id}>
       <div className="container">
         <div className="row align-items-center p-4">
           <div className={`col-lg-6 px-5 ${order}`}>
@@ -44,4 +44,4 @@ const SectionTwo = ({
   );
 };
 
-export default SectionTwo;
+export default SectionCustom;

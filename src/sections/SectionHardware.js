@@ -4,15 +4,15 @@ import img3 from "../img/bluecash-50.png";
 import img4 from "../img/cantar.jpg";
 import Carousel from "react-bootstrap/Carousel";
 
-const SectionFive = () => {
+const SectionHardware = () => {
   return (
-    <section id="baneficii" className="section-area py-5">
+    <section id="hardware" className="section-area py-5">
       <div className="container">
         <div className="text-center pb-40">
           <h3 className="title">Hardware</h3>
         </div>
-        <div class="row gap-4 justify-content-center">
-          <div class="card col-lg-5 col-sm-8 my-4">
+        <div className="row gap-4 justify-content-center">
+          <div className="card col-lg-5 col-sm-8 my-4">
             <Carousel variant="dark">
               <Carousel.Item>
                 <img className="d-block m-auto" src={img1} alt="First slide" />
@@ -32,7 +32,7 @@ const SectionFive = () => {
               </p>
             </div>
           </div>
-          <div class="card col-lg-5 col-sm-8 my-4">
+          <div className="card col-lg-5 col-sm-8 my-4">
             <Carousel variant="dark">
               <Carousel.Item>
                 <img className="d-block m-auto" src={img2} alt="First slide" />
@@ -76,4 +76,4 @@ const SectionFive = () => {
   );
 };
 
-export default SectionFive;
+export default SectionHardware;

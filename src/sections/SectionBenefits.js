@@ -4,9 +4,9 @@ import img2 from "../img/analize.svg";
 import img3 from "../img/fidelizare.svg";
 import img4 from "../img/rapoarte.svg";
 
-const SectionFour = () => {
+const SectionBenefits = () => {
   return (
-    <section id="baneficii" className="section-area py-5">
+    <section id="beneficii" className="section-area py-5">
       <div className="container">
         <div className="text-center pb-40">
           <h3 className="title">Principalele beneficii</h3>
@@ -62,4 +62,4 @@ const SectionFour = () => {
   );
 };
 
-export default SectionFour;
+export default SectionBenefits;

@@ -1,39 +1,301 @@
-import "./PricingTable.css";
+import "./PricingTable.scss";
+import { useCallback } from "react";
+
+const featureCategories = [
+  {
+    name: "Administrare",
+    features: [
+      {
+        name: "Creare cont Casier (aplicație/user)",
+        textTier1: "X conturi de Casier",
+        textTier2: "număr nelimitat de Casierr",
+        textTier3: "număr nelimitat de Casier",
+      },
+      {
+        name: "Creare cont de Administrator/Francizat (user backend)",
+        textTier1: "X conturi de Administrator",
+        textTier2: "număr nelimitat de Administrator",
+        textTier3: "număr nelimitat de Administrator (per companie)",
+      },
+      {
+        name: "Număr de locații",
+        textTier1: "o singură locație",
+        textTier2: "număr nelimitat de locații",
+        textTier3:
+          "număr nelimitat de locații de la mai multe companii (parte a aceluiași grup)",
+      },
+      {
+        name: "Număr de conturi de administrare",
+        textTier1: "o singură entitate de administrare a contului",
+        textTier2: "nelimitat entități de administrare a contului",
+        textTier3: "nelimitat entități de administrare a contului",
+      },
+    ],
+  },
+  {
+    name: "Catalog",
+    features: [
+      {
+        name: "Număr nelimitat de produse și categorii pe care le poți administra",
+        iconTier1: "fa-check",
+        iconTier2: "fa-check",
+        iconTier3: "fa-check",
+      },
+      {
+        name: "SKU - căutare pe bază de caracteristici ce înapoiază rezultate totale precum - cantitate, locație sau categorie",
+        iconTier1: "fa-check",
+        iconTier2: "fa-check",
+        iconTier3: "fa-check",
+      },
+      {
+        name: "Acces la baza de date universală Barcode EAN",
+        iconTier1: "fa-minus",
+        iconTier2: "fa-check",
+        iconTier3: "fa-check",
+      },
+    ],
+  },
+  {
+    name: "Dashboard / Rapoarte",
+    features: [
+      {
+        name: "Interogare încasări în timp real",
+        iconTier1: "fa-check",
+        iconTier2: "fa-check",
+        iconTier3: "fa-check",
+      },
+      {
+        name: "Interogare încasări pe intervale de timp: zi, săptămână, lună",
+        iconTier1: "fa-check",
+        iconTier2: "fa-check",
+        iconTier3: "fa-check",
+      },
+      {
+        name: "Interogare produse vândute în timp real",
+        iconTier1: "fa-check",
+        iconTier2: "fa-check",
+        iconTier3: "fa-check",
+      },
+      {
+        name: "Interogare produse vândute pe intervale de timp: zi, săptămână, lună",
+        iconTier1: "fa-check",
+        iconTier2: "fa-check",
+        iconTier3: "fa-check",
+      },
+      {
+        name: "Top 10 produse / categorii / locații / clienți",
+        iconTier1: "fa-check",
+        iconTier2: "fa-check",
+        iconTier3: "fa-check",
+      },
+      {
+        name: "Rapoarte complete de vânzări, pe produse sau pe categorii",
+        iconTier1: "fa-check",
+        iconTier2: "fa-check",
+        iconTier3: "fa-check",
+      },
+      {
+        name: "Registru de casă",
+        textTier1: "Un singur registru de casă",
+        textTier2: "număr nelimitat",
+        textTier3: "număr nelimitat",
+      },
+      {
+        name: "Registru de casă în lei",
+        iconTier1: "fa-check",
+        iconTier2: "fa-check",
+        iconTier3: "fa-check",
+      },
+      {
+        name: "Registru de casă în valută",
+        iconTier1: "fa-minus",
+        iconTier2: "fa-check",
+        iconTier3: "fa-check",
+      },
+    ],
+  },
+  {
+    name: "Facturare",
+    features: [
+      {
+        name: "Administrare facturi (emise și încasate pentru fiecare furnizor sau partener în parte)",
+        iconTier1: "fa-check",
+        iconTier2: "fa-check",
+        iconTier3: "fa-check",
+      },
+      {
+        name: "Calcul automat de sold (pentru a ști cât trebuie să încasezi sau să achiți)",
+        iconTier1: "fa-check",
+        iconTier2: "fa-check",
+        iconTier3: "fa-check",
+      },
+      {
+        name: "Administrare de chitanțe fiscale pentru plățile cash",
+        iconTier1: "fa-check",
+        iconTier2: "fa-check",
+        iconTier3: "fa-check",
+      },
+    ],
+  },
+  {
+    name: "POS",
+    features: [
+      {
+        name: "Terminal bancar",
+        iconTier1: "fa-minus",
+        iconTier2: "fa-check",
+        iconTier3: "fa-check",
+      },
+      {
+        name: "Aplicație POS pentru smartphone (android)",
+        iconTier1: "fa-check",
+        iconTier2: "fa-check",
+        iconTier3: "fa-check",
+      },
+      {
+        name: "Sincronizare instantă cu platforma de retail, casa de marcat, cântar, prin aplicația POS pentru smartphone",
+        iconTier1: "fa-check",
+        iconTier2: "fa-check",
+        iconTier3: "fa-check",
+      },
+    ],
+  },
+  {
+    name: "Marketing",
+    features: [
+      {
+        name: "Integrare cu serviciul web2sms",
+        iconTier1: "fa-check",
+        iconTier2: "fa-check",
+        iconTier3: "fa-check",
+      },
+    ],
+  },
+  {
+    name: "Procesare de card",
+    features: [
+      {
+        name: "Posibilitatea integrării pentru plata cu cardul",
+        iconTier1: "fa-check",
+        iconTier2: "fa-check",
+        iconTier3: "fa-check",
+      },
+      {
+        name: "Procesarea tranzacțiilor cu cardul preintegrat cu NETOPIA Payments",
+        iconTier1: "fa-minus",
+        iconTier2: "fa-check",
+        iconTier3: "fa-check",
+      },
+      {
+        name: "Comision 0 până depășești X număr de vânzări pe lună",
+        iconTier1: "fa-minus",
+        iconTier2: "fa-check",
+        iconTier3: "fa-minus",
+      },
+      {
+        name: "Comision 0 pe toată durata contractului",
+        iconTier1: "fa-minus",
+        iconTier2: "fa-minus",
+        iconTier3: "fa-check",
+      },
+    ],
+  },
+  {
+    name: "Suport",
+    features: [
+      {
+        name: "Suport tehnic",
+        iconTier1: "fa-minus",
+        iconTier2: "fa-check",
+        iconTier3: "fa-check",
+      },
+    ],
+  },
+  {
+    name: "Integrare custom",
+    features: [
+      {
+        name: "Personalizarea soluției NETOPIA Retail pentru propriile nevoi de business",
+        iconTier1: "fa-minus",
+        iconTier2: "fa-minus",
+        iconTier3: "fa-check",
+      },
+    ],
+  },
+];
 
 const PricingTable = () => {
+  const renderFeature = useCallback((feature) => {
+    return (
+      <tr>
+        <td className="ptable-title">{feature.name}</td>
+        <td>
+          {feature.textTier1 && feature.textTier1}
+          {feature.iconTier1 && (
+            <i className={`fa-solid ${feature.iconTier1}`} />
+          )}
+        </td>
+        <td>
+          {feature.textTier2 && feature.textTier2}
+          {feature.iconTier2 && (
+            <i className={`fa-solid ${feature.iconTier2}`} />
+          )}
+        </td>
+        <td>
+          {feature.textTier2 && feature.textTier2}
+          {feature.iconTier2 && (
+            <i className={`fa-solid ${feature.iconTier2}`} />
+          )}
+        </td>
+      </tr>
+    );
+  }, []);
+  const renderFeatureCategory = useCallback((featureCategory) => {
+    return (
+      <>
+        <tr>
+          <td className="ptable-title">
+            <span>{featureCategory.name}</span>
+          </td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        {featureCategory.features.map(renderFeature)}
+      </>
+    );
+  }, []);
+
   return (
-    <section id="pachete" className="mt-70 section-area py-5">
+    <section id="pricing" className="mt-70 section-area py-5">
       <div className="container">
         <div className="pricing">
           <div className="pricing-table table-responsive">
+            <input type="radio" name="pricing-type" id="free" value="free" />
             <input
               type="radio"
-              name="pachet-type"
-              id="free"
-              value="free"
-              checked
-            />
-            <label for="free" className="text-white px-2">
-              Gratis
-            </label>
-            <input
-              type="radio"
-              name="pachet-type"
+              name="pricing-type"
               id="standard"
               value="standard"
             />
-            <label for="standard" className="text-white px-2">
-              Standard
-            </label>
             <input
               type="radio"
-              name="pachet-type"
+              name="pricing-type"
               id="premium"
               value="premium"
             />
-            <label for="premium" className="text-white px-2">
-              Premium
-            </label>
+
+            <div id="labels" className="p-3 text-center">
+              <label htmlFor="free" className="p-2">
+                Gratis
+              </label>
+              <label htmlFor="standard" className="p-2">
+                Standard
+              </label>
+              <label htmlFor="premium" className="p-2">
+                Premium
+              </label>
+            </div>
 
             <table className="table text-center mt-4" id="pricing-table">
               <thead>
@@ -74,483 +336,7 @@ const PricingTable = () => {
                 </tr>
               </thead>
               <tbody>
-                <tr>
-                  <td className="ptable-title">
-                    <span>Administrare</span>
-                  </td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td className="ptable-title">
-                    Creare cont Casier (aplicație/user)
-                  </td>
-                  <td>X conturi de Casier</td>
-                  <td>număr nelimitat de Casier</td>
-                  <td>număr nelimitat de Casier</td>
-                </tr>
-                <tr>
-                  <td className="ptable-title">
-                    Creare cont de Administrator/Francizat (user backend)
-                  </td>
-                  <td>X conturi de Administrator</td>
-                  <td>număr nelimitat de Administrator</td>
-                  <td>număr nelimitat de Administrator (per companie)</td>
-                </tr>
-                <tr>
-                  <td className="ptable-title">Număr de locații</td>
-                  <td>o singură locație</td>
-                  <td>număr nelimitat de locații</td>
-                  <td>
-                    număr nelimitat de locații de la mai multe companii (parte a
-                    aceluiași grup)
-                  </td>
-                </tr>
-                <tr>
-                  <td className="ptable-title">
-                    Număr de conturi de administrare
-                  </td>
-                  <td>o singură entitate de administrare a contului</td>
-                  <td>nelimitat entități de administrare a contului</td>
-                  <td>nelimitat entități de administrare a contului</td>
-                </tr>
-
-                <tr>
-                  <td className="ptable-title">
-                    <span>Catalog</span>
-                  </td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td className="ptable-title">
-                    Număr nelimitat de produse și categorii pe care le poți
-                    administra
-                  </td>
-                  <td>
-                    <i className="fa-solid fa-check"></i>
-                  </td>
-                  <td>
-                    <i className="fa-solid fa-check"></i>
-                  </td>
-                  <td>
-                    <i className="fa-solid fa-check"></i>
-                  </td>
-                </tr>
-                <tr>
-                  <td className="ptable-title">
-                    SKU - căutare pe bază de caracteristici ce înapoiază
-                    rezultate totale precum - cantitate, locație sau categorie
-                  </td>
-                  <td>
-                    <i className="fa-solid fa-check"></i>
-                  </td>
-                  <td>
-                    <i className="fa-solid fa-check"></i>
-                  </td>
-                  <td>
-                    <i className="fa-solid fa-check"></i>
-                  </td>
-                </tr>
-
-                <tr>
-                  <td className="ptable-title">
-                    Acces la baza de date universală Barcode EAN
-                  </td>
-                  <td>
-                    <i className="fa-solid fa-minus"></i>
-                  </td>
-                  <td>
-                    <i className="fa-solid fa-check"></i>
-                  </td>
-                  <td>
-                    <i className="fa-solid fa-check"></i>
-                  </td>
-                </tr>
-
-                <tr>
-                  <td className="ptable-title">
-                    <span>Dashboard / Rapoarte</span>
-                  </td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-
-                <tr>
-                  <td className="ptable-title">
-                    Interogare încasări în timp real
-                  </td>
-                  <td>
-                    <i className="fa-solid fa-check"></i>
-                  </td>
-                  <td>
-                    <i className="fa-solid fa-check"></i>
-                  </td>
-                  <td>
-                    <i className="fa-solid fa-check"></i>
-                  </td>
-                </tr>
-
-                <tr>
-                  <td className="ptable-title">
-                    Interogare încasări pe intervale de timp: zi, săptămână,
-                    lună
-                  </td>
-                  <td>
-                    <i className="fa-solid fa-check"></i>
-                  </td>
-                  <td>
-                    <i className="fa-solid fa-check"></i>
-                  </td>
-                  <td>
-                    <i className="fa-solid fa-check"></i>
-                  </td>
-                </tr>
-
-                <tr>
-                  <td className="ptable-title">
-                    Interogare produse vândute în timp real
-                  </td>
-                  <td>
-                    <i className="fa-solid fa-check"></i>
-                  </td>
-                  <td>
-                    <i className="fa-solid fa-check"></i>
-                  </td>
-                  <td>
-                    <i className="fa-solid fa-check"></i>
-                  </td>
-                </tr>
-
-                <tr>
-                  <td className="ptable-title">
-                    Interogare produse vândute pe intervale de timp: zi,
-                    săptămână, lună
-                  </td>
-                  <td>
-                    <i className="fa-solid fa-check"></i>
-                  </td>
-                  <td>
-                    <i className="fa-solid fa-check"></i>
-                  </td>
-                  <td>
-                    <i className="fa-solid fa-check"></i>
-                  </td>
-                </tr>
-
-                <tr>
-                  <td className="ptable-title">
-                    Top 10 produse / categorii / locații / clienți
-                  </td>
-                  <td>
-                    <i className="fa-solid fa-check"></i>
-                  </td>
-                  <td>
-                    <i className="fa-solid fa-check"></i>
-                  </td>
-                  <td>
-                    <i className="fa-solid fa-check"></i>
-                  </td>
-                </tr>
-
-                <tr>
-                  <td className="ptable-title">
-                    Rapoarte complete de vânzări, pe produse sau pe categorii
-                  </td>
-                  <td>
-                    <i className="fa-solid fa-check"></i>
-                  </td>
-                  <td>
-                    <i className="fa-solid fa-check"></i>
-                  </td>
-                  <td>
-                    <i className="fa-solid fa-check"></i>
-                  </td>
-                </tr>
-
-                <tr>
-                  <td className="ptable-title">Registru de casă</td>
-                  <td>Un singur registru de casă</td>
-                  <td>număr nelimitat</td>
-                  <td>număr nelimitat</td>
-                </tr>
-                <tr>
-                  <td className="ptable-title">Registru de casă în lei</td>
-                  <td>
-                    <i className="fa-solid fa-check"></i>
-                  </td>
-                  <td>
-                    <i className="fa-solid fa-check"></i>
-                  </td>
-                  <td>
-                    <i className="fa-solid fa-check"></i>
-                  </td>
-                </tr>
-
-                <tr>
-                  <td className="ptable-title">Registru de casă în valută</td>
-                  <td>
-                    <i className="fa-solid fa-minus"></i>
-                  </td>
-                  <td>
-                    <i className="fa-solid fa-minus"></i>
-                  </td>
-                  <td>
-                    <i className="fa-solid fa-check"></i>
-                  </td>
-                </tr>
-
-                <tr>
-                  <td className="ptable-title">
-                    <span>Facturare</span>
-                  </td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td className="ptable-title">
-                    Administrare facturi (emise și încasate pentru fiecare
-                    furnizor sau partener în parte)
-                  </td>
-                  <td>
-                    <i className="fa-solid fa-check"></i>
-                  </td>
-                  <td>
-                    <i className="fa-solid fa-check"></i>
-                  </td>
-                  <td>
-                    <i className="fa-solid fa-check"></i>
-                  </td>
-                </tr>
-
-                <tr>
-                  <td className="ptable-title">
-                    Calcul automat de sold (pentru a ști cât trebuie să încasezi
-                    sau să achiți)
-                  </td>
-                  <td>
-                    <i className="fa-solid fa-check"></i>
-                  </td>
-                  <td>
-                    <i className="fa-solid fa-check"></i>
-                  </td>
-                  <td>
-                    <i className="fa-solid fa-check"></i>
-                  </td>
-                </tr>
-                <tr>
-                  <td className="ptable-title">
-                    Administrare de chitanțe fiscale pentru plățile cash
-                  </td>
-                  <td>
-                    <i className="fa-solid fa-check"></i>
-                  </td>
-                  <td>
-                    <i className="fa-solid fa-check"></i>
-                  </td>
-                  <td>
-                    <i className="fa-solid fa-check"></i>
-                  </td>
-                </tr>
-
-                <tr>
-                  <td className="ptable-title">
-                    <span>POS</span>
-                  </td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr></tr>
-
-                <tr>
-                  <td className="ptable-title">Terminal bancar</td>
-                  <td>
-                    <i className="fa-solid fa-minus"></i>
-                  </td>
-                  <td>
-                    <i className="fa-solid fa-check"></i>
-                  </td>
-                  <td>
-                    <i className="fa-solid fa-check"></i>
-                  </td>
-                </tr>
-                <tr>
-                  <td className="ptable-title">
-                    Aplicație POS pentru smartphone (android)
-                  </td>
-                  <td>
-                    <i className="fa-solid fa-check"></i>
-                  </td>
-                  <td>
-                    <i className="fa-solid fa-check"></i>
-                  </td>
-                  <td>
-                    <i className="fa-solid fa-check"></i>
-                  </td>
-                </tr>
-
-                <tr>
-                  <td className="ptable-title">
-                    Sincronizare instantă cu platforma de retail, casa de
-                    marcat, cântar, prin aplicația POS pentru smartphone
-                  </td>
-                  <td>
-                    <i className="fa-solid fa-check"></i>
-                  </td>
-                  <td>
-                    <i className="fa-solid fa-check"></i>
-                  </td>
-                  <td>
-                    <i className="fa-solid fa-check"></i>
-                  </td>
-                </tr>
-
-                <tr>
-                  <td className="ptable-title">
-                    <span>Marketing</span>
-                  </td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr></tr>
-                <tr>
-                  <td className="ptable-title">
-                    Integrare cu serviciul web2sms
-                  </td>
-                  <td>
-                    <i className="fa-solid fa-check"></i>
-                  </td>
-                  <td>
-                    <i className="fa-solid fa-check"></i>
-                  </td>
-                  <td>
-                    <i className="fa-solid fa-check"></i>
-                  </td>
-                </tr>
-
-                <tr>
-                  <td className="ptable-title">
-                    <span>Procesare de card</span>
-                  </td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr></tr>
-                <tr>
-                  <td className="ptable-title">
-                    Posibilitatea integrării pentru plata cu cardul
-                  </td>
-                  <td>
-                    <i className="fa-solid fa-check"></i>
-                  </td>
-                  <td>
-                    <i className="fa-solid fa-check"></i>
-                  </td>
-                  <td>
-                    <i className="fa-solid fa-check"></i>
-                  </td>
-                </tr>
-                <tr>
-                  <td className="ptable-title">
-                    Procesarea tranzacțiilor cu cardul preintegrat cu NETOPIA
-                    Payments
-                  </td>
-                  <td>
-                    <i className="fa-solid fa-minus"></i>
-                  </td>
-                  <td>
-                    <i className="fa-solid fa-check"></i>
-                  </td>
-                  <td>
-                    <i className="fa-solid fa-check"></i>
-                  </td>
-                </tr>
-                <tr>
-                  <td className="ptable-title">
-                    Comision 0 până depășești X număr de vânzări pe lună
-                  </td>
-                  <td>
-                    <i className="fa-solid fa-minus"></i>
-                  </td>
-                  <td>
-                    <i className="fa-solid fa-check"></i>
-                  </td>
-                  <td>
-                    <i className="fa-solid fa-minus"></i>
-                  </td>
-                </tr>
-
-                <tr>
-                  <td className="ptable-title">
-                    Comision 0 pe toată durata contractului
-                  </td>
-                  <td>
-                    <i className="fa-solid fa-minus"></i>
-                  </td>
-                  <td>
-                    <i className="fa-solid fa-minus"></i>
-                  </td>
-                  <td>
-                    <i className="fa-solid fa-check"></i>
-                  </td>
-                </tr>
-
-                <tr>
-                  <td className="ptable-title">
-                    <span>Suport</span>
-                  </td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr></tr>
-
-                <tr>
-                  <td className="ptable-title">Suport tehnic</td>
-                  <td>
-                    <i className="fa-solid fa-minus"></i>
-                  </td>
-                  <td>
-                    <i className="fa-solid fa-check"></i>
-                  </td>
-                  <td>
-                    <i className="fa-solid fa-check"></i>
-                  </td>
-                </tr>
-
-                <tr>
-                  <td className="ptable-title">
-                    <span>Integrare custom</span>
-                  </td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr></tr>
-
-                <tr>
-                  <td className="ptable-title">
-                    Personalizarea soluției NETOPIA Retail pentru propriile
-                    nevoi de business
-                  </td>
-                  <td>
-                    <i className="fa-solid fa-minus"></i>
-                  </td>
-                  <td>
-                    <i className="fa-solid fa-minus"></i>
-                  </td>
-                  <td>
-                    <i className="fa-solid fa-check"></i>
-                  </td>
-                </tr>
-
+                {featureCategories.map(renderFeatureCategory)}
                 <tr className="section-content">
                   <td>&nbsp;</td>
                   <td id="first-th">

@@ -6,7 +6,7 @@ const Wizard = () => {
   const [state, updateState] = useState({
     form: {},
   });
-  console.log("state", state);
+  // console.log("state", state);
   const updateForm = (key, value) => {
     const { form } = state;
 
@@ -18,7 +18,7 @@ const Wizard = () => {
   };
 
   // Do something on step change
-  const onStepChange = (stats) => {
+  const onStepChange = () => {
     // console.log(stats);
   };
 

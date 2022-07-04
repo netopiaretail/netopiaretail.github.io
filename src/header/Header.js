@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import "./Header.css";
+import "./Header.scss";
 import logo from "../img/logo-blank.svg";
 import logo2 from "../img/logo.svg";
 import device from "../img/header-hero.png";
@@ -32,7 +32,7 @@ const Header = () => {
         collapseOnSelect
         expand="lg"
         fixed="top"
-        className={navbar ? "bg-white" : "bg-transparent"}
+        className={navbar ? "bg-white shadow navbar-sticky" : "bg-transparent"}
       >
         <Container>
           <Navbar.Brand href="#home">
@@ -42,16 +42,20 @@ const Header = () => {
               alt="NETOPIA Retail"
             />
           </Navbar.Brand>
-          <Navbar.Toggle aria-controls="navbarScroll" />
+          <Navbar.Toggle aria-controls="navbarScroll" className="border-0">
+            <span className="toggler-icon"></span>
+            <span className="toggler-icon"></span>
+            <span className="toggler-icon"></span>
+          </Navbar.Toggle>
           <Navbar.Collapse
             id="navbarScroll"
             className={"justify-content-end rounded"}
           >
             <Nav className={navbar ? "gap-3 text-black" : "gap-3 text-white"}>
-              <Nav.Link href="#solutii">Soluții</Nav.Link>
-              <Nav.Link href="#despre">Despre noi</Nav.Link>
+              <Nav.Link href="#features">Soluții</Nav.Link>
+              <Nav.Link href="#about">Despre noi</Nav.Link>
               <Nav.Link href="#hardware">Hardware</Nav.Link>
-              <Nav.Link href="#pachete">Pachete</Nav.Link>
+              <Nav.Link href="#pricing">Pachete</Nav.Link>
               <Nav.Link href="#documentatie">Documentație</Nav.Link>
               <Nav.Link href="#contact">Contact</Nav.Link>
               <Nav.Link className="btn main-btn fw-bold" href="/">
@@ -89,7 +93,7 @@ const Header = () => {
                 </h3>
                 <div className="mb-4">
                   <a
-                    href="#pachete"
+                    href="#pricing"
                     className="btn secondary-btn primary-color wow fadeInUp"
                     data-wow-duration="1.3s"
                     data-wow-delay="1.1s"

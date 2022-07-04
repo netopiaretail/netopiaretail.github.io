@@ -88,7 +88,7 @@ const horecaList = [
   },
 ];
 
-const SectionOne = () => {
+const SectionFeatures = () => {
   return (
     <section id="features" className="py-5">
       <div className="container">
@@ -171,4 +171,4 @@ const SectionOne = () => {
   );
 };
 
-export default SectionOne;
+export default SectionFeatures;
