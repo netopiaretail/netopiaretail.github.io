@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.fd6c4a1a.css",
-    "main.js": "/static/js/main.0ca888d1.js",
+    "main.css": "/static/css/main.31a07389.css",
+    "main.js": "/static/js/main.eb5f3db8.js",
     "static/media/angajati.png": "/static/media/angajati.c5cd659c47880cc70d8e.png",
     "static/media/section3.png": "/static/media/section3.9d1948ce8177fe1ab6c9.png",
     "static/media/Group 1 (8).png": "/static/media/Group 1 (8).ab99711aba5fdb6ce448.png",
@@ -21,11 +21,11 @@
     "static/media/footer.svg": "/static/media/footer.5631c1f4976200bc820b.svg",
     "static/media/Group.svg": "/static/media/Group.4a8c85ec6084aab8866d.svg",
     "index.html": "/index.html",
-    "main.fd6c4a1a.css.map": "/static/css/main.fd6c4a1a.css.map",
-    "main.0ca888d1.js.map": "/static/js/main.0ca888d1.js.map"
+    "main.31a07389.css.map": "/static/css/main.31a07389.css.map",
+    "main.eb5f3db8.js.map": "/static/js/main.eb5f3db8.js.map"
   },
   "entrypoints": [
-    "static/css/main.fd6c4a1a.css",
-    "static/js/main.0ca888d1.js"
+    "static/css/main.31a07389.css",
+    "static/js/main.eb5f3db8.js"
   ]
 }
