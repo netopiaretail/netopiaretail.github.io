@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/static/css/main.b96360d5.css",
+    "main.js": "/static/js/main.bb22cebb.js",
+    "static/media/angajati.png": "/static/media/angajati.c5cd659c47880cc70d8e.png",
+    "static/media/section3.png": "/static/media/section3.9d1948ce8177fe1ab6c9.png",
+    "static/media/Group 1 (8).png": "/static/media/Group 1 (8).ab99711aba5fdb6ce448.png",
+    "static/media/dp25.png": "/static/media/dp25.97326a159d303ad55465.png",
+    "static/media/cantar.jpg": "/static/media/cantar.2af993b468e6125e4c55.jpg",
+    "static/media/header-hero.png": "/static/media/header-hero.f915d6cf96c480a16520.png",
+    "static/media/bluecash-50.png": "/static/media/bluecash-50.d4265a58ee80d0bdedfd.png",
+    "static/media/section2.svg": "/static/media/section2.2582b7b7f9f299945491bd1e78f5fa55.svg",
+    "static/media/E800.jpg": "/static/media/E800.f2d7e1660a99fe1ea93b.jpg",
+    "static/media/automatizare.svg": "/static/media/automatizare.ef8b75eb1b7981ff13320328eb843556.svg",
+    "static/media/analize.svg": "/static/media/analize.78a86448c8e7eb82b40d2fd0fc1bbf3c.svg",
+    "static/media/contact.svg": "/static/media/contact.41892f96a0e110f79249c97f63b6ce5d.svg",
+    "static/media/rapoarte.svg": "/static/media/rapoarte.2498220d22f9f591f7ac6810d793a329.svg",
+    "static/media/fidelizare.svg": "/static/media/fidelizare.0deb8f322004590a60bfb3a6e891b138.svg",
+    "static/media/logo.svg": "/static/media/logo.e26e912c12aca13bff2ee9a20448e742.svg",
+    "static/media/logo-blank.svg": "/static/media/logo-blank.2a3e43572746c7acf9ca1915eefb264a.svg",
+    "static/media/footer.svg": "/static/media/footer.5631c1f4976200bc820b.svg",
+    "static/media/Group.svg": "/static/media/Group.4a8c85ec6084aab8866d.svg",
+    "index.html": "/index.html",
+    "main.b96360d5.css.map": "/static/css/main.b96360d5.css.map",
+    "main.bb22cebb.js.map": "/static/js/main.bb22cebb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b96360d5.css",
+    "static/js/main.bb22cebb.js"
+  ]
+}
