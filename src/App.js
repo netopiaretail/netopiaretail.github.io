@@ -12,7 +12,7 @@ import SectionHardware from "./sections/SectionHardware";
 import SectionAdvantages from "./sections/SectionAdvantages";
 import FooterArea from "./footer/FooterArea";
 import PricingTable from "./sections/PricingTable";
-import WizardStep from "./sections/Wizard";
+import WizardStep from "./wizard";
 
 function App() {
   return (
@@ -30,6 +30,11 @@ function App() {
         }
         btnLink={""}
         btnText={"Începe gratuit"}
+        particles={{
+          color: "#000",
+          width: "50%",
+          align: "left",
+        }}
       />
       <SectionFunctionalities />
       <SectionCustom

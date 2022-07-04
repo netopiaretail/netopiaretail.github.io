@@ -1,3 +1,5 @@
+import ParticlesComponent from "../components/Particles";
+
 const SectionCustom = ({
   id,
   image,
@@ -8,12 +10,13 @@ const SectionCustom = ({
   btnLink,
   btnText,
   order,
+  particles = null,
 }) => {
   return (
     <section className="bg-color py-5" id={id}>
       <div className="container">
         <div className="row align-items-center p-4">
-          <div className={`col-lg-6 px-5 ${order}`}>
+          <div className={`col-lg-6 ${order}`}>
             <div
               className="text-center mt-5 wow fadeInRightBig"
               data-wow-duration="1s"
@@ -39,6 +42,14 @@ const SectionCustom = ({
             </div>
           </div>
         </div>
+        {particles && (
+          <ParticlesComponent
+            id={id}
+            color={particles.color}
+            width={particles.width}
+            align={particles.align}
+          />
+        )}
       </div>
     </section>
   );

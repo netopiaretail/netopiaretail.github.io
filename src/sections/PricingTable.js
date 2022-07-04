@@ -109,7 +109,7 @@ const featureCategories = [
       {
         name: "Registru de casă în valută",
         iconTier1: "fa-minus",
-        iconTier2: "fa-check",
+        iconTier2: "fa-minus",
         iconTier3: "fa-check",
       },
     ],
@@ -227,7 +227,7 @@ const featureCategories = [
 const PricingTable = () => {
   const renderFeature = useCallback((feature) => {
     return (
-      <tr>
+      <tr key={feature.name}>
         <td className="ptable-title">{feature.name}</td>
         <td>
           {feature.textTier1 && feature.textTier1}
@@ -242,9 +242,9 @@ const PricingTable = () => {
           )}
         </td>
         <td>
-          {feature.textTier2 && feature.textTier2}
-          {feature.iconTier2 && (
-            <i className={`fa-solid ${feature.iconTier2}`} />
+          {feature.textTier3 && feature.textTier3}
+          {feature.iconTier3 && (
+            <i className={`fa-solid ${feature.iconTier3}`} />
           )}
         </td>
       </tr>

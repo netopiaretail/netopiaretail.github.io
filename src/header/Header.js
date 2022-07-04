@@ -3,15 +3,10 @@ import "./Header.scss";
 import logo from "../img/logo-blank.svg";
 import logo2 from "../img/logo.svg";
 import device from "../img/header-hero.png";
-import Particles from "react-tsparticles";
-import { loadFull } from "tsparticles";
 import { Navbar, Nav, Container } from "react-bootstrap";
+import ParticlesComponent from "../components/Particles";
 
 const Header = () => {
-  const particlesInit = async (main) => {
-    await loadFull(main);
-  };
-
   const [navbar, setNavbar] = useState(false);
   const changeBackground = () => {
     if (window.scrollY >= 66) {
@@ -126,78 +121,7 @@ const Header = () => {
             </div>
           </div>
         </div>
-        <Particles
-          id="tsparticles"
-          init={particlesInit}
-          options={{
-            fullScreen: {
-              enable: false,
-            },
-            particles: {
-              number: {
-                value: 50,
-                density: {
-                  enable: true,
-                  value_area: 800,
-                },
-              },
-              color: {
-                value: "#fff",
-              },
-              opacity: {
-                value: 0.5,
-                random: false,
-                anim: {
-                  enable: false,
-                  speed: 1,
-                  opacity_min: 0.1,
-                  sync: false,
-                },
-              },
-              size: {
-                value: 2,
-                random: true,
-                anim: {
-                  enable: false,
-                  speed: 1,
-                  size_min: 0.1,
-                  sync: false,
-                },
-              },
-              rotate: {
-                value: 0,
-                random: true,
-                direction: "clockwise",
-                animation: {
-                  enable: true,
-                  speed: 1,
-                  sync: false,
-                },
-              },
-              line_linked: {
-                enable: true,
-                distance: 150,
-                color: "#ffffff",
-                opacity: 0.4,
-                width: 1,
-              },
-              move: {
-                enable: true,
-                speed: 1,
-                direction: "none",
-                random: false,
-                straight: false,
-                out_mode: "out",
-                attract: {
-                  enable: false,
-                  rotateX: 600,
-                  rotateY: 1200,
-                },
-              },
-            },
-            retina_detect: true,
-          }}
-        />
+        <ParticlesComponent id={"header"} color={"#fff"} width={"100%"} />
       </div>
     </header>
   );
