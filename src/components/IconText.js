@@ -6,7 +6,7 @@ const IconText = ({ icon, iconTitle }) => {
       <div className="card-icon">
         <i className={icon}></i>
       </div>
-      <div>{iconTitle}</div>
+      <div className="flex-1 text-start">{iconTitle}</div>
     </div>
   );
 };

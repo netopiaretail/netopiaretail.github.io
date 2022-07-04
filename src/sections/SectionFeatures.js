@@ -107,7 +107,7 @@ const SectionFeatures = () => {
         </div>
 
         <div className="row mb-5 justify-content-center">
-          <div className="col-lg-6 col-sm-12">
+          <div className="col-lg-6 col-sm-12 p-3">
             <Card
               title={"Retail"}
               content={
@@ -117,46 +117,24 @@ const SectionFeatures = () => {
             />
           </div>
 
-          <div className="col-lg-3 col-sm-6 d-grid gap-1">
-            {retailList
-              .slice(0, Math.floor(retailList.length / 2))
-              .map((el, index) => (
-                <IconText
-                  key={index + el}
-                  iconTitle={el.iconTitle}
-                  icon={el.icon}
-                />
-              ))}
-          </div>
-          <div className="col-lg-3 col-sm-6 d-grid gap-1">
-            {retailList
-              .slice(Math.floor(retailList.length / 2))
-              .map((el, index) => (
-                <IconText
-                  key={index + el}
-                  iconTitle={el.iconTitle}
-                  icon={el.icon}
-                />
-              ))}
+          <div className="col-lg-6 col-sm-12 p-3 d-grid gap-2 grid-columns-2">
+            {retailList.map((el, index) => (
+              <IconText
+                key={index + el}
+                iconTitle={el.iconTitle}
+                icon={el.icon}
+              />
+            ))}
           </div>
         </div>
 
         <div className="row justify-content-center">
-          <div className="col-lg-3 col-sm-6 d-grid gap-1">
-            {horecaList
-              .slice(0, Math.floor(horecaList.length / 2))
-              .map((el, index) => (
-                <IconText key={index} iconTitle={el.iconTitle} icon={el.icon} />
-              ))}
+          <div className="col-lg-6 col-sm-12 p-3 d-grid  gap-2 grid-columns-2">
+            {horecaList.map((el, index) => (
+              <IconText key={index} iconTitle={el.iconTitle} icon={el.icon} />
+            ))}
           </div>
-          <div className="col-lg-3 col-sm-6 d-grid gap-1">
-            {horecaList
-              .slice(Math.floor(horecaList.length / 2))
-              .map((el, index) => (
-                <IconText key={index} iconTitle={el.iconTitle} icon={el.icon} />
-              ))}
-          </div>
-          <div className="col-lg-6 col-sm-12">
+          <div className="col-lg-6 col-sm-12 p-3">
             <Card
               title={"HoReCa"}
               content={
