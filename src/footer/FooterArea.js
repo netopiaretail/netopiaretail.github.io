@@ -1,6 +1,5 @@
 import img from "../img/contact.svg";
 import logo from "../img/logo-blank.svg";
-import "./FooterArea.scss";
 import ParticlesComponent from "../components/Particles";
 
 const FooterArea = () => {

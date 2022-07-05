@@ -1,9 +1,8 @@
 import { useEffect, useState } from "react";
-import "./Header.scss";
 import logo from "../img/logo-blank.svg";
 import logo2 from "../img/logo.svg";
 import device from "../img/header-hero.png";
-import { Navbar, Nav, Container } from "react-bootstrap";
+import { Container, Nav, Navbar } from "react-bootstrap";
 import ParticlesComponent from "../components/Particles";
 
 const Header = () => {

@@ -1,4 +1,3 @@
-import "./App.scss";
 import Header from "./header/Header";
 import SectionFeatures from "./sections/SectionFeatures";
 import SectionCustom from "./sections/SectionCustom";

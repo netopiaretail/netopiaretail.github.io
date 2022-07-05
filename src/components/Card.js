@@ -1,5 +1,3 @@
-import "./Card.scss";
-
 const Card = ({ image, imageTitle, title, content, styles }) => {
   return (
     <div

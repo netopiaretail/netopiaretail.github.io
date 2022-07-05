@@ -1,0 +1,50 @@
+[
+  {
+    "icon": "fas fa-store",
+    "iconTitle": "Magazin universal"
+  },
+  {
+    "icon": "fas fa-basket-shopping",
+    "iconTitle": "Magazin IT&C & Electrocasnice"
+  },
+  {
+    "icon": "fas fa-shirt",
+    "iconTitle": "Magazin de îmbrăcăminte"
+  },
+  {
+    "icon": "fas fa-user",
+    "iconTitle": "Farmacie"
+  },
+  {
+    "icon": "fas fa-eye-dropper",
+    "iconTitle": "Beauty"
+  },
+  {
+    "icon": "fas fa-cash-register",
+    "iconTitle": "Cash & Carry"
+  },
+  {
+    "icon": "fas fa-cart-shopping",
+    "iconTitle": "Hypermarket"
+  },
+  {
+    "icon": "fas fa-cart-flatbed",
+    "iconTitle": "Supermarket"
+  },
+  {
+    "icon": "fas fa-percent",
+    "iconTitle": "Discounter"
+  },
+  {
+    "icon": "fas fa-shop",
+    "iconTitle": "Proximitate"
+  },
+  {
+    "icon": "fas fa-newspaper",
+    "iconTitle": "News & Convenience"
+  },
+  {
+    "icon": "fas fa-book",
+    "iconTitle": "Librărie & Papetărie"
+  }
+]

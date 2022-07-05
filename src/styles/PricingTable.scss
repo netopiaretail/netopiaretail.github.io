@@ -1,3 +1,5 @@
+@import "varibales";
+
 input[type="radio"][name="pricing-type"] {
   display: none;
 }
@@ -29,14 +31,14 @@ input[type="radio"][name="pricing-type"] {
 .ptable-link {
   font-weight: 600;
   padding: 0.5rem 0.75rem;
-  background-color: #ff40002f;
+  background-color: rgba($secondary-color, .2);
   border-radius: 8px;
   font-size: 0.75rem;
-  color: #ff4000;
+  color: $secondary-color;
 
   &:hover {
-    background-color: #14499e2f;
-    color: #14499e;
+    background-color: rgba($primary-color, .2);
+    color: $primary-color;
   }
 
   a {
@@ -45,9 +47,9 @@ input[type="radio"][name="pricing-type"] {
 }
 
 .pricing {
-  background: linear-gradient(to right, #14499e 0%, #2e82ef 100%);
-  background: -webkit-linear-gradient(left, #14499e 0%, #2e82ef 100%);
-  background: -o-linear-gradient(left, #14499e 0%, #2e82ef 100%);
+  background: linear-gradient(to right, $primary-color 0%, $primary-color-light 100%);
+  background: -webkit-linear-gradient(left, $primary-color 0%, $primary-color-light 100%);
+  background: -o-linear-gradient(left, $primary-color 0%, $primary-color-light 100%);
   border-radius: 8px;
   padding: 2rem;
 }
@@ -93,7 +95,7 @@ td i {
   margin: auto;
 
   &.fa-check {
-    background-color: #ff4000;
+    background-color: $secondary-color;
   }
 
   &.fa-minus {
@@ -134,7 +136,7 @@ td i {
   input[type="radio"]#premium:checked ~ div > label[for=premium],
   input[type="radio"]#free:not(:checked) + input[type="radio"]#standard:not(:checked) + input[type="radio"]#premium:not(:checked) ~ div > label[for=free] {
     background-color: #fff;
-    color: #14499e;
+    color: $primary-color;
     border-radius: 0.5rem;
   }
 

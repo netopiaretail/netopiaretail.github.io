@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Fizic",
+    "icon": "fa-solid fa-shop"
+  },
+  {
+    "name": "Online",
+    "icon": "fa-solid fa-globe"
+  },
+  {
+    "name": "Fizic si online",
+    "icon": "fa-solid fa-question"
+  }
+]

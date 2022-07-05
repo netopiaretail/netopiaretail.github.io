@@ -1,0 +1,12 @@
+[
+  {
+    "name": "retail",
+    "label": "Retail",
+    "icon": "fa-solid fa-cart-shopping"
+  },
+  {
+    "name": "horeca",
+    "label": "HoReCa",
+    "icon": "fa-solid fa-utensils"
+  }
+]

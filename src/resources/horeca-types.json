@@ -1,0 +1,38 @@
+[
+  {
+    "icon": "fas fa-mug-hot",
+    "iconTitle": "Ceainărie"
+  },
+  {
+    "icon": "fas fa-cake-candles",
+    "iconTitle": "Cofetărie"
+  },
+  {
+    "icon": "fas fa-mug-saucer",
+    "iconTitle": "Cafenea"
+  },
+  {
+    "icon": "fas fa-wheat-awn",
+    "iconTitle": "Brutărie"
+  },
+  {
+    "icon": "fas fa-bread-slice",
+    "iconTitle": "Patiserie & Covrigărie"
+  },
+  {
+    "icon": "fas fa-martini-glass-citrus",
+    "iconTitle": "Pub"
+  },
+  {
+    "icon": "fas fa-blender",
+    "iconTitle": "Berărie"
+  },
+  {
+    "icon": "fas fa-wine-glass",
+    "iconTitle": "Vinotecă & Cramă"
+  },
+  {
+    "icon": "fas fa-fish-fins",
+    "iconTitle": "Pescărie"
+  }
+]

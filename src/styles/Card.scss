@@ -1,9 +1,11 @@
+@import "varibales";
+
 .card {
   height: 100%;
   background-color: #fff;
-  -webkit-box-shadow: 0 5px 30px 0 rgba(167, 167, 167, 0.16);
-  -moz-box-shadow: 0 5px 30px 0 rgba(167, 167, 167, 0.16);
-  box-shadow: 0 5px 30px 0 rgba(167, 167, 167, 0.16);
+  -webkit-box-shadow: 0 5px 30px 0 $shadow-color;
+  -moz-box-shadow: 0 5px 30px 0 $shadow-color;
+  box-shadow: 0 5px 30px 0 $shadow-color;
   -webkit-transition: all 0.3s ease-out 0s;
   -moz-transition: all 0.3s ease-out 0s;
   -ms-transition: all 0.3s ease-out 0s;
@@ -14,9 +16,9 @@
   border-radius: 8px;
 
   &:hover {
-    -webkit-box-shadow: 0 5px 30px 0 rgba(167, 167, 167, 0.6);
-    -moz-box-shadow: 0 5px 30px 0 rgba(167, 167, 167, 0.6);
-    box-shadow: 0 5px 30px 0 rgba(167, 167, 167, 0.6);
+    -webkit-box-shadow: 0 5px 30px 0 $shadow-color;
+    -moz-box-shadow: 0 5px 30px 0 $shadow-color;
+    box-shadow: 0 5px 30px 0 $shadow-color;
   }
 
   .card-content {
@@ -35,7 +37,7 @@
       transition: all 0.3s ease-out 0s;
 
       &:hover {
-        color: #14499e;
+        color: $primary-color;
       }
     }
   }
@@ -54,7 +56,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(#ff4000 0%, #f9b71a 100%);
+  background: linear-gradient($secondary-color 0%, $secondary-color-light 100%);
   border-radius: 50%;
 
   i {
@@ -79,13 +81,13 @@
 
 a.more {
   font-weight: 600;
-  color: #14499e;
+  color: $primary-color;
 
   i {
     margin-left: 10px;
   }
 
   &:hover {
-    color: #ff4000;
+    color: $secondary-color;
   }
 }

@@ -1,5 +1,3 @@
-import "./Card.scss";
-
 const IconText = ({ icon, iconTitle }) => {
   return (
     <div className="d-flex align-items-center gap-2">
