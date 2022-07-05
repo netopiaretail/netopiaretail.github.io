@@ -46,8 +46,7 @@ const SectionCustom = ({
           <ParticlesComponent
             id={id}
             color={particles.color}
-            width={particles.width}
-            align={particles.align}
+            extraClass={particles.extraClass}
           />
         )}
       </div>

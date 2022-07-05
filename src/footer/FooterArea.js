@@ -186,7 +186,7 @@ const FooterArea = () => {
         </div>
       </div>
 
-      <ParticlesComponent id={"footer"} color={"#fff"} width={"100%"} />
+      <ParticlesComponent id={"footer"} color={"#fff"} />
     </footer>
   );
 };

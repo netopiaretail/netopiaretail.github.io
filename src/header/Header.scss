@@ -83,6 +83,10 @@
       position: relative;
       font-family: "Nunito", sans-serif;
       color: #fff;
+
+      &:hover, &.active {
+        color: inherit;
+      }
     }
 
     .sub-nav-toggler {

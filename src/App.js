@@ -33,7 +33,7 @@ function App() {
         particles={{
           color: "#000",
           width: "50%",
-          align: "left",
+          extraClass: "left",
         }}
       />
       <SectionFunctionalities />

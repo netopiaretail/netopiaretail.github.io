@@ -121,7 +121,7 @@ const Header = () => {
             </div>
           </div>
         </div>
-        <ParticlesComponent id={"header"} color={"#fff"} width={"100%"} />
+        <ParticlesComponent id={"header"} color={"#fff"} />
       </div>
     </header>
   );

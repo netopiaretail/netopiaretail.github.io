@@ -1,14 +1,13 @@
 import { loadFull } from "tsparticles";
 import Particles from "react-tsparticles";
 
-const ParticlesComponent = ({ id, color, width, align }) => {
+const ParticlesComponent = ({ id, color, extraClass }) => {
   const particlesInit = async (main) => {
     await loadFull(main);
   };
   return (
     <Particles
-      canvasClassName={`particles ${align}`}
-      width={width}
+      canvasClassName={`particles ${extraClass}`}
       id={`tsparticles_${id}`}
       init={particlesInit}
       options={{
