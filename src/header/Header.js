@@ -51,6 +51,12 @@ const Header = () => {
               <Nav.Link href="#hardware">Hardware</Nav.Link>
               <Nav.Link href="#pricing">Pachete</Nav.Link>
               <Nav.Link href="#documentatie">Documentație</Nav.Link>
+              <Nav.Link
+                href="https://sites.google.com/netopia-system.com/netopia-retail-faq"
+                target="_blank"
+              >
+                FAQ
+              </Nav.Link>
               <Nav.Link href="#contact">Contact</Nav.Link>
               <Nav.Link className="btn main-btn fw-bold" href="/">
                 Înscrie-te
