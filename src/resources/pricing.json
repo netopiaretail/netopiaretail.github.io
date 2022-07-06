@@ -157,12 +157,35 @@
     ]
   },
   {
+    "name": "Online",
+    "features": [
+      {
+        "name": "Integrare cu platforme de ecommerce",
+        "iconTier1": "fa-check",
+        "iconTier2": "fa-check",
+        "iconTier3": "fa-check"
+      }
+    ]
+  },
+  {
     "name": "Marketing",
     "features": [
       {
         "name": "Integrare cu serviciul web2sms",
         "iconTier1": "fa-check",
         "iconTier2": "fa-check",
+        "iconTier3": "fa-check"
+      },
+      {
+        "name": "Personalizare platformă cu propriul logo",
+        "iconTier1": "fa-minus",
+        "iconTier2": "fa-minus",
+        "iconTier3": "fa-check"
+      },
+      {
+        "name": "Imprimare logo pe bonul fiscal",
+        "iconTier1": "fa-minus",
+        "iconTier2": "fa-minus",
         "iconTier3": "fa-check"
       }
     ]
@@ -204,6 +227,24 @@
         "iconTier1": "fa-minus",
         "iconTier2": "fa-check",
         "iconTier3": "fa-check"
+      },
+      {
+        "name": "Suport B2B pentru angajații tăi (presupun ca suport pentru angajatii interni ai francizei)",
+        "iconTier1": "fa-minus",
+        "iconTier2": "fa-minus",
+        "iconTier3": "fa-check"
+      },
+      {
+        "name": "Suport B2C către consumatorul tău final (presupun ca merge vb despre casier, formularea nu este prea clara)",
+        "iconTier1": "fa-minus",
+        "iconTier2": "fa-check",
+        "iconTier3": "fa-check"
+      },
+      {
+        "name": "Training suport ",
+        "iconTier1": "fa-minus",
+        "iconTier2": "fa-check",
+        "iconTier3": "fa-check"
       }
     ]
   },
@@ -212,6 +253,12 @@
     "features": [
       {
         "name": "Personalizarea soluției NETOPIA Retail pentru propriile nevoi de business",
+        "iconTier1": "fa-minus",
+        "iconTier2": "fa-minus",
+        "iconTier3": "fa-check"
+      },
+      {
+        "name": "Integrare custom tehnică",
         "iconTier1": "fa-minus",
         "iconTier2": "fa-minus",
         "iconTier3": "fa-check"

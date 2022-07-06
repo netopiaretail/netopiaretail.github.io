@@ -4,9 +4,12 @@ input[type="radio"][name="pricing-type"] {
   display: none;
 }
 
-#labels > label {
+#labels {
   display: none;
-  color: #fff;
+  label {
+    color: #fff;
+    cursor: pointer;
+  }
 }
 
 .ptable-title {
@@ -163,13 +166,8 @@ td i {
     width: 60%;
   }
 
-  #free,
-  #standard,
-  #premium {
-    & ~ div > label {
-      display: inline;
-      cursor: pointer;
-    }
+  #labels {
+    display: block;
   }
 
   #free-th,
@@ -178,7 +176,7 @@ td i {
     border-radius: 8px 8px 0 0;
   }
 
-  #frirst-th,
+  #first-th,
   #second-th,
   #third-th {
     border-radius: 0 0 8px 8px;

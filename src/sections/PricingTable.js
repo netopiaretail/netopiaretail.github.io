@@ -74,7 +74,7 @@ const PricingTable = () => {
               </label>
             </div>
 
-            <table className="table text-center mt-4" id="pricing-table">
+            <table className="table text-center" id="pricing-table">
               <thead>
                 <tr>
                   <th className="text-start align-middle">
