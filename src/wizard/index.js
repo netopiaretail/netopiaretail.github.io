@@ -31,7 +31,7 @@ const Wizard = () => {
     }));
 
   return (
-    <div className="container shadow rounded p-4">
+    <div className="container shadow rounded p-4 wow fadeInUpBig">
       <h3 className="mb-4">Wizard</h3>
 
       <div>

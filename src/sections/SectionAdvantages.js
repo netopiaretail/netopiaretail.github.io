@@ -9,7 +9,7 @@ const SectionAdvantages = () => {
           <h3 className="title">Principalele avantaje</h3>
         </div>
         <div className="row justify-content-center">
-          <div className="col-lg-3 col-sm-8 my-4">
+          <div className="col-lg-3 col-sm-8 my-4 wow fadeInUp">
             <Card
               image={img1}
               imageTitle={"NETOPIA Payments"}
@@ -19,7 +19,7 @@ const SectionAdvantages = () => {
               }
             />
           </div>
-          <div className="col-lg-3 col-sm-8 my-4">
+          <div className="col-lg-3 col-sm-8 my-4 wow fadeInUp">
             <Card
               image={img1}
               imageTitle={"Vanzari"}
@@ -29,7 +29,7 @@ const SectionAdvantages = () => {
               }
             />
           </div>
-          <div className="col-lg-3 col-sm-8 my-4">
+          <div className="col-lg-3 col-sm-8 my-4 wow fadeInUp">
             <Card
               image={img1}
               imageTitle={"Personalizeaza"}
@@ -39,7 +39,7 @@ const SectionAdvantages = () => {
               }
             />
           </div>
-          <div className="col-lg-3 col-sm-8 my-4">
+          <div className="col-lg-3 col-sm-8 my-4 wow fadeInUp">
             <Card
               image={img1}
               imageTitle={"NETOPIA Card"}

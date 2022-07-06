@@ -22,7 +22,7 @@ const SectionFeatures = () => {
         </div>
 
         <div className="row mb-5 justify-content-center">
-          <div className="col-lg-6 col-sm-12 p-3">
+          <div className="col-lg-6 col-sm-12 p-3 wow fadeInLeftBig">
             <Card
               title={"Retail"}
               content={
@@ -32,7 +32,7 @@ const SectionFeatures = () => {
             />
           </div>
 
-          <div className="col-lg-6 col-sm-12 p-3 d-grid gap-2 grid-columns-2">
+          <div className="col-lg-6 col-sm-12 p-3 wow fadeInRightBig d-grid gap-2 grid-columns-2">
             {retailList.map((el, index) => (
               <IconText
                 key={index + el}
@@ -44,12 +44,12 @@ const SectionFeatures = () => {
         </div>
 
         <div className="row justify-content-center">
-          <div className="col-lg-6 col-sm-12 p-3 d-grid  gap-2 grid-columns-2">
+          <div className="col-lg-6 col-sm-12 p-3 wow fadeInLeftBig d-grid gap-2 grid-columns-2">
             {horecaList.map((el, index) => (
               <IconText key={index} iconTitle={el.iconTitle} icon={el.icon} />
             ))}
           </div>
-          <div className="col-lg-6 col-sm-12 p-3">
+          <div className="col-lg-6 col-sm-12 p-3 wow fadeInRightBig">
             <Card
               title={"HoReCa"}
               content={

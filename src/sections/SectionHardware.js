@@ -12,7 +12,7 @@ const SectionHardware = () => {
           <h3 className="title">Hardware</h3>
         </div>
         <div className="row gap-4 justify-content-center">
-          <div className="card col-lg-5 col-sm-8 my-4">
+          <div className="card col-lg-5 col-sm-8 my-4 wow fadeInLeftBig">
             <Carousel variant="dark">
               <Carousel.Item>
                 <img className="d-block m-auto" src={img1} alt="First slide" />
@@ -32,7 +32,7 @@ const SectionHardware = () => {
               </p>
             </div>
           </div>
-          <div className="card col-lg-5 col-sm-8 my-4">
+          <div className="card col-lg-5 col-sm-8 my-4 wow fadeInRightBig">
             <Carousel variant="dark">
               <Carousel.Item>
                 <img className="d-block m-auto" src={img2} alt="First slide" />

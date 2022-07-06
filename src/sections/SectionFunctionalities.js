@@ -12,7 +12,10 @@ const SectionFunctionalities = () => {
         <div className="row align-items-start pt-5">
           <Accordion className="row text-start">
             <div className="col-lg-6">
-              <Accordion.Item className="shadow mb-4 p-2 border-0" eventKey="0">
+              <Accordion.Item
+                className="shadow mb-4 p-2 border-0 wow fadeInLeftBig"
+                eventKey="0"
+              >
                 <Accordion.Header>
                   <span>
                     <i className="fa-solid fa-user-gear"></i>
@@ -54,7 +57,10 @@ const SectionFunctionalities = () => {
                   </a>
                 </Accordion.Body>
               </Accordion.Item>
-              <Accordion.Item className="shadow mb-4 p-2 border-0" eventKey="1">
+              <Accordion.Item
+                className="shadow mb-4 p-2 border-0  wow fadeInLeftBig"
+                eventKey="1"
+              >
                 <Accordion.Header>
                   <span>
                     <i className="fa-solid fa-folder-tree"></i>Catalog produse
@@ -87,7 +93,10 @@ const SectionFunctionalities = () => {
                   </a>
                 </Accordion.Body>
               </Accordion.Item>
-              <Accordion.Item className="shadow mb-4 p-2 border-0" eventKey="2">
+              <Accordion.Item
+                className="shadow mb-4 p-2 border-0  wow fadeInLeftBig"
+                eventKey="2"
+              >
                 <Accordion.Header>
                   <span>
                     <i className="fa-solid fa-chart-line"></i>
@@ -123,7 +132,10 @@ const SectionFunctionalities = () => {
               </Accordion.Item>
             </div>
             <div className="col-lg-6">
-              <Accordion.Item className="shadow mb-4 p-2 border-0" eventKey="3">
+              <Accordion.Item
+                className="shadow mb-4 p-2 border-0 wow fadeInRightBig"
+                eventKey="3"
+              >
                 <Accordion.Header>
                   <span>
                     <i className="fa-regular fa-file-lines"></i>Facturare
@@ -150,7 +162,10 @@ const SectionFunctionalities = () => {
                   </a>
                 </Accordion.Body>
               </Accordion.Item>
-              <Accordion.Item className="shadow mb-4 p-2 border-0" eventKey="4">
+              <Accordion.Item
+                className="shadow mb-4 p-2 border-0 wow fadeInRightBig"
+                eventKey="4"
+              >
                 <Accordion.Header>
                   <span>
                     <i className="fa-brands fa-sellsy"></i>Vânzări
@@ -183,7 +198,10 @@ const SectionFunctionalities = () => {
                   </a>
                 </Accordion.Body>
               </Accordion.Item>
-              <Accordion.Item className="shadow mb-4 p-2 border-0" eventKey="5">
+              <Accordion.Item
+                className="shadow mb-4 p-2 border-0 wow fadeInRightBig"
+                eventKey="5"
+              >
                 <Accordion.Header>
                   <span>
                     <i className="fa-solid fa-credit-card"></i>

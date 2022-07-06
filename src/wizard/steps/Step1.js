@@ -13,7 +13,7 @@ const Step1 = ({ form, update, ...props }) => {
         {domains.map((domain) => (
           <label
             key={domain.name}
-            className={form.domain === domain.name && "active"}
+            className={form.domain === domain.name ? "active" : ""}
             onClick={() => {
               update("domain", domain.name);
               update("activityType", null);
@@ -31,7 +31,7 @@ const Step1 = ({ form, update, ...props }) => {
             {retailList.map((item) => (
               <label
                 key={item.iconTitle}
-                className={form.activityType === item.iconTitle && "active"}
+                className={form.activityType === item.iconTitle ? "active" : ""}
                 onClick={() => {
                   update("activityType", item.iconTitle);
                 }}
@@ -49,7 +49,7 @@ const Step1 = ({ form, update, ...props }) => {
             {horecaList.map((item) => (
               <label
                 key={item.iconTitle}
-                className={form.activityType === item.iconTitle && "active"}
+                className={form.activityType === item.iconTitle ? "active" : ""}
                 onClick={() => {
                   update("activityType", item.iconTitle);
                 }}
@@ -65,7 +65,7 @@ const Step1 = ({ form, update, ...props }) => {
         {shopTypes.map((shopType) => (
           <label
             key={shopType.name}
-            className={form.shopType === shopType.name && "active"}
+            className={form.shopType === shopType.name ? "active" : ""}
             onClick={() => {
               update("shopType", shopType.name);
             }}

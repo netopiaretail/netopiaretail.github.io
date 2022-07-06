@@ -12,8 +12,17 @@ import SectionAdvantages from "./sections/SectionAdvantages";
 import FooterArea from "./footer/FooterArea";
 import PricingTable from "./sections/PricingTable";
 import WizardStep from "./wizard";
+import { useEffect } from "react";
+import WOW from "wowjs";
 
 function App() {
+  useEffect(() => {
+    new WOW.WOW({
+      live: false,
+      mobile: false,
+    }).init();
+  }, []);
+
   return (
     <div className="App">
       <Header />
@@ -46,7 +55,7 @@ function App() {
         }
         btnLink={""}
         btnText={"Începe gratuit"}
-        order={"order-2"}
+        swap={true}
       />
       <SectionCustom
         id={"employee"}
@@ -69,7 +78,7 @@ function App() {
         }
         btnLink={""}
         btnText={"Începe gratuit"}
-        order={"order-2"}
+        swap={true}
       />
       <SectionBenefits />
       <SectionHardware />
