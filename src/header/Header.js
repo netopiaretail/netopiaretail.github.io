@@ -21,7 +21,7 @@ const Header = () => {
   }, []);
 
   return (
-    <header className="header-area header-hero bg_cover">
+    <header className="header-area">
       <Navbar
         collapseOnSelect
         expand="lg"
@@ -66,7 +66,7 @@ const Header = () => {
         </Container>
       </Navbar>
 
-      <div id="home" className="header-hero bg_cover">
+      <div id="home" className="header-hero">
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-lg-8">
@@ -115,7 +115,11 @@ const Header = () => {
                 data-wow-duration="1.3s"
                 data-wow-delay="1.4s"
               >
-                <img src={device} className="user-select-none" alt="hero" />
+                <img
+                  src={device}
+                  className="user-select-none image-bounce"
+                  alt="hero"
+                />
               </div>
             </div>
           </div>

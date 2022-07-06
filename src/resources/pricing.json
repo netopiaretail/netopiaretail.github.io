@@ -33,21 +33,21 @@
     "features": [
       {
         "name": "Număr nelimitat de produse și categorii pe care le poți administra",
-        "iconTier1": "fa-check",
-        "iconTier2": "fa-check",
-        "iconTier3": "fa-check"
+        "iconTier1": "fa-solid fa-check",
+        "iconTier2": "fa-solid fa-check",
+        "iconTier3": "fa-solid fa-check"
       },
       {
         "name": "SKU - căutare pe bază de caracteristici ce înapoiază rezultate totale precum - cantitate, locație sau categorie",
-        "iconTier1": "fa-check",
-        "iconTier2": "fa-check",
-        "iconTier3": "fa-check"
+        "iconTier1": "fa-solid fa-check",
+        "iconTier2": "fa-solid fa-check",
+        "iconTier3": "fa-solid fa-check"
       },
       {
         "name": "Acces la baza de date universală Barcode EAN",
-        "iconTier1": "fa-minus",
-        "iconTier2": "fa-check",
-        "iconTier3": "fa-check"
+        "iconTier1": "fa-solid fa-minus",
+        "iconTier2": "fa-solid fa-check",
+        "iconTier3": "fa-solid fa-check"
       }
     ]
   },
@@ -56,39 +56,39 @@
     "features": [
       {
         "name": "Interogare încasări în timp real",
-        "iconTier1": "fa-check",
-        "iconTier2": "fa-check",
-        "iconTier3": "fa-check"
+        "iconTier1": "fa-solid fa-check",
+        "iconTier2": "fa-solid fa-check",
+        "iconTier3": "fa-solid fa-check"
       },
       {
         "name": "Interogare încasări pe intervale de timp: zi, săptămână, lună",
-        "iconTier1": "fa-check",
-        "iconTier2": "fa-check",
-        "iconTier3": "fa-check"
+        "iconTier1": "fa-solid fa-check",
+        "iconTier2": "fa-solid fa-check",
+        "iconTier3": "fa-solid fa-check"
       },
       {
         "name": "Interogare produse vândute în timp real",
-        "iconTier1": "fa-check",
-        "iconTier2": "fa-check",
-        "iconTier3": "fa-check"
+        "iconTier1": "fa-solid fa-check",
+        "iconTier2": "fa-solid fa-check",
+        "iconTier3": "fa-solid fa-check"
       },
       {
         "name": "Interogare produse vândute pe intervale de timp: zi, săptămână, lună",
-        "iconTier1": "fa-check",
-        "iconTier2": "fa-check",
-        "iconTier3": "fa-check"
+        "iconTier1": "fa-solid fa-check",
+        "iconTier2": "fa-solid fa-check",
+        "iconTier3": "fa-solid fa-check"
       },
       {
         "name": "Top 10 produse / categorii / locații / clienți",
-        "iconTier1": "fa-check",
-        "iconTier2": "fa-check",
-        "iconTier3": "fa-check"
+        "iconTier1": "fa-solid fa-check",
+        "iconTier2": "fa-solid fa-check",
+        "iconTier3": "fa-solid fa-check"
       },
       {
         "name": "Rapoarte complete de vânzări, pe produse sau pe categorii",
-        "iconTier1": "fa-check",
-        "iconTier2": "fa-check",
-        "iconTier3": "fa-check"
+        "iconTier1": "fa-solid fa-check",
+        "iconTier2": "fa-solid fa-check",
+        "iconTier3": "fa-solid fa-check"
       },
       {
         "name": "Registru de casă",
@@ -98,15 +98,15 @@
       },
       {
         "name": "Registru de casă în lei",
-        "iconTier1": "fa-check",
-        "iconTier2": "fa-check",
-        "iconTier3": "fa-check"
+        "iconTier1": "fa-solid fa-check",
+        "iconTier2": "fa-solid fa-check",
+        "iconTier3": "fa-solid fa-check"
       },
       {
         "name": "Registru de casă în valută",
-        "iconTier1": "fa-minus",
-        "iconTier2": "fa-minus",
-        "iconTier3": "fa-check"
+        "iconTier1": "fa-solid fa-minus",
+        "iconTier2": "fa-solid fa-minus",
+        "iconTier3": "fa-solid fa-check"
       }
     ]
   },
@@ -115,21 +115,21 @@
     "features": [
       {
         "name": "Administrare facturi (emise și încasate pentru fiecare furnizor sau partener în parte)",
-        "iconTier1": "fa-check",
-        "iconTier2": "fa-check",
-        "iconTier3": "fa-check"
+        "iconTier1": "fa-solid fa-check",
+        "iconTier2": "fa-solid fa-check",
+        "iconTier3": "fa-solid fa-check"
       },
       {
         "name": "Calcul automat de sold (pentru a ști cât trebuie să încasezi sau să achiți)",
-        "iconTier1": "fa-check",
-        "iconTier2": "fa-check",
-        "iconTier3": "fa-check"
+        "iconTier1": "fa-solid fa-check",
+        "iconTier2": "fa-solid fa-check",
+        "iconTier3": "fa-solid fa-check"
       },
       {
         "name": "Administrare de chitanțe fiscale pentru plățile cash",
-        "iconTier1": "fa-check",
-        "iconTier2": "fa-check",
-        "iconTier3": "fa-check"
+        "iconTier1": "fa-solid fa-check",
+        "iconTier2": "fa-solid fa-check",
+        "iconTier3": "fa-solid fa-check"
       }
     ]
   },
@@ -138,21 +138,21 @@
     "features": [
       {
         "name": "Terminal bancar",
-        "iconTier1": "fa-minus",
-        "iconTier2": "fa-check",
-        "iconTier3": "fa-check"
+        "iconTier1": "fa-solid fa-minus",
+        "iconTier2": "fa-solid fa-check",
+        "iconTier3": "fa-solid fa-check"
       },
       {
         "name": "Aplicație POS pentru smartphone (android)",
-        "iconTier1": "fa-check",
-        "iconTier2": "fa-check",
-        "iconTier3": "fa-check"
+        "iconTier1": "fa-solid fa-check",
+        "iconTier2": "fa-solid fa-check",
+        "iconTier3": "fa-solid fa-check"
       },
       {
         "name": "Sincronizare instantă cu platforma de retail, casa de marcat, cântar, prin aplicația POS pentru smartphone",
-        "iconTier1": "fa-check",
-        "iconTier2": "fa-check",
-        "iconTier3": "fa-check"
+        "iconTier1": "fa-solid fa-check",
+        "iconTier2": "fa-solid fa-check",
+        "iconTier3": "fa-solid fa-check"
       }
     ]
   },
@@ -161,9 +161,9 @@
     "features": [
       {
         "name": "Integrare cu platforme de ecommerce",
-        "iconTier1": "fa-check",
-        "iconTier2": "fa-check",
-        "iconTier3": "fa-check"
+        "iconTier1": "fa-solid fa-check",
+        "iconTier2": "fa-solid fa-check",
+        "iconTier3": "fa-solid fa-check"
       }
     ]
   },
@@ -172,21 +172,21 @@
     "features": [
       {
         "name": "Integrare cu serviciul web2sms",
-        "iconTier1": "fa-check",
-        "iconTier2": "fa-check",
-        "iconTier3": "fa-check"
+        "iconTier1": "fa-solid fa-check",
+        "iconTier2": "fa-solid fa-check",
+        "iconTier3": "fa-solid fa-check"
       },
       {
         "name": "Personalizare platformă cu propriul logo",
-        "iconTier1": "fa-minus",
-        "iconTier2": "fa-minus",
-        "iconTier3": "fa-check"
+        "iconTier1": "fa-solid fa-minus",
+        "iconTier2": "fa-solid fa-minus",
+        "iconTier3": "fa-solid fa-check"
       },
       {
         "name": "Imprimare logo pe bonul fiscal",
-        "iconTier1": "fa-minus",
-        "iconTier2": "fa-minus",
-        "iconTier3": "fa-check"
+        "iconTier1": "fa-solid fa-minus",
+        "iconTier2": "fa-solid fa-minus",
+        "iconTier3": "fa-solid fa-check"
       }
     ]
   },
@@ -195,27 +195,27 @@
     "features": [
       {
         "name": "Posibilitatea integrării pentru plata cu cardul",
-        "iconTier1": "fa-check",
-        "iconTier2": "fa-check",
-        "iconTier3": "fa-check"
+        "iconTier1": "fa-solid fa-check",
+        "iconTier2": "fa-solid fa-check",
+        "iconTier3": "fa-solid fa-check"
       },
       {
         "name": "Procesarea tranzacțiilor cu cardul preintegrat cu NETOPIA Payments",
-        "iconTier1": "fa-minus",
-        "iconTier2": "fa-check",
-        "iconTier3": "fa-check"
+        "iconTier1": "fa-solid fa-minus",
+        "iconTier2": "fa-solid fa-check",
+        "iconTier3": "fa-solid fa-check"
       },
       {
         "name": "Comision 0 până depășești X număr de vânzări pe lună",
-        "iconTier1": "fa-minus",
-        "iconTier2": "fa-check",
-        "iconTier3": "fa-minus"
+        "iconTier1": "fa-solid fa-minus",
+        "iconTier2": "fa-solid fa-check",
+        "iconTier3": "fa-solid fa-minus"
       },
       {
         "name": "Comision 0 pe toată durata contractului",
-        "iconTier1": "fa-minus",
-        "iconTier2": "fa-minus",
-        "iconTier3": "fa-check"
+        "iconTier1": "fa-solid fa-minus",
+        "iconTier2": "fa-solid fa-minus",
+        "iconTier3": "fa-solid fa-check"
       }
     ]
   },
@@ -224,27 +224,27 @@
     "features": [
       {
         "name": "Suport tehnic",
-        "iconTier1": "fa-minus",
-        "iconTier2": "fa-check",
-        "iconTier3": "fa-check"
+        "iconTier1": "fa-solid fa-minus",
+        "iconTier2": "fa-solid fa-check",
+        "iconTier3": "fa-solid fa-check"
       },
       {
         "name": "Suport B2B pentru angajații tăi (presupun ca suport pentru angajatii interni ai francizei)",
-        "iconTier1": "fa-minus",
-        "iconTier2": "fa-minus",
-        "iconTier3": "fa-check"
+        "iconTier1": "fa-solid fa-minus",
+        "iconTier2": "fa-solid fa-minus",
+        "iconTier3": "fa-solid fa-check"
       },
       {
         "name": "Suport B2C către consumatorul tău final (presupun ca merge vb despre casier, formularea nu este prea clara)",
-        "iconTier1": "fa-minus",
-        "iconTier2": "fa-check",
-        "iconTier3": "fa-check"
+        "iconTier1": "fa-solid fa-minus",
+        "iconTier2": "fa-solid fa-check",
+        "iconTier3": "fa-solid fa-check"
       },
       {
         "name": "Training suport ",
-        "iconTier1": "fa-minus",
-        "iconTier2": "fa-check",
-        "iconTier3": "fa-check"
+        "iconTier1": "fa-solid fa-minus",
+        "iconTier2": "fa-solid fa-check",
+        "iconTier3": "fa-solid fa-check"
       }
     ]
   },
@@ -253,15 +253,15 @@
     "features": [
       {
         "name": "Personalizarea soluției NETOPIA Retail pentru propriile nevoi de business",
-        "iconTier1": "fa-minus",
-        "iconTier2": "fa-minus",
-        "iconTier3": "fa-check"
+        "iconTier1": "fa-solid fa-minus",
+        "iconTier2": "fa-solid fa-minus",
+        "iconTier3": "fa-solid fa-check"
       },
       {
         "name": "Integrare custom tehnică",
-        "iconTier1": "fa-minus",
-        "iconTier2": "fa-minus",
-        "iconTier3": "fa-check"
+        "iconTier1": "fa-solid fa-minus",
+        "iconTier2": "fa-solid fa-minus",
+        "iconTier3": "fa-solid fa-check"
       }
     ]
   }

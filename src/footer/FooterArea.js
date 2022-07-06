@@ -6,11 +6,7 @@ const FooterArea = () => {
   return (
     <footer id="contact" className="footer-area relative py-5">
       <div className="container text-start">
-        <div
-          className="subscribe-area wow fadeIn"
-          data-wow-duration="1s"
-          data-wow-delay="0.5s"
-        >
+        <div className="subscribe-area wow fadeIn">
           <div className="row justify-content-center">
             <div className="col-lg-6">
               <div className="subscribe-content mt-4">
@@ -100,7 +96,6 @@ const FooterArea = () => {
                       Email
                     </label>
                   </div>
-
                   <button type="submit" className="btn main-btn mt-3">
                     Trimite
                   </button>

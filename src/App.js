@@ -86,6 +86,9 @@ function App() {
       <PricingTable />
       <WizardStep />
       <FooterArea />
+      <a href="#" className="back-to-top">
+        <i className="fa-solid fa-arrow-up"></i>
+      </a>
     </div>
   );
 }
