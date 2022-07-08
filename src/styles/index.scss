@@ -348,6 +348,7 @@ canvas.particles {
 
   .navbar {
     background-color: rgba($white-color, 0.5);
+    color: $text-color;
     padding: 25px 0;
     -webkit-transition: all 0.3s ease-out 0s;
     -moz-transition: all 0.3s ease-out 0s;
@@ -357,6 +358,11 @@ canvas.particles {
 
     .navbar-brand img {
       width: 7rem;
+    }
+
+    .navbar-collapse{
+      padding: 25px 0;
+      margin-top: 25px;
     }
 
     .navbar-toggler {
@@ -398,16 +404,6 @@ canvas.particles {
             top: -7px;
           }
         }
-      }
-    }
-
-    &.navbar-sticky {
-      .navbar-nav .nav-link:not(.btn) {
-        color: inherit !important;
-      }
-
-      .navbar-toggler .toggler-icon {
-        background-color: #000;
       }
     }
 
@@ -467,6 +463,35 @@ canvas.particles {
         display: none;
       }
     }
+
+    &.navbar-sticky {
+      .navbar-collapse {
+        margin-top: 0;
+      }
+
+      .navbar-nav .nav-link:not(.btn) {
+        color: inherit !important;
+      }
+
+      .navbar-toggler .toggler-icon {
+        background-color: #000;
+      }
+    }
+
+    &:not(.navbar-sticky) {
+      .navbar-collapse {
+        -webkit-box-shadow: 0 .5rem 1rem $shadow-color;
+        -moz-box-shadow: 0 .5rem 1rem $shadow-color;
+        box-shadow: 0 .5rem 1rem $shadow-color;
+        background-color: $white-color;
+        border-radius: $border-radius;
+
+        .nav-link:not(.btn) {
+          color: $text-color !important;
+        }
+      }
+    }
+
   }
 
   .header-hero {
