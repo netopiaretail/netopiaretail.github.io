@@ -1,82 +1,98 @@
 import React from "react";
 import Stats from "./Stats";
-import featureCategories from "../../resources/pricing.json";
 
-const Step2 = (props) => {
-  const update = (tier) => {
-    props.update("tier", tier);
-  };
-  const getActiveClass = (tier) =>
-    props.form.tier === tier
-      ? "text-center col-3 p-1 cursor-pointer active"
-      : "text-center col-3 p-1 cursor-pointer";
-
-  const getFeatureContent = React.useCallback((feature, tier) => {
-    return (
-      <>
-        {feature[`textTier${tier}`] && feature[`textTier${tier}`]}
-        {feature[`iconTier${tier}`] && (
-          <i className={`fa-solid ${feature[`iconTier${tier}`]}`} />
-        )}
-      </>
-    );
-  }, []);
-
+const Step2 = ({ form, update, ...props }) => {
   return (
     <div className="text-start wizard-step-2">
-      <h4 className="mb-3">
-        Alege functionalitatile ce se potrivesc business-ului tau:
-      </h4>
-      <div>
-        {featureCategories.map((featureCategory) => {
-          return (
-            <div key={featureCategory.name} className="feature-category">
-              <div className="row">
-                <div className="col-3 p-1">{featureCategory.name}</div>
-                <div
-                  className={getActiveClass("free")}
-                  onClick={() => update("free")}
-                />
-                <div
-                  className={getActiveClass("standard")}
-                  onClick={() => update("standard")}
-                />
-                <div
-                  className={getActiveClass("premium")}
-                  onClick={() => update("premium")}
-                />
-              </div>
-              {featureCategory.features.map((feature) => {
-                return (
-                  <div key={feature.name} className="row feature">
-                    <div className="col-3 p-1">{feature.name}</div>
-                    <div
-                      className={getActiveClass("free")}
-                      onClick={() => update("free")}
-                    >
-                      {getFeatureContent(feature, 1)}
-                    </div>
-                    <div
-                      className={getActiveClass("standard")}
-                      onClick={() => update("standard")}
-                    >
-                      {getFeatureContent(feature, 2)}
-                    </div>
-                    <div
-                      className={getActiveClass("premium")}
-                      onClick={() => update("premium")}
-                    >
-                      {getFeatureContent(feature, 3)}
-                    </div>
-                  </div>
-                );
-              })}
-            </div>
-          );
-        })}
+      <h4 className="mb-3">Alege pachetul potrivit business-ului tau:</h4>
+      <div className="d-flex column flex-wrap justify-content-evenly">
+        <div className="row">
+          <div
+            className={
+              form.pachet?.name === "Gratis"
+                ? "active btn pricing-btn fs-5"
+                : "btn pricing-btn fs-5"
+            }
+            onClick={() => update("pachet", { name: "Gratis", price: 0 })}
+          >
+            Gratis
+          </div>
+          <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+          <a
+            href="#pricing"
+            className="text-center fs-6 fw-light text-secondary"
+          >
+            Vezi detalii
+          </a>
+        </div>
+        <div className="row">
+          <div
+            className={
+              form.pachet?.name === "Standard"
+                ? "active btn pricing-btn fs-5"
+                : "btn pricing-btn fs-5"
+            }
+            onClick={() => update("pachet", { name: "Standard", price: 40 })}
+          >
+            Standard
+          </div>
+          <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+          <a
+            href="#pricing"
+            className="text-center fs-6 fw-light text-secondary"
+          >
+            Vezi detalii
+          </a>
+        </div>
+        <div className="row">
+          <div
+            className={
+              form.pachet?.name === "Premium"
+                ? "active btn pricing-btn fs-5"
+                : "btn pricing-btn fs-5"
+            }
+            onClick={() => update("pachet", { name: "Premium", price: 80 })}
+          >
+            Premium
+          </div>
+          <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+          <a
+            href="#pricing"
+            className="text-center fs-6 fw-light text-secondary"
+          >
+            Vezi detalii
+          </a>
+        </div>
       </div>
 
-      <Stats {...props} />
+      <Stats {...props} form={form} />
     </div>
   );
 };

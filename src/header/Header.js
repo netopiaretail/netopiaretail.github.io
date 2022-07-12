@@ -4,9 +4,11 @@ import logo2 from "../img/logo.svg";
 import device from "../img/header-hero.png";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import ParticlesComponent from "../components/Particles";
+import SearchBar from "./SearchBar";
 
 const Header = () => {
   const [navbar, setNavbar] = useState(false);
+
   const changeBackground = () => {
     if (window.scrollY >= 66) {
       setNavbar(true);
@@ -28,7 +30,7 @@ const Header = () => {
         fixed="top"
         className={navbar ? "bg-white shadow navbar-sticky" : "bg-transparent"}
       >
-        <Container>
+        <Container className="position-relative">
           <Navbar.Brand href="#home">
             <img
               className="user-select-none"
@@ -67,6 +69,7 @@ const Header = () => {
               >
                 Login
               </Nav.Link>
+              <SearchBar />
             </Nav>
           </Navbar.Collapse>
         </Container>

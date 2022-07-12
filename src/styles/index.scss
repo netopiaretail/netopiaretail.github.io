@@ -20,6 +20,11 @@ body {
   box-sizing: border-box;
 }
 
+::selection {
+  background-color: hsl(27, 100%, 50%);
+  color: $white-color;
+}
+
 img {
   max-width: 100%;
 }
@@ -31,7 +36,6 @@ button:focus {
   text-decoration: none;
   outline: none;
 }
-
 
 i,
 span,
@@ -120,7 +124,7 @@ p {
   line-height: 48px;
   border-radius: 8px;
   border: 0;
-  color: $white-color !important;
+  // color: $white-color;
   cursor: pointer;
   -webkit-transition: all 0.4s ease-out 0s;
   -moz-transition: all 0.4s ease-out 0s;
@@ -130,9 +134,24 @@ p {
 }
 
 .secondary-btn {
-  background: -webkit-linear-gradient(90deg, $white-color 0%, $tint-color 50%, $white-color 100%);
-  background: -o-linear-gradient(90deg, $white-color 0%, $tint-color 50%, $white-color 100%);
-  background: linear-gradient(90deg, $white-color 0%, $tint-color 50%, $white-color 100%);
+  background: -webkit-linear-gradient(
+    90deg,
+    $white-color 0%,
+    $tint-color 50%,
+    $white-color 100%
+  );
+  background: -o-linear-gradient(
+    90deg,
+    $white-color 0%,
+    $tint-color 50%,
+    $white-color 100%
+  );
+  background: linear-gradient(
+    90deg,
+    $white-color 0%,
+    $tint-color 50%,
+    $white-color 100%
+  );
   background-size: 200%;
 
   &:hover {
@@ -182,28 +201,34 @@ p {
 
 .main-btn {
   background-image: -webkit-linear-gradient(
-                  90deg,
-                  $secondary-color 0%,
-                  $secondary-color-light 50%,
-                  $secondary-color 100%
+    90deg,
+    $secondary-color 0%,
+    $secondary-color-light 50%,
+    $secondary-color 100%
   );
   background-image: -o-linear-gradient(
-                  90deg,
-                  $secondary-color 0%,
-                  $secondary-color-light 50%,
-                  $secondary-color 100%
+    90deg,
+    $secondary-color 0%,
+    $secondary-color-light 50%,
+    $secondary-color 100%
   );
   background-image: linear-gradient(
-                  90deg,
-                  $secondary-color 0%,
-                  $secondary-color-light 50%,
-                  $secondary-color 100%
+    90deg,
+    $secondary-color 0%,
+    $secondary-color-light 50%,
+    $secondary-color 100%
   );
   background-size: 200%;
+  color: $white-color;
 
   &:hover {
     color: $white-color;
     background-position: right center;
+  }
+
+  &:disabled {
+    background-image: none;
+    background-color: $text-color;
   }
 }
 
@@ -326,9 +351,21 @@ canvas.particles {
   height: 40px;
   line-height: 40px;
   border-radius: $border-radius;
-  background: -webkit-linear-gradient(to top left, $primary-color 0%, $primary-color-light 100%);
-  background: -o-linear-gradient(to top left, $primary-color 0%, $primary-color-light 100%);
-  background: linear-gradient(to top left, $primary-color 0%, $primary-color-light 100%);
+  background: -webkit-linear-gradient(
+    to top left,
+    $primary-color 0%,
+    $primary-color-light 100%
+  );
+  background: -o-linear-gradient(
+    to top left,
+    $primary-color 0%,
+    $primary-color-light 100%
+  );
+  background: linear-gradient(
+    to top left,
+    $primary-color 0%,
+    $primary-color-light 100%
+  );
   text-align: center;
   z-index: 99;
   -webkit-transition: all 0.3s ease-out 0s;
@@ -357,6 +394,24 @@ canvas.particles {
 
     .navbar-brand img {
       width: 7rem;
+    }
+
+    .search {
+      i {
+        cursor: pointer;
+      }
+
+      &-input {
+        position: absolute;
+        padding: 10px;
+        top: 4rem;
+        left: 0;
+
+        @media (max-width: 767px) {
+          position: relative;
+          top: 0;
+        }
+      }
     }
 
     .navbar-toggler {
@@ -458,7 +513,8 @@ canvas.particles {
         font-family: "Nunito", sans-serif;
         color: $white-color;
 
-        &:hover, &.active {
+        &:hover,
+        &.active {
           color: inherit;
         }
       }
@@ -599,7 +655,6 @@ canvas.particles {
         }
       }
     }
-
   }
 
   .footer-copyright {
@@ -728,9 +783,21 @@ a.more {
 }
 
 .pricing-table {
-  background: linear-gradient(to right, $primary-color 0%, $primary-color-light 100%);
-  background: -webkit-linear-gradient(left, $primary-color 0%, $primary-color-light 100%);
-  background: -o-linear-gradient(left, $primary-color 0%, $primary-color-light 100%);
+  background: linear-gradient(
+    to right,
+    $primary-color 0%,
+    $primary-color-light 100%
+  );
+  background: -webkit-linear-gradient(
+    left,
+    $primary-color 0%,
+    $primary-color-light 100%
+  );
+  background: -o-linear-gradient(
+    left,
+    $primary-color 0%,
+    $primary-color-light 100%
+  );
   border-radius: $border-radius;
   padding: 2rem;
 
@@ -800,13 +867,13 @@ a.more {
       .link {
         font-weight: 600;
         padding: 0.5rem 0.75rem;
-        background-color: rgba($secondary-color, .2);
+        background-color: rgba($secondary-color, 0.2);
         border-radius: $border-radius;
         font-size: 0.75rem;
         color: $secondary-color;
 
         &:hover {
-          background-color: rgba($primary-color, .2);
+          background-color: rgba($primary-color, 0.2);
           color: $primary-color;
         }
 
@@ -868,14 +935,13 @@ a.more {
     }
   }
 
-
   @media (max-width: 767px) {
     & {
       padding: 0.5rem;
     }
 
     // hide all columns
-    table tr > :nth-of-type(n+2):nth-of-type(-n+4) {
+    table tr > :nth-of-type(n + 2):nth-of-type(-n + 4) {
       display: none;
     }
 
@@ -889,7 +955,6 @@ a.more {
     input[type="radio"]#free:not(:checked) + input[type="radio"]#standard:not(:checked) + input[type="radio"]#premium:not(:checked) ~ table tr > :nth-of-type(2) {
       display: table-cell;
     }
-
 
     // if free is checked show free label
     input[type="radio"]#free:checked ~ div > label[for=free],
@@ -920,14 +985,12 @@ a.more {
         font-size: 1.2rem;
       }
 
-
       tr {
         td:first-child,
         th:first-child {
           width: auto;
         }
       }
-
 
       thead tr th {
         border-radius: $border-radius $border-radius 0 0;
@@ -944,12 +1007,17 @@ a.more {
   font-family: "Nunito", sans-serif;
   overflow: hidden;
   padding: 2rem;
+  height: 52rem;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
 
   .wizard-step-1 {
     .wizard-block {
       display: flex;
       align-items: center;
       justify-content: space-around;
+      color: $primary-color !important;
 
       label {
         cursor: pointer;
@@ -959,12 +1027,12 @@ a.more {
 
         &.active {
           font-weight: 700;
-          color: $primary-color !important;
+          color: $secondary-color !important;
         }
 
         i {
-          width: 2rem;
-          height: 2rem;
+          width: 25px;
+          height: 25px;
           display: flex;
           align-items: center;
           justify-content: center;
@@ -974,15 +1042,24 @@ a.more {
       &.wizard-activity-type {
         padding-top: 1rem;
         padding-bottom: 3rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: start;
+        text-align: left;
 
         label {
           i {
-            margin-right: .5rem;
+            margin-right: 0.5rem;
           }
+        }
+
+        @media (max-width: 767px) {
+          grid-template-columns: 1fr 1fr;
         }
       }
 
-      &.wizard-domain, &.wizard-shop-type {
+      &.wizard-domain,
+      &.wizard-shop-type {
         padding: 3rem;
 
         label {
@@ -990,7 +1067,7 @@ a.more {
 
           i {
             font-size: 2rem;
-            margin-bottom: .5rem;
+            margin-bottom: 0.5rem;
           }
         }
       }
@@ -1003,27 +1080,40 @@ a.more {
   }
 
   .wizard-step-2 {
-    .feature-category {
-      div.active {
-        background-color: rgba($primary-color, .5);
-      }
+    .pricing-btn {
+      border: 2px solid $primary-color-light;
+      color: $primary-color-light !important;
 
-      &:first-of-type {
-        div:first-of-type {
-          div.active {
-            border-radius: $border-radius $border-radius 0 0;
-          }
-        }
+      &:hover,
+      &.active {
+        border: 2px solid $secondary-color;
+        color: $secondary-color !important;
       }
+    }
+  }
 
-      &:last-of-type {
-        div:last-of-type {
-          div.active {
-            border-radius: 0 0 $border-radius $border-radius;
-          }
-        }
+  .wizard-step-3 {
+    .active {
+      border: 2px solid $primary-color-light;
+      color: $primary-color-light !important;
+    }
+
+    .choice-img {
+      transition: height 1s linear;
+    }
+  }
+
+  .wizard-step-4 {
+    .btns {
+      button {
+        color: $primary-color;
+        border: 2px solid $primary-color;
+        width: 15rem;
+        padding: 1rem;
+        font-size: 1.2rem;
+        background-color: transparent;
+        border-radius: 8px;
       }
     }
   }
 }
-

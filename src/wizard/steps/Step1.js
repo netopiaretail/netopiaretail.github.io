@@ -8,7 +8,7 @@ import shopTypes from "../../resources/shop-types.json";
 const Step1 = ({ form, update, ...props }) => {
   return (
     <div className="wizard-step-1">
-      <h4>Domeniu de activitate</h4>
+      <h4>Domeniu de activitate*</h4>
       <div className="wizard-block wizard-domain">
         {domains.map((domain) => (
           <label
@@ -26,7 +26,7 @@ const Step1 = ({ form, update, ...props }) => {
 
       {form.domain === "retail" && (
         <>
-          <h5>Tip de activitate</h5>
+          <h5>Tip de activitate*</h5>
           <div className="wizard-block wizard-activity-type retail">
             {retailList.map((item) => (
               <label
@@ -44,7 +44,7 @@ const Step1 = ({ form, update, ...props }) => {
       )}
       {form.domain === "horeca" && (
         <>
-          <h5>Tip de activitate</h5>
+          <h5>Tip de activitate*</h5>
           <div className="wizard-block wizard-activity-type horeca">
             {horecaList.map((item) => (
               <label
@@ -60,7 +60,7 @@ const Step1 = ({ form, update, ...props }) => {
           </div>
         </>
       )}
-      <h4>Vei folosi soluția retail pentru magazin:</h4>
+      <h4>Tip de magazin*</h4>
       <div className="wizard-block wizard-shop-type">
         {shopTypes.map((shopType) => (
           <label
@@ -74,7 +74,7 @@ const Step1 = ({ form, update, ...props }) => {
           </label>
         ))}
       </div>
-      <Stats {...props} />
+      <Stats form={form} {...props} />
     </div>
   );
 };

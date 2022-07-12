@@ -49,7 +49,7 @@ const SectionFunctionalities = () => {
                   </ul>
                   <p className="py-2">
                     <b>Contul de Admin</b> are aceleași drepturi ca cel de
-                    <b>Manager</b> și, în plus, poate să adauge atât conturi de
+                    <b> Manager</b> și, în plus, poate să adauge atât conturi de
                     Casier și Manager, cât și companii.
                   </p>
                   <a className="more" href="#pricing">

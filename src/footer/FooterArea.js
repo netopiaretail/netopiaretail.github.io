@@ -43,14 +43,6 @@ const FooterArea = () => {
                   </div>
                   <div className="mb-4">
                     <input
-                      type="phone"
-                      className="form-control"
-                      id="phone"
-                      placeholder="Telefon"
-                    />
-                  </div>
-                  <div className="mb-4">
-                    <input
                       type="text"
                       className="form-control"
                       id="city"
@@ -72,29 +64,6 @@ const FooterArea = () => {
                       rows="3"
                       placeholder="Mesaj"
                     ></textarea>
-                  </div>
-                  <label>Metoda preferată de contact</label>
-                  <div className="form-check">
-                    <input
-                      className="form-check-input"
-                      type="checkbox"
-                      value="telefon"
-                      id="telefon"
-                    />
-                    <label className="form-check-label" htmlFor="telefon">
-                      Telefon
-                    </label>
-                  </div>
-                  <div className="form-check">
-                    <input
-                      className="form-check-input"
-                      type="checkbox"
-                      value="Email"
-                      id="email"
-                    />
-                    <label className="form-check-label" htmlFor="email">
-                      Email
-                    </label>
                   </div>
                   <button type="submit" className="btn main-btn mt-3">
                     Trimite

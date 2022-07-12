@@ -11,7 +11,7 @@ const SectionFeatures = () => {
           <div className="col-lg-10">
             <div className="text-center pb-4">
               <h3 className="title">
-                Softul de gestiune și administrare vânzări NETOPIA Retail &nbsp;
+                Softul de gestiune și administrare vânzări NETOPIA Retail&nbsp;
                 <span>
                   conține soluții și programe IT de tip On Cloud și Android
                   pentru:

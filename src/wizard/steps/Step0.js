@@ -1,15 +1,17 @@
 import React from "react";
+import wizard from "../../img/wizard.svg";
 
 const Step0 = (props) => {
   return (
-    <div className="text-center">
+    <div className="row gap-4 justify-content-center text-center">
       <h4>
-        Foloseste wizard-ul pentru a configura solutia dupa nevoie business-ului
-        tau
+        Folosește wizard-ul pentru a configura soluția după nevoia business-ului
+        tău
       </h4>
-      <span className="btn main-btn" onClick={props.nextStep}>
-        Incepe
-      </span>
+      <img src={wizard} alt="NETOPIA Retail Wizard" height={400} />
+      <button className="btn main-btn w-auto" onClick={props.nextStep}>
+        Începe
+      </button>
     </div>
   );
 };
