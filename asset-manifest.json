@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.49e2f833.css",
-    "main.js": "/static/js/main.5dcf3c05.js",
+    "main.css": "/static/css/main.aa9066bc.css",
+    "main.js": "/static/js/main.8ea1ac92.js",
     "static/media/angajati.png": "/static/media/angajati.c5cd659c47880cc70d8e.png",
     "static/media/section3.png": "/static/media/section3.9d1948ce8177fe1ab6c9.png",
     "static/media/Group 1 (8).png": "/static/media/Group 1 (8).ab99711aba5fdb6ce448.png",
@@ -17,17 +17,18 @@
     "static/media/wizard.svg": "/static/media/wizard.d48cb1efe9fc0e0acb361fa53c570bb0.svg",
     "static/media/contact.svg": "/static/media/contact.41892f96a0e110f79249c97f63b6ce5d.svg",
     "static/media/rapoarte.svg": "/static/media/rapoarte.2498220d22f9f591f7ac6810d793a329.svg",
+    "static/media/choice.svg": "/static/media/choice.5329f7c038d85318ab55c55434ff3ad2.svg",
     "static/media/fidelizare.svg": "/static/media/fidelizare.0deb8f322004590a60bfb3a6e891b138.svg",
     "static/media/logo.svg": "/static/media/logo.e26e912c12aca13bff2ee9a20448e742.svg",
     "static/media/logo-blank.svg": "/static/media/logo-blank.2a3e43572746c7acf9ca1915eefb264a.svg",
     "static/media/footer.svg": "/static/media/footer.5631c1f4976200bc820b.svg",
     "static/media/Group.svg": "/static/media/Group.4a8c85ec6084aab8866d.svg",
     "index.html": "/index.html",
-    "main.49e2f833.css.map": "/static/css/main.49e2f833.css.map",
-    "main.5dcf3c05.js.map": "/static/js/main.5dcf3c05.js.map"
+    "main.aa9066bc.css.map": "/static/css/main.aa9066bc.css.map",
+    "main.8ea1ac92.js.map": "/static/js/main.8ea1ac92.js.map"
   },
   "entrypoints": [
-    "static/css/main.49e2f833.css",
-    "static/js/main.5dcf3c05.js"
+    "static/css/main.aa9066bc.css",
+    "static/js/main.8ea1ac92.js"
   ]
 }
