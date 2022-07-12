@@ -47,7 +47,7 @@ const Header = () => {
             id="navbarScroll"
             className={"justify-content-end rounded"}
           >
-            <Nav className={navbar ? "gap-3 text-black" : "gap-3 text-white"}>
+            <Nav className={navbar ? "gap-3" : "gap-3 text-white"}>
               <Nav.Link href="#features">Soluții</Nav.Link>
               <Nav.Link href="#about">Despre noi</Nav.Link>
               <Nav.Link href="#hardware">Hardware</Nav.Link>

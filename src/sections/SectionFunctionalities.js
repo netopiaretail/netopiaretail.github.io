@@ -9,7 +9,7 @@ const SectionFunctionalities = () => {
             Acces gratuit <span>la funcționalități cheie</span>
           </h3>
         </div>
-        <div className="row align-items-start pt-5">
+        <div className="align-items-start pt-5">
           <Accordion className="row text-start">
             <div className="col-lg-6">
               <Accordion.Item
