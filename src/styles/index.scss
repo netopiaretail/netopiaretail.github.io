@@ -360,9 +360,11 @@ canvas.particles {
       width: 7rem;
     }
 
-    .navbar-collapse{
-      padding: 25px 0;
-      margin-top: 25px;
+    @media (max-width: 991px) {
+      .navbar-collapse {
+        padding: 25px 0;
+        margin-top: 25px;
+      }
     }
 
     .navbar-toggler {
@@ -479,15 +481,19 @@ canvas.particles {
     }
 
     &:not(.navbar-sticky) {
-      .navbar-collapse {
-        -webkit-box-shadow: 0 .5rem 1rem $shadow-color;
-        -moz-box-shadow: 0 .5rem 1rem $shadow-color;
-        box-shadow: 0 .5rem 1rem $shadow-color;
-        background-color: $white-color;
-        border-radius: $border-radius;
+      @media (max-width: 991px) {
 
-        .nav-link:not(.btn) {
-          color: $text-color !important;
+
+        .navbar-collapse {
+          -webkit-box-shadow: 0 .5rem 1rem $shadow-color;
+          -moz-box-shadow: 0 .5rem 1rem $shadow-color;
+          box-shadow: 0 .5rem 1rem $shadow-color;
+          background-color: $white-color;
+          border-radius: $border-radius;
+
+          .nav-link:not(.btn) {
+            color: $text-color !important;
+          }
         }
       }
     }
