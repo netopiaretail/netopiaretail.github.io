@@ -8,7 +8,7 @@ const Stats = ({ nextStep, previousStep, totalSteps, currentStep, form }) => {
       case 3:
         return form.pachet;
       case 4:
-        return form.device;
+        return typeof form.device == "boolean";
     }
   };
 

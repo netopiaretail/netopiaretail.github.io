@@ -19,27 +19,41 @@ const Step4 = ({ form, update, ...props }) => {
 
   return (
     <div className="wizard-step-4">
-      <div className={"row gap-4 text-start fs-5"}>
-        <div className="col-12 col-sm-5">
+      <div className={"row gap-4 text-start fs-5 justify-content-evenly"}>
+        <div className="col-12">
           <h4 className="mb-4">Verifică alegerile tale:</h4>
-          <ul>
-            <li>Domeniul de activitate: {form.domain}</li>
-            <li>Tip de activitate: {form.activityType}</li>
-            <li>Magazin: {form.shopType}</li>
-            <li>Pachetul: {form.pachet?.name}</li>
-            <li>Dispozitiv: {form.device}</li>
-            <li>
-              Accesorii:{" "}
-              {form.accesories.map((device) => device.name).join(", ")}
-            </li>
-          </ul>
+          <div className="d-flex flex-row justify-content-around choices-list">
+            <div>
+              Domeniul de activitate<div>{form.domain}</div>
+            </div>
+            <div>
+              Tip de activitate<div>{form.activityType}</div>
+            </div>
+            <div>
+              Magazin<div>{form.shopType}</div>
+            </div>
+            <div>
+              Pachetul<div>{form.pachet?.name}</div>
+            </div>
+            <div>
+              Dispozitiv<div>{form.device.toString()}</div>
+            </div>
+            <div>
+              Accesorii{" "}
+              <div>
+                {form.accesories.map((device) => (
+                  <div key={device.name}>{device.name}</div>
+                ))}
+              </div>
+            </div>
+          </div>
           <h4 className="mt-4">
             Prețul total:{" "}
             {form.pachet?.price +
               form.accesories.reduce((s, x) => s + x.price, 0)}
           </h4>
         </div>
-        <div className="col-12 col-sm-5 btns d-flex flex-column align-items-center justify-content-center gap-4">
+        <div className="col-12 btns d-flex flex-column align-items-center justify-content-center gap-4">
           <button>
             <i className="fa-solid fa-user-plus"></i> Înscrie-te
           </button>

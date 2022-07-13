@@ -10,6 +10,7 @@ const Wizard = () => {
   const [state, updateState] = useState({
     form: {
       accesories: [],
+      device: true,
     },
   });
 

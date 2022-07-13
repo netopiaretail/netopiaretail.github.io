@@ -7,7 +7,7 @@ body {
   font-family: "Montserrat", sans-serif;
   font-weight: normal;
   font-style: normal;
-  color: $text-color;
+  color: $dark-color;
   overflow-x: hidden;
   text-align: center;
 }
@@ -68,7 +68,6 @@ h5,
 h6 {
   font-family: "Nunito", sans-serif;
   font-weight: 700;
-  color: $dark-color;
   margin: 0;
 }
 
@@ -105,8 +104,6 @@ ol {
 p {
   font-size: 16px;
   font-weight: 400;
-  line-height: 26px;
-  color: $text-color;
   margin: 0;
 }
 
@@ -122,9 +119,8 @@ p {
   padding: 0 25px !important;
   font-size: 16px;
   line-height: 48px;
-  border-radius: 8px;
+  border-radius: $border-radius;
   border: 0;
-  // color: $white-color;
   cursor: pointer;
   -webkit-transition: all 0.4s ease-out 0s;
   -moz-transition: all 0.4s ease-out 0s;
@@ -233,7 +229,7 @@ p {
 }
 
 .accordion-item {
-  border-radius: 8px !important;
+  border-radius: $border-radius !important;
   min-height: 12rem;
 }
 
@@ -373,6 +369,25 @@ canvas.particles {
   -ms-transition: all 0.3s ease-out 0s;
   -o-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
+
+  &:hover {
+    color: $white-color;
+    background: -webkit-linear-gradient(
+      to top left,
+      $secondary-color 0%,
+      $secondary-color-light 100%
+    );
+    background: -o-linear-gradient(
+      to top left,
+      $secondary-color 0%,
+      $secondary-color-light 100%
+    );
+    background: linear-gradient(
+      to top left,
+      $secondary-color 0%,
+      $secondary-color-light 100%
+    );
+  }
 }
 
 .header-area {
@@ -398,22 +413,51 @@ canvas.particles {
     }
 
     .search {
+      @media (max-width: 991px) {
+        box-shadow: 0 0.5rem 1rem $shadow-color;
+        padding: 0 1rem;
+        border: 1px solid rgba($primary-color-light, 0.4);
+        border-radius: $border-radius;
+      }
+
       i {
         cursor: pointer;
+
+        @media (max-width: 991px) {
+          color: $primary-color;
+        }
       }
 
       &-input {
         position: absolute;
+        box-shadow: 0 -0.1rem 1rem $shadow-color;
+        border: 1px solid rgba($primary-color-light, 0.4);
+        border-radius: $border-radius;
         padding: 10px;
         top: 4rem;
-        left: 0;
+        right: 0;
+        width: 100%;
+        outline: 0;
 
-        @media (max-width: 767px) {
+        &.hide {
+          width: 0;
+          visibility: hidden;
+        }
+
+        transition: all 0.3s linear;
+
+        @media (max-width: 991px) {
           position: relative;
           top: 0;
+
+          &.hide {
+            width: 100%;
+            visibility: visible;
+          }
         }
       }
     }
+
     @media (max-width: 991px) {
       .navbar-collapse {
         padding: 25px 0;
@@ -745,7 +789,7 @@ canvas.particles {
   .card-content {
     .text {
       margin-top: 30px;
-
+      color: $text-color;
       @media (max-width: 767px) {
         & {
           margin-top: 20px;
@@ -777,6 +821,173 @@ canvas.particles {
 
       &:hover {
         color: $primary-color;
+      }
+    }
+  }
+}
+
+.pricing-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: var(--shadow);
+  padding: 2rem;
+  border-radius: $border-radius;
+  border: 1px solid var(--gradient1);
+  cursor: pointer;
+  transition: transform 0.3s ease-out;
+
+  --gradient1: #{$primary-color};
+  --gradient2: #{$primary-color-light};
+  --shadow: #{$box-shadow-primary};
+
+  &.orange {
+    --gradient1: #{$secondary-color};
+    --gradient2: #{$secondary-color-light};
+    --shadow: #{$box-shadow-secondary};
+  }
+
+  &.blue {
+    --gradient1: #{$primary-color};
+    --gradient2: #{$primary-color-light};
+    --shadow: #{$box-shadow-primary};
+  }
+  &.purple {
+    --gradient1: #{$tertiary-color};
+    --gradient2: #{$tertiary-color-light};
+    --shadow: #{$box-shadow-tertiary};
+  }
+
+  &.inactive {
+    filter: grayscale(1);
+  }
+
+  &:hover,
+  &.active {
+    border: 1px solid var(--gradient1);
+    transform: scale(1.05);
+    z-index: 2;
+  }
+
+  &:hover {
+    .pricing-card-price {
+      background-position: right center;
+    }
+  }
+
+  &-price {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    font-size: 2.8rem;
+    line-height: 1.2;
+    background-image: -webkit-linear-gradient(
+      90deg,
+      var(--gradient1) 0%,
+      var(--gradient2) 51%,
+      var(--gradient1) 100%
+    );
+    background-image: -o-linear-gradient(
+      90deg,
+      var(--gradient1) 0%,
+      var(--gradient2) 51%,
+      var(--gradient1) 100%
+    );
+    background-image: linear-gradient(
+      90deg,
+      var(--gradient1) 0%,
+      var(--gradient2) 51%,
+      var(--gradient1) 100%
+    );
+    background-size: 200% auto;
+    transition: all 500ms ease;
+    color: $white-color;
+    padding: 0.5rem;
+    border-radius: 100%;
+    width: 6.5rem;
+    height: 6.5rem;
+    text-align: center;
+    outline: var(--gradient1) solid 2px;
+    border: 2px solid $white-color;
+
+    span {
+      font-weight: 300;
+      font-size: 1rem;
+      line-height: 1.2;
+    }
+  }
+
+  &-title {
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: var(--gradient1);
+
+    &::after,
+    &::before {
+      content: "";
+      height: 1px;
+      flex: 1;
+      border-top: 1px solid var(--gradient1);
+    }
+  }
+
+  &-link {
+    color: var(--gradient1);
+    border: 1px solid var(--gradient1);
+    border-radius: $border-radius;
+    padding: 5px 15px;
+    width: fit-content;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease-out;
+
+    &::after {
+      background-image: -webkit-linear-gradient(
+        90deg,
+        var(--gradient1) 0%,
+        var(--gradient2) 100%
+      );
+      background-image: -o-linear-gradient(
+        90deg,
+        var(--gradient1) 0%,
+        var(--gradient2) 100%
+      );
+      background-image: linear-gradient(
+        90deg,
+        var(--gradient1) 0%,
+        var(--gradient2) 100%
+      );
+      content: "";
+      width: 0;
+      height: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: all 0.3s ease-out;
+      z-index: -1;
+      opacity: 0;
+    }
+
+    &:hover {
+      color: $white-color;
+      border-color: $secondary-color;
+      background-position-x: 0;
+      border-color: transparent;
+
+      &::after {
+        width: 100%;
+        height: 100%;
+        opacity: 1;
       }
     }
   }
@@ -1106,31 +1317,150 @@ a.more {
     }
   }
 
-  .wizard-step-2 {
-    .pricing-btn {
-      border: 2px solid $primary-color-light;
-      color: $primary-color-light !important;
+  .wizard-step-3 {
+    .accesories-list {
+      .active {
+        border: 2px solid $primary-color-light;
+        border-radius: $border-radius;
+        color: $primary-color-light !important;
+      }
+    }
 
-      &:hover,
-      &.active {
-        border: 2px solid $secondary-color;
-        color: $secondary-color !important;
+    .switch-toggler {
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+
+      li a {
+        font-size: 1.5rem;
+        font-weight: 500;
+        color: #7c7d8a;
+        padding-left: 10px;
+        padding-right: 10px;
+        display: block;
+      }
+
+      .switch {
+        position: relative;
+        display: inline-block;
+        width: 79px;
+        height: 36px;
+        vertical-align: middle;
+        margin: 0;
+
+        &.off {
+          .slider {
+            filter: grayscale(1);
+
+            &::before {
+              transform: translateX(42px);
+            }
+          }
+        }
+
+        &.on {
+          .slider {
+            filter: none;
+            &::before {
+              transform: translateX(0px);
+            }
+          }
+        }
+
+        .slider {
+          position: absolute;
+          cursor: pointer;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          -webkit-transition: 0.4s;
+          transition: 0.4s;
+          background-image: linear-gradient(
+            90deg,
+            $primary-color 0%,
+            $primary-color-light 100%
+          );
+          box-shadow: 0px 20px 20px 0px rgb(0 0 0 / 3%);
+          border-radius: 30px;
+
+          &::before {
+            border-radius: 50%;
+            position: absolute;
+            content: "";
+            height: 26px;
+            width: 26px;
+            left: 6px;
+            bottom: 6px;
+            background-color: #fff;
+            -webkit-transition: 0.4s;
+            transition: 0.4s;
+          }
+        }
+      }
+    }
+
+    .device-card {
+      border-radius: $border-radius;
+      padding: 1rem;
+      color: $text-color;
+      width: 45rem;
+      height: 20rem;
+      margin: 1.5rem 0;
+      perspective: 1000px;
+
+      .device-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+        box-shadow: $box-shadow-primary;
+
+        &.active {
+          transform: rotateY(180deg);
+        }
+      }
+
+      .flip-card-front,
+      .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+      }
+
+      .flip-card-back {
+        transform: rotateY(180deg);
+      }
+
+      h4 {
+        color: $dark-color;
       }
     }
   }
 
-  .wizard-step-3 {
-    .active {
-      border: 2px solid $primary-color-light;
-      color: $primary-color-light !important;
-    }
-
-    .choice-img {
-      transition: height 1s linear;
-    }
-  }
-
   .wizard-step-4 {
+    .choices-list {
+      & > div {
+        color: $secondary-color;
+        font-size: 1rem;
+        font-weight: 700;
+        & > div {
+          color: $dark-color;
+          font-size: 1.3rem;
+          font-weight: 400;
+          font-family: "Montserrat", sans-serif;
+        }
+      }
+    }
+
     .btns {
       button {
         color: $primary-color;
@@ -1139,7 +1469,7 @@ a.more {
         padding: 1rem;
         font-size: 1.2rem;
         background-color: transparent;
-        border-radius: 8px;
+        border-radius: $border-radius;
       }
     }
   }

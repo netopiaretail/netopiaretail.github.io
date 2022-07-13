@@ -8,10 +8,12 @@ const SectionFeatures = () => {
     <section id="features" className="py-5">
       <div className="container">
         <div className="row mb-5 justify-content-center">
-          <div className="col-lg-10">
+          <div>
             <div className="text-center pb-4">
               <h3 className="title">
-                Softul de gestiune și administrare vânzări NETOPIA Retail&nbsp;
+                Softul de gestiune și administrare vânzări{" "}
+                <span className="text-nowrap fw-bold">NETOPIA Retail</span>
+                &nbsp;
                 <span>
                   conține soluții și programe IT de tip On Cloud și Android
                   pentru:
