@@ -42,7 +42,7 @@ const Step3 = ({ form, update, ...props }) => {
 
   return (
     <div className="wizard-step-3">
-      <div className="d-flex flex-row text-center">
+      <div className="d-flex row text-center">
         <div className="col-lg-6 col-sm-12">
           <h4>Vrei dispozitivul nostru?</h4>
           <div className="row fs-5 my-4">
@@ -89,9 +89,13 @@ const Step3 = ({ form, update, ...props }) => {
                   form.device ? "device-card-inner" : "device-card-inner active"
                 }
               >
-                <div className="flip-card-front d-flex flex-row justify-content-center align-items-center gap-4 ">
-                  <img src={device} width={200} />
-                  <p className="text-start">
+                <div className="flip-card-front d-flex row justify-content-center align-items-center gap-4 ">
+                  <img
+                    className="col-sm-10 col-lg-5"
+                    src={device}
+                    width={200}
+                  />
+                  <p className="text-start col-sm-12 col-lg-6">
                     <h4 className="mb-2">PAX E800</h4>
                     Adaugă un plus de eleganță magazinului tău. Îți oferim unul
                     dintre cele mai moderne și rapide dispozitive care va impune

@@ -10,10 +10,10 @@ import SectionBenefits from "./sections/SectionBenefits";
 import SectionHardware from "./sections/SectionHardware";
 import SectionAdvantages from "./sections/SectionAdvantages";
 import FooterArea from "./footer/FooterArea";
-import PricingTable from "./sections/PricingTable";
 import WizardStep from "./wizard";
 import { useEffect } from "react";
 import WOW from "wowjs";
+import SectionPricing from "./sections/SectionPricing";
 
 function App() {
   useEffect(() => {
@@ -83,7 +83,7 @@ function App() {
       <SectionBenefits />
       <SectionHardware />
       <SectionAdvantages />
-      <PricingTable />
+      <SectionPricing />
       <WizardStep />
       <FooterArea />
       <a href="#" className="back-to-top">

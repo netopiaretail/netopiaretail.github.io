@@ -1,7 +1,7 @@
 const PricingCard = ({ price, title, styles, link, onClick, children }) => {
   return (
     <div
-      className={`pricing-card col-3 gap-4 wow fadeIn ${styles}`}
+      className={`pricing-card col-lg-3 col-sm-8 gap-4 wow fadeIn ${styles}`}
       data-wow-duration="1s"
       data-wow-delay="0.2s"
       onClick={onClick}

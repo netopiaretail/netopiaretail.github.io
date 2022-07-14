@@ -5,6 +5,7 @@ import Step2 from "./steps/Step2";
 import Step3 from "./steps/Step3";
 import Step4 from "./steps/Step4";
 import Step0 from "./steps/Step0";
+import CoolNav from "./CoolNav";
 
 const Wizard = () => {
   const [state, updateState] = useState({
@@ -35,14 +36,14 @@ const Wizard = () => {
     }));
 
   return (
-    <div className="container wizard shadow rounded p-4 wow fadeInUpBig">
-      <h3>Wizard</h3>
-      <div className="row justify-content-center align-content-center">
+    <div className="container wizard shadow rounded wow fadeInUpBig py-4">
+      <div>
         <StepWizard
           className="p-4"
           onStepChange={onStepChange}
           isHashEnabled
           instance={setInstance}
+          nav={<CoolNav currentStep={state.currentStep} />}
         >
           <Step0 hashKey={"Step0"} />
           <Step1 hashKey={"Step1"} update={updateForm} form={state.form} />

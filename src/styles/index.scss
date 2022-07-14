@@ -228,6 +228,39 @@ p {
   }
 }
 
+.secondary-btn-gradient {
+  background-image: -webkit-linear-gradient(
+    90deg,
+    $primary-color 0%,
+    $primary-color-light 50%,
+    $primary-color 100%
+  );
+  background-image: -o-linear-gradient(
+    90deg,
+    $primary-color 0%,
+    $primary-color-light 50%,
+    $primary-color 100%
+  );
+  background-image: linear-gradient(
+    90deg,
+    $primary-color 0%,
+    $primary-color-light 50%,
+    $primary-color 100%
+  );
+  background-size: 200%;
+  color: $white-color;
+
+  &:hover {
+    color: $white-color;
+    background-position: right center;
+  }
+
+  &:disabled {
+    background-image: none;
+    background-color: $text-color;
+  }
+}
+
 .accordion-item {
   border-radius: $border-radius !important;
   min-height: 12rem;
@@ -449,7 +482,8 @@ canvas.particles {
         @media (max-width: 991px) {
           position: relative;
           top: 0;
-
+          box-shadow: none;
+          border: none;
           &.hide {
             width: 100%;
             visibility: visible;
@@ -1020,6 +1054,21 @@ a.more {
   }
 }
 
+#pricing {
+  .accordion-item {
+    min-height: auto;
+
+    .accordion-button {
+      font-size: 2rem;
+      justify-content: center;
+
+      &::after {
+        margin-left: 1rem;
+      }
+    }
+  }
+}
+
 .pricing-table {
   background: linear-gradient(
     to right,
@@ -1244,11 +1293,153 @@ a.more {
 .wizard {
   font-family: "Nunito", sans-serif;
   overflow: hidden;
-  padding: 2rem;
   height: 52rem;
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
+
+  @media (max-width: 991px) {
+    height: auto;
+  }
+
+  .app-progress-bar {
+    overflow: hidden;
+    margin: 3rem 0;
+    border-radius: $border-radius;
+    background-color: $white-color;
+    width: 100%;
+    position: relative;
+    display: block;
+
+    ul {
+      display: flex;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      font-weight: bold;
+      font-size: 13px;
+      line-height: 1;
+      list-style: none;
+      position: relative;
+
+      @media (max-width: 767px) {
+        justify-content: center;
+      }
+
+      li {
+        display: flex;
+        align-items: center;
+        transition: all 0.4s ease-out 0s;
+        &.active {
+          &::before {
+            background: -webkit-linear-gradient(
+              -90deg,
+              $primary-color-light 0%,
+              $primary-color 100%
+            );
+            background: -o-linear-gradient(
+              -90deg,
+              $primary-color-light 0%,
+              $primary-color 100%
+            );
+            background: linear-gradient(
+              -90deg,
+              $primary-color-light 0%,
+              $primary-color 100%
+            );
+          }
+        }
+
+        &.check {
+          &::before {
+            background-color: $primary-color;
+          }
+        }
+
+        & > div {
+          position: relative;
+          display: flex;
+          border-radius: 50%;
+          align-items: center;
+          justify-content: center;
+          width: 3rem;
+          height: 3rem;
+          font-size: 1.4rem;
+          background-color: $tint-color;
+          color: $white-color;
+          transition: all 0.4s ease-in 0s;
+
+          @media (max-width: 475px) {
+            width: 2rem;
+            height: 2rem;
+          }
+
+          &.active {
+            background: -webkit-linear-gradient(
+              90deg,
+              $primary-color-light 0%,
+              #1ac4ff 100%
+            );
+            background: -o-linear-gradient(
+              90deg,
+              $primary-color-light 0%,
+              #1ac4ff 100%
+            );
+            background: linear-gradient(
+              90deg,
+              $primary-color-light 0%,
+              #1ac4ff 100%
+            );
+          }
+          &.check {
+            background-color: $primary-color;
+          }
+        }
+
+        &::before {
+          content: "";
+          width: 10rem;
+          height: 4px;
+          background-color: $tint-color;
+          top: 0;
+          left: 0;
+          transition: all 0.4s ease-in 0s;
+
+          @media (max-width: 991px) {
+            width: 4rem;
+          }
+
+          @media (max-width: 767px) {
+            width: 2rem;
+          }
+
+          @media (max-width: 441px) {
+            width: 1.5rem;
+          }
+        }
+
+        &:first-child {
+          justify-content: end;
+          &::before {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  .back-btn {
+    font-size: 1rem;
+    margin: auto 0;
+    color: $primary-color;
+    cursor: pointer;
+    transition: all 0.5s ease-in;
+
+    &:hover {
+      i {
+        transform: translateX(-10px);
+      }
+    }
+  }
 
   .wizard-step-1 {
     .wizard-block {
@@ -1323,6 +1514,10 @@ a.more {
         border: 2px solid $primary-color-light;
         border-radius: $border-radius;
         color: $primary-color-light !important;
+      }
+
+      label {
+        cursor: pointer;
       }
     }
 
@@ -1406,12 +1601,15 @@ a.more {
 
     .device-card {
       border-radius: $border-radius;
-      padding: 1rem;
       color: $text-color;
-      width: 45rem;
+      width: 33rem;
       height: 20rem;
-      margin: 1.5rem 0;
+      margin: 1.5rem 0 2.5rem 0;
       perspective: 1000px;
+
+      @media (max-width: 991px) {
+        height: 40rem;
+      }
 
       .device-card-inner {
         position: relative;
@@ -1432,6 +1630,8 @@ a.more {
         position: absolute;
         width: 100%;
         height: 100%;
+        top: 0;
+        left: 0;
         -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
       }
@@ -1447,29 +1647,55 @@ a.more {
   }
 
   .wizard-step-4 {
-    .choices-list {
+    .price {
+      text-align: center;
+      font-family: "Montserrat", sans-serif;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 1.5rem;
+      // font-weight: 600;
+      color: $primary-color;
+
       & > div {
-        color: $secondary-color;
-        font-size: 1rem;
-        font-weight: 700;
+        background-color: $tint-color;
+        border-radius: 40px;
+        color: $primary-color;
+        padding: 0.7rem 2.5rem;
+        text-transform: uppercase;
+
+        span {
+          text-transform: none;
+          font-size: 1rem;
+          margin-left: 5px;
+        }
+      }
+
+      &::after,
+      &::before {
+        content: "";
+        height: 1px;
+        flex: 1;
+        border-top: 1px solid $primary-color;
+      }
+    }
+
+    .choices-list {
+      & > div > div {
+        margin-bottom: 8px;
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: rgb(119, 119, 119);
+
         & > div {
           color: $dark-color;
+          text-transform: none;
+          letter-spacing: normal;
           font-size: 1.3rem;
           font-weight: 400;
           font-family: "Montserrat", sans-serif;
         }
-      }
-    }
-
-    .btns {
-      button {
-        color: $primary-color;
-        border: 2px solid $primary-color;
-        width: 15rem;
-        padding: 1rem;
-        font-size: 1.2rem;
-        background-color: transparent;
-        border-radius: $border-radius;
       }
     }
   }

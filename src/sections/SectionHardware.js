@@ -8,7 +8,7 @@ const SectionHardware = () => {
   return (
     <section id="hardware" className="section-area py-5">
       <div className="container">
-        <div className="text-center pb-40">
+        <div className="text-center">
           <h3 className="title">Hardware</h3>
         </div>
         <div className="row gap-4 justify-content-center">

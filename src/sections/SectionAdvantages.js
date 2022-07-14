@@ -5,7 +5,7 @@ const SectionAdvantages = () => {
   return (
     <section id="avantaje" className="section-area py-5">
       <div className="container">
-        <div className="text-center pb-40">
+        <div className="text-center">
           <h3 className="title">Principalele avantaje</h3>
         </div>
         <div className="row justify-content-center">

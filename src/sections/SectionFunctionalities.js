@@ -4,7 +4,7 @@ const SectionFunctionalities = () => {
   return (
     <section id="functionalitati" className="section-area py-5">
       <div className="container">
-        <div className="text-center pb-40">
+        <div className="text-center">
           <h3 className="title">
             Acces gratuit <span>la funcționalități cheie</span>
           </h3>

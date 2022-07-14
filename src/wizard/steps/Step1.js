@@ -27,7 +27,7 @@ const Step1 = ({ form, update, ...props }) => {
       {form.domain === "retail" && (
         <>
           <h5>Tip de activitate*</h5>
-          <div className="wizard-block wizard-activity-type retail">
+          <div className="wizard-block wizard-activity-type gap-2 retail">
             {retailList.map((item) => (
               <label
                 key={item.iconTitle}
@@ -45,7 +45,7 @@ const Step1 = ({ form, update, ...props }) => {
       {form.domain === "horeca" && (
         <>
           <h5>Tip de activitate*</h5>
-          <div className="wizard-block wizard-activity-type horeca">
+          <div className="wizard-block wizard-activity-type gap-2 horeca">
             {horecaList.map((item) => (
               <label
                 key={item.iconTitle}

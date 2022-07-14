@@ -15,13 +15,13 @@ const Step2 = ({ form, update, ...props }) => {
     <div className="text-start wizard-step-2">
       <h4 className="mb-3">Alege pachetul potrivit business-ului tau:</h4>
 
-      <div className="row justify-content-evenly">
+      <div className="row justify-content-evenly gap-4">
         <PricingCard
           styles={getCardClass("Gratis", "orange")}
           price={"0"}
           onClick={() => update("pachet", { name: "Gratis", price: 0 })}
           title={"Gratis"}
-          link={"#pricing"}
+          link={"#pricing-table"}
         >
           <p>
             Este ideal pentru businessurile care sunt la început de drum și vor
@@ -35,7 +35,7 @@ const Step2 = ({ form, update, ...props }) => {
           price={"10"}
           onClick={() => update("pachet", { name: "Standard", price: 10 })}
           title={"Standard"}
-          link={"#pricing"}
+          link={"#pricing-table"}
         >
           <p>
             Ai deja câțiva ani de activitate, între 2 și 4 magazine și îți
@@ -52,7 +52,7 @@ const Step2 = ({ form, update, ...props }) => {
           price={"80"}
           onClick={() => update("pachet", { name: "Premium", price: 80 })}
           title={"Premium"}
-          link={"#pricing"}
+          link={"#pricing-table"}
         >
           <p>
             Afacerea ta face parte dintr-o franciză sau reprezinți o franciză și
