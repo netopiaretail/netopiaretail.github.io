@@ -1367,12 +1367,8 @@ a.more {
   background-image: url(../img/bg-circle.svg);
   background-position: center center;
   background-repeat: no-repeat;
-  animation-name: tesiMove;
-  animation-duration: 5s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  transition: all 0.4s ease;
   transform-origin: center center;
+  --radius: 260px;
 
   &:first-child {
     background-image: url(../img/bg-circle-2.svg);
@@ -1388,37 +1384,57 @@ a.more {
     }
   }
 
+  & > div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    animation-name: tesiMove;
+    animation-duration: 100s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    --init-angle: calc(360deg / var(--count) * var(--index));
+  }
+
   @keyframes tesiMove {
     0% {
-      transform: rotate(0deg);
+      transform: translate(-50%, -50%)
+      rotate(calc(var(--init-angle) + 0deg))
+      translateX(calc(var(--radius) - 25px))
+      rotate(calc((var(--init-angle) + 0deg) * -1));
     }
 
-    15% {
-      transform: rotate(4deg);
+    25% {
+      transform: translate(-50%, -50%)
+      rotate(calc(var(--init-angle) + 90deg))
+      translateX(calc(var(--radius) - 25px))
+      rotate(calc((var(--init-angle) + 90deg) * -1));
     }
 
-    33% {
-      transform: rotate(6deg);
+    50% {
+      transform: translate(-50%, -50%)
+      rotate(calc(var(--init-angle) + 180deg))
+      translateX(calc(var(--radius) - 25px))
+      rotate(calc((var(--init-angle) + 180deg) * -1));
     }
 
-    66% {
-      transform: rotate(4deg);
+    75% {
+      transform: translate(-50%, -50%)
+      rotate(calc(var(--init-angle) + 270deg))
+      translateX(calc(var(--radius) - 25px))
+      rotate(calc((var(--init-angle) + 270deg) * -1));
     }
 
     100% {
-      transform: rotate(0deg);
+      transform: translate(-50%, -50%)
+      rotate(calc(var(--init-angle) + 360deg))
+      translateX(calc(var(--radius) - 25px))
+      rotate(calc((var(--init-angle) + 360deg) * -1));
     }
-  }
-
-  .icon-container {
-    top: 35%;
-    left: 40%;
   }
 
   .icon-container > img {
     width: 100%;
     border-radius: 50%;
-    transition: all 0.4s ease;
   }
 }
 

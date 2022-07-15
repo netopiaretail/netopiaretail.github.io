@@ -2,31 +2,8 @@ import Card from "../components/Card";
 import IconText from "../components/IconText";
 import retailList from "../resources/retail-types.json";
 import horecaList from "../resources/horeca-types.json";
-import { useRef, useEffect } from "react";
 
 const SectionFeatures = () => {
-  const graph = useRef(null);
-  const graph2 = useRef(null);
-
-  useEffect(() => {
-    const ciclegraph = graph.current;
-    const ciclegraph2 = graph2.current;
-    const circleElements = [ciclegraph.childNodes, ciclegraph2.childNodes];
-
-    circleElements.map((circleElements) => {
-      let angle = 360 - 90;
-      let dangle = 360 / circleElements.length;
-
-      for (let i = 0; i < circleElements.length; i++) {
-        let circle = circleElements[i];
-        angle += dangle;
-        circle.style.transform = `rotate(${angle}deg) translate(${
-          ciclegraph.clientWidth / 2
-        }px) rotate(-${angle}deg)`;
-      }
-    });
-  }, []);
-
   return (
     <section id="features" className="py-5">
       <div className="container">
@@ -59,11 +36,12 @@ const SectionFeatures = () => {
 
           <div
             className="mb-4 col-lg-6 col-sm-12 p-3 order-2 wow fadeInRightBig ciclegraph"
-            ref={graph2}
+            style={{ ["--count"]: horecaList.length }}
           >
             {retailList.map((el, index) => (
               <IconText
                 key={index + el}
+                index={index}
                 iconTitle={el.iconTitle}
                 icon={el.icon}
               />
@@ -74,10 +52,15 @@ const SectionFeatures = () => {
         <div className="features-card row">
           <div
             className="mb-4 col-lg-6 col-sm-12 p-3 order-2 order-lg-1 wow fadeInLeftBig ciclegraph"
-            ref={graph}
+            style={{ ["--count"]: horecaList.length }}
           >
             {horecaList.map((el, index) => (
-              <IconText key={index} iconTitle={el.iconTitle} icon={el.icon} />
+              <IconText
+                key={index}
+                index={index}
+                iconTitle={el.iconTitle}
+                icon={el.icon}
+              />
             ))}
           </div>
           <div className="mb-4 col-lg-6 col-sm-12 p-3 order-1 order-lg-2 wow fadeInRightBig">
