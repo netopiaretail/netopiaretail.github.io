@@ -1,10 +1,13 @@
 const IconText = ({ icon, iconTitle }) => {
   return (
-    <div className="d-flex align-items-center gap-2">
-      <div className="card-icon">
+    <div
+      className="icon-container d-flex flex-column align-items-center justify-content-center"
+      style={{ backgroundImage: icon }}
+    >
+      <div className="icon-card">
         <i className={icon}></i>
       </div>
-      <div className="flex-1 text-start">{iconTitle}</div>
+      <div className="icon-text ">{iconTitle}</div>
     </div>
   );
 };

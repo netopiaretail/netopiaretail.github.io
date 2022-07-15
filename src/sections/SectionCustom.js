@@ -25,11 +25,11 @@ const SectionCustom = ({
             <img src={image} alt={imageTitle} className="rounded" />
           </div>
           <div className={`col-lg-6 px-5 text-start mt-5 ${rightAnimation}`}>
-            <h3 className="title">
+            <h2 className="title">
               {title} <span>{titleSpan}</span>
-            </h3>
+            </h2>
 
-            <p className="mt-4">{content}</p>
+            <p className="mt-4 text">{content}</p>
             <a href={btnLink} className="btn main-btn mt-4">
               {btnText}
             </a>

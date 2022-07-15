@@ -34,7 +34,7 @@ const Stats = ({ nextStep, previousStep, totalSteps, currentStep, form }) => {
   };
 
   return (
-    <div className="d-flex flex-wrap gap-4 justify-content-center mt-4">
+    <div className="d-flex flex-wrap gap-4 justify-content-center my-5">
       {currentStep > 1 && (
         <div className="back-btn" onClick={previousStep}>
           <i className="fa-solid fa-chevron-left" onClick={previousStep}></i>

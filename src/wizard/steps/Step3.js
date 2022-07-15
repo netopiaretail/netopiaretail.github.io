@@ -89,9 +89,9 @@ const Step3 = ({ form, update, ...props }) => {
                   form.device ? "device-card-inner" : "device-card-inner active"
                 }
               >
-                <div className="flip-card-front d-flex row justify-content-center align-items-center gap-4 ">
+                <div className="flip-card-front d-flex row justify-content-center align-items-center">
                   <img
-                    className="col-sm-10 col-lg-5"
+                    className="col-sm-10 col-lg-6"
                     src={device}
                     width={200}
                   />

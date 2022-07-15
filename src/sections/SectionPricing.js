@@ -3,6 +3,7 @@ import Accordion from "react-bootstrap/Accordion";
 import PricingTable from "./PricingTable";
 
 const SectionPricing = () => {
+  console.log(document.activeElement);
   return (
     <section id="pricing" className="section-area py-5">
       <div className="container">
