@@ -3,7 +3,7 @@ import Card from "../components/Card";
 
 const SectionAdvantages = () => {
   return (
-    <section id="avantaje" className="section-area py-5">
+    <section id="avantaje" className="section-area">
       <div className="container">
         <div className="text-center">
           <h3 className="title">Principalele avantaje</h3>

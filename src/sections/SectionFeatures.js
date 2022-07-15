@@ -5,7 +5,7 @@ import horecaList from "../resources/horeca-types.json";
 
 const SectionFeatures = () => {
   return (
-    <section id="features" className="py-5">
+    <section id="features" className="section-area">
       <div className="container">
         <div className="row mb-5 justify-content-center">
           <div>
@@ -35,7 +35,7 @@ const SectionFeatures = () => {
           </div>
 
           <div
-            className="mb-4 col-lg-6 col-sm-12 p-3 order-2 wow fadeInRightBig ciclegraph"
+            className="mb-4 col-lg-4 col-sm-12 p-3 order-2 wow fadeInRightBig ciclegraph"
             style={{ ["--count"]: horecaList.length }}
           >
             {retailList.map((el, index) => (
@@ -51,7 +51,7 @@ const SectionFeatures = () => {
 
         <div className="features-card row">
           <div
-            className="mb-4 col-lg-6 col-sm-12 p-3 order-2 order-lg-1 wow fadeInLeftBig ciclegraph"
+            className="mb-4 col-lg-4 col-md-12 p-3 order-2 order-lg-1 wow fadeInLeftBig ciclegraph"
             style={{ ["--count"]: horecaList.length }}
           >
             {horecaList.map((el, index) => (
@@ -63,7 +63,7 @@ const SectionFeatures = () => {
               />
             ))}
           </div>
-          <div className="mb-4 col-lg-6 col-sm-12 p-3 order-1 order-lg-2 wow fadeInRightBig">
+          <div className="mb-4 col-lg-6 col-md-12 p-3 order-1 order-lg-2 wow fadeInRightBig">
             <Card
               title={"HoReCa"}
               content={

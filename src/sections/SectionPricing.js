@@ -5,7 +5,7 @@ import PricingTable from "./PricingTable";
 const SectionPricing = () => {
   console.log(document.activeElement);
   return (
-    <section id="pricing" className="section-area py-5">
+    <section id="pricing" className="section-area">
       <div className="container">
         <div className="text-center pb-4">
           <h3 className="title">Pachete</h3>
@@ -55,7 +55,7 @@ const SectionPricing = () => {
           </PricingCard>
         </div>
 
-        <Accordion className="py-5 wow fadeInUpBig" id="pricing-table">
+        <Accordion className="pt-5 wow fadeInUpBig" id="pricing-table">
           <Accordion.Item eventKey="0">
             <Accordion.Header>Functionalitati Pachete</Accordion.Header>
             <Accordion.Body>

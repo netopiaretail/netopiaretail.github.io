@@ -2,7 +2,7 @@ import Accordion from "react-bootstrap/Accordion";
 
 const SectionFunctionalities = () => {
   return (
-    <section id="functionalitati" className="section-area py-5">
+    <section id="functionalitati" className="section-area">
       <div className="container">
         <div className="text-center">
           <h3 className="title">

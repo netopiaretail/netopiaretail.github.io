@@ -102,12 +102,21 @@ ul,
 ol {
   margin: 0;
   padding: 0;
+  list-style-position: inside;
 }
 
 p {
   font-size: 16px;
   font-weight: 400;
   margin: 0;
+}
+
+.section-area {
+  margin: 5rem 3rem;
+
+  @media (max-width: 475px) {
+    margin: 4rem 1.5rem;
+  }
 }
 
 .btn {
@@ -171,7 +180,7 @@ p {
   font-size: 36px;
   font-weight: 700;
   line-height: 42px;
-
+  padding-bottom: 1.5rem;
   @media (max-width: 767px) {
     & {
       font-size: 26px;
@@ -265,7 +274,6 @@ p {
 }
 
 .text {
-  margin: 30px 0;
   color: $text-color;
   line-height: 30px;
 }
@@ -876,7 +884,7 @@ canvas.particles {
   flex-direction: column;
   align-items: center;
   box-shadow: var(--shadow);
-  padding: 2rem;
+  padding: 1.2rem;
   border-radius: $border-radius;
   border: 1px solid var(--gradient1);
   cursor: pointer;
@@ -1079,6 +1087,10 @@ a.more {
     .accordion-button {
       font-size: 2rem;
       justify-content: center;
+
+      @media (max-width: 375px) {
+        font-size: 1.5rem;
+      }
 
       &::after {
         margin-left: 1rem;
@@ -1335,12 +1347,16 @@ a.more {
   border-radius: 50%;
   background: #f0f0f0;
   box-shadow: $box-shadow;
-  // box-shadow: inset -13px -13px 26px rgba($tint-color, 0.8),
-  //   inset 13px 13px 26px #ffffff;
-
   background: -webkit-linear-gradient(90deg, #fff 0%, #fbe3d7 100%);
   background: -o-linear-gradient(90deg, #fff 0%, #fbe3d7 100%);
   background: linear-gradient(90deg, #fff 0%, #fbe3d7 100%);
+  top: 50%;
+  left: 50%;
+  animation-name: tesiMove;
+  animation-duration: 100s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  --init-angle: calc(360deg / var(--count) * var(--index));
 
   .icon-text {
     font-size: 10px;
@@ -1370,6 +1386,16 @@ a.more {
   transform-origin: center center;
   --radius: 260px;
 
+  @media (max-width: 991px) {
+    margin-top: 3rem;
+  }
+
+  @media (max-width: 575px) {
+    width: 350px;
+    height: 350px;
+    --radius: 200px;
+  }
+
   &:first-child {
     background-image: url(../img/bg-circle-2.svg);
 
@@ -1383,52 +1409,35 @@ a.more {
       color: $primary-color;
     }
   }
-
-  & > div {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    animation-name: tesiMove;
-    animation-duration: 100s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    --init-angle: calc(360deg / var(--count) * var(--index));
-  }
-
   @keyframes tesiMove {
     0% {
-      transform: translate(-50%, -50%)
-      rotate(calc(var(--init-angle) + 0deg))
-      translateX(calc(var(--radius) - 25px))
-      rotate(calc((var(--init-angle) + 0deg) * -1));
+      transform: translate(-50%, -50%) rotate(calc(var(--init-angle) + 0deg))
+        translateX(calc(var(--radius) - 25px))
+        rotate(calc((var(--init-angle) + 0deg) * -1));
     }
 
     25% {
-      transform: translate(-50%, -50%)
-      rotate(calc(var(--init-angle) + 90deg))
-      translateX(calc(var(--radius) - 25px))
-      rotate(calc((var(--init-angle) + 90deg) * -1));
+      transform: translate(-50%, -50%) rotate(calc(var(--init-angle) + 90deg))
+        translateX(calc(var(--radius) - 25px))
+        rotate(calc((var(--init-angle) + 90deg) * -1));
     }
 
     50% {
-      transform: translate(-50%, -50%)
-      rotate(calc(var(--init-angle) + 180deg))
-      translateX(calc(var(--radius) - 25px))
-      rotate(calc((var(--init-angle) + 180deg) * -1));
+      transform: translate(-50%, -50%) rotate(calc(var(--init-angle) + 180deg))
+        translateX(calc(var(--radius) - 25px))
+        rotate(calc((var(--init-angle) + 180deg) * -1));
     }
 
     75% {
-      transform: translate(-50%, -50%)
-      rotate(calc(var(--init-angle) + 270deg))
-      translateX(calc(var(--radius) - 25px))
-      rotate(calc((var(--init-angle) + 270deg) * -1));
+      transform: translate(-50%, -50%) rotate(calc(var(--init-angle) + 270deg))
+        translateX(calc(var(--radius) - 25px))
+        rotate(calc((var(--init-angle) + 270deg) * -1));
     }
 
     100% {
-      transform: translate(-50%, -50%)
-      rotate(calc(var(--init-angle) + 360deg))
-      translateX(calc(var(--radius) - 25px))
-      rotate(calc((var(--init-angle) + 360deg) * -1));
+      transform: translate(-50%, -50%) rotate(calc(var(--init-angle) + 360deg))
+        translateX(calc(var(--radius) - 25px))
+        rotate(calc((var(--init-angle) + 360deg) * -1));
     }
   }
 
@@ -1643,6 +1652,10 @@ a.more {
         @media (max-width: 767px) {
           grid-template-columns: 1fr 1fr;
         }
+
+        @media (max-width: 475px) {
+          grid-template-columns: 1fr;
+        }
       }
 
       &.wizard-domain,
@@ -1656,6 +1669,10 @@ a.more {
             font-size: 2rem;
             margin-bottom: 0.5rem;
           }
+        }
+
+        @media (max-width: 475px) {
+          padding: 3rem 1rem;
         }
       }
 

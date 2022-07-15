@@ -6,7 +6,7 @@ import Carousel from "react-bootstrap/Carousel";
 
 const SectionHardware = () => {
   return (
-    <section id="hardware" className="section-area py-5">
+    <section id="hardware" className="section-area">
       <div className="container">
         <div className="text-center">
           <h3 className="title">Hardware</h3>

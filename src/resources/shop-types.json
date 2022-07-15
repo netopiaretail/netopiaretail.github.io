@@ -4,11 +4,11 @@
     "icon": "fa-solid fa-shop"
   },
   {
-    "name": "Online",
-    "icon": "fa-solid fa-globe"
+    "name": "Fizic si online",
+    "icon": "fa-solid fa-house-laptop"
   },
   {
-    "name": "Fizic si online",
-    "icon": "fa-solid fa-question"
+    "name": "Online",
+    "icon": "fa-solid fa-globe"
   }
 ]

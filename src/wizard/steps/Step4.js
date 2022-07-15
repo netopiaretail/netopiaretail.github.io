@@ -19,7 +19,7 @@ const Step4 = ({ form, update, ...props }) => {
             </div>
           </div>
           <div className="d-flex row justify-content-around choices-list mb-5">
-            <div className="row d-flex justify-content-around">
+            <div className="row d-flex justify-content-around gap-2">
               <div className="col-lg-3">
                 Domeniul de activitate<div>{form.domain}</div>
               </div>
@@ -30,7 +30,7 @@ const Step4 = ({ form, update, ...props }) => {
                 Magazin<div>{form.shopType}</div>
               </div>
             </div>
-            <div className="row d-flex justify-content-around">
+            <div className="row d-flex justify-content-around gap-2">
               <div className="col-lg-3">
                 Pachetul<div>{form.pachet?.name}</div>
               </div>

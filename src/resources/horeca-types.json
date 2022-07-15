@@ -1,5 +1,9 @@
 [
   {
+    "icon": "fa-solid fa-utensils",
+    "iconTitle": "Restaurant"
+  },
+  {
     "icon": "fas fa-mug-hot",
     "iconTitle": "Ceainărie"
   },

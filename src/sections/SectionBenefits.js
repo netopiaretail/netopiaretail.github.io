@@ -6,7 +6,7 @@ import img4 from "../img/rapoarte.svg";
 
 const SectionBenefits = () => {
   return (
-    <section id="beneficii" className="section-area py-5">
+    <section id="beneficii" className="section-area">
       <div className="container">
         <div className="text-center">
           <h3 className="title">Principalele beneficii</h3>
