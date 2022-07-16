@@ -1345,11 +1345,8 @@ a.more {
   display: inline-block;
   vertical-align: middle;
   border-radius: 50%;
-  background: #f0f0f0;
+  background: $white-color;
   box-shadow: $box-shadow;
-  background: -webkit-linear-gradient(90deg, #fff 0%, #fbe3d7 100%);
-  background: -o-linear-gradient(90deg, #fff 0%, #fbe3d7 100%);
-  background: linear-gradient(90deg, #fff 0%, #fbe3d7 100%);
   top: 50%;
   left: 50%;
   animation-name: tesiMove;
@@ -1376,8 +1373,7 @@ a.more {
 }
 
 .ciclegraph {
-  width: 474px;
-  height: 474px;
+  height: 600px;
   border-radius: 50%;
   position: relative;
   background-image: url(../img/bg-circle.svg);
@@ -1391,24 +1387,18 @@ a.more {
   }
 
   @media (max-width: 575px) {
-    width: 350px;
     height: 350px;
-    --radius: 200px;
+    --radius: 150px;
   }
 
   &:first-child {
     background-image: url(../img/bg-circle-2.svg);
 
-    .icon-container {
-      background: -webkit-linear-gradient(90deg, #fff 0%, $tint-color 100%);
-      background: -o-linear-gradient(90deg, #fff 0%, $tint-color 100%);
-      background: linear-gradient(90deg, #fff 0%, $tint-color 100%);
-    }
-
     .icon-card {
       color: $primary-color;
     }
   }
+
   @keyframes tesiMove {
     0% {
       transform: translate(-50%, -50%) rotate(calc(var(--init-angle) + 0deg))
@@ -1439,11 +1429,6 @@ a.more {
         translateX(calc(var(--radius) - 25px))
         rotate(calc((var(--init-angle) + 360deg) * -1));
     }
-  }
-
-  .icon-container > img {
-    width: 100%;
-    border-radius: 50%;
   }
 }
 

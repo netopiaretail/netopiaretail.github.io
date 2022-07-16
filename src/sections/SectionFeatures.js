@@ -35,8 +35,8 @@ const SectionFeatures = () => {
           </div>
 
           <div
-            className="mb-4 col-lg-4 col-sm-12 p-3 order-2 wow fadeInRightBig ciclegraph"
-            style={{ ["--count"]: horecaList.length }}
+            className="mb-4 col-lg-6 col-sm-12 p-3 order-2 wow fadeInRightBig ciclegraph"
+            style={{ ["--count"]: retailList.length }}
           >
             {retailList.map((el, index) => (
               <IconText
@@ -51,7 +51,7 @@ const SectionFeatures = () => {
 
         <div className="features-card row">
           <div
-            className="mb-4 col-lg-4 col-md-12 p-3 order-2 order-lg-1 wow fadeInLeftBig ciclegraph"
+            className="mb-4 col-lg-6 col-md-12 p-3 order-2 order-lg-1 wow fadeInLeftBig ciclegraph"
             style={{ ["--count"]: horecaList.length }}
           >
             {horecaList.map((el, index) => (
