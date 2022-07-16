@@ -1,69 +1,78 @@
 import React from "react";
-import PricingCard from "../../components/PricingCard";
-import Stats from "./Stats";
+import domains from "../../resources/wizard-domains.json";
+import retailList from "../../resources/retail-types.json";
+import horecaList from "../../resources/horeca-types.json";
+import shopTypes from "../../resources/shop-types.json";
 
-const Step2 = ({ form, update, ...props }) => {
-  const getCardClass = (name, color) => {
-    return form.pachet?.name === name
-      ? `active ${color}`
-      : form.pachet?.name
-      ? `${color} inactive`
-      : color;
-  };
-
+const Step2 = ({ form, update }) => {
   return (
-    <div className="text-start wizard-step-2">
-      <h4 className="mb-3">Alege pachetul potrivit business-ului tau:</h4>
-
-      <div className="row justify-content-evenly gap-4">
-        <PricingCard
-          styles={getCardClass("Gratis", "orange")}
-          price={"0"}
-          onClick={() => update("pachet", { name: "Gratis", price: 0 })}
-          title={"Gratis"}
-          link={"#pricing-table"}
-        >
-          <p>
-            Este ideal pentru businessurile care sunt la început de drum și vor
-            să înțeleagă mai clar cum își pot gestiona afacerea. Ai acces la
-            majoritatea funcționalităților care să te ajute în definirea
-            propriului succes
-          </p>
-        </PricingCard>
-        <PricingCard
-          styles={getCardClass("Standard", "blue")}
-          price={"10"}
-          onClick={() => update("pachet", { name: "Standard", price: 10 })}
-          title={"Standard"}
-          link={"#pricing-table"}
-        >
-          <p>
-            Ai deja câțiva ani de activitate, între 2 și 4 magazine și îți
-            dorești să te extinzi. Ce primești în plus sunt:
-          </p>
-          <ul>
-            <li>baza de coduri universală EAN;</li>
-            <li>preintegrare cu NETOPIA Payments pentru plățile online;</li>
-            <li>administrare facilă a mai multor locații.</li>
-          </ul>
-        </PricingCard>
-        <PricingCard
-          styles={getCardClass("Premium", "purple")}
-          price={"80"}
-          onClick={() => update("pachet", { name: "Premium", price: 80 })}
-          title={"Premium"}
-          link={"#pricing-table"}
-        >
-          <p>
-            Afacerea ta face parte dintr-o franciză sau reprezinți o franciză și
-            ai nevoie de un soft de gestiune și administrare vânzări
-            personalizat propriilor nevoi. Scrie-ne și, împreună, vom găsi cea
-            mai bună soluție.
-          </p>
-        </PricingCard>
+    <div className="wizard-step-1">
+      <h4>Domeniu de activitate*</h4>
+      <div className="wizard-block wizard-domain">
+        {domains.map((domain) => (
+          <label
+            key={domain.name}
+            className={form.domain === domain.name ? "active" : ""}
+            onClick={() => {
+              update("domain", domain.name);
+              update("activityType", null);
+            }}
+          >
+            <i className={domain.icon}></i> {domain.label}
+          </label>
+        ))}
       </div>
 
-      <Stats {...props} form={form} />
+      {form.domain === "retail" && (
+        <>
+          <h5>Tip de activitate*</h5>
+          <div className="wizard-block wizard-activity-type gap-2 retail">
+            {retailList.map((item) => (
+              <label
+                key={item.iconTitle}
+                className={form.activityType === item.iconTitle ? "active" : ""}
+                onClick={() => {
+                  update("activityType", item.iconTitle);
+                }}
+              >
+                <i className={item.icon}></i> {item.iconTitle}
+              </label>
+            ))}
+          </div>
+        </>
+      )}
+      {form.domain === "horeca" && (
+        <>
+          <h5>Tip de activitate*</h5>
+          <div className="wizard-block wizard-activity-type gap-2 horeca">
+            {horecaList.map((item) => (
+              <label
+                key={item.iconTitle}
+                className={form.activityType === item.iconTitle ? "active" : ""}
+                onClick={() => {
+                  update("activityType", item.iconTitle);
+                }}
+              >
+                <i className={item.icon}></i> {item.iconTitle}
+              </label>
+            ))}
+          </div>
+        </>
+      )}
+      <h4>Tip de magazin*</h4>
+      <div className="wizard-block wizard-shop-type">
+        {shopTypes.map((shopType) => (
+          <label
+            key={shopType.name}
+            className={form.shopType === shopType.name ? "active" : ""}
+            onClick={() => {
+              update("shopType", shopType.name);
+            }}
+          >
+            <i className={shopType.icon}></i> {shopType.name}
+          </label>
+        ))}
+      </div>
     </div>
   );
 };

@@ -6,6 +6,8 @@ import Button from "react-bootstrap/Button";
 const Stats = ({ nextStep, previousStep, totalSteps, currentStep, form }) => {
   const canGoNext = () => {
     switch (currentStep) {
+      case 1:
+        return true;
       case 2:
         return form.activityType && form.domain && form.shopType;
       case 3:
@@ -34,7 +36,7 @@ const Stats = ({ nextStep, previousStep, totalSteps, currentStep, form }) => {
   };
 
   return (
-    <div className="d-flex flex-wrap gap-4 justify-content-center my-5">
+    <div className="d-flex flex-wrap gap-4 justify-content-center mt-5">
       {currentStep > 1 && (
         <div className="back-btn" onClick={previousStep}>
           <i className="fa-solid fa-chevron-left" onClick={previousStep}></i>
@@ -47,7 +49,7 @@ const Stats = ({ nextStep, previousStep, totalSteps, currentStep, form }) => {
           onClick={() => validate()}
           disabled={!canGoNext()}
         >
-          Continuă
+          {currentStep === 1 ? "Începe" : "Continuă"}
         </button>
       ) : (
         <div className="d-flex row align-items-center justify-content-center gap-4">

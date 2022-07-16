@@ -1,149 +1,66 @@
-import React, { useCallback } from "react";
-import Stats from "./Stats";
-import device from "../../img/e800.png";
+import React from "react";
+import PricingCard from "../../components/PricingCard";
 
-const accesoryList = [
-  {
-    image: require("../../img/cantar.jpg"),
-    deviceTitle: "Cantar",
-    price: 35,
-  },
-  {
-    image: require("../../img/dp25.png"),
-    deviceTitle: "Imprimantă nonfiscala",
-    price: 20,
-  },
-  {
-    image: require("../../img/cititor-coduri.jpg"),
-    deviceTitle: "Cititor coduri de bare",
-    price: 40,
-  },
-  {
-    image: require("../../img/sertar.jpg"),
-    deviceTitle: "Sertar casa de marcat",
-    price: 15,
-  },
-];
-
-const Step3 = ({ form, update, ...props }) => {
-  console.log(form.device);
-  const updateAccesories = useCallback(
-    (item) => {
-      if (form.accesories.map((device) => device.name).includes(item.name)) {
-        update("accesories", [
-          ...form.accesories.filter((x) => x.name != item.name),
-        ]);
-      } else {
-        update("accesories", [...form.accesories, item]);
-      }
-    },
-    [form]
-  );
+const Step3 = ({ form, update }) => {
+  const getCardClass = (name, color) => {
+    return form.pachet?.name === name
+      ? `active ${color}`
+      : form.pachet?.name
+      ? `${color} inactive`
+      : color;
+  };
 
   return (
-    <div className="wizard-step-3">
-      <div className="d-flex row text-center">
-        <div className="col-lg-6 col-sm-12">
-          <h4>Vrei dispozitivul nostru?</h4>
-          <div className="row fs-5 my-4">
-            <ul
-              className="list-inline text-center switch-toggler"
-              role="tablist"
-              id="switch-toggle-tab"
-            >
-              <li className="cursor-pointer">
-                <a
-                  onClick={() => {
-                    update("device", true);
-                  }}
-                >
-                  Da
-                </a>
-              </li>
-              <li>
-                <label
-                  className={form.device ? "on switch" : "off switch"}
-                  onClick={() => {
-                    update("device", !form.device);
-                  }}
-                >
-                  <span className="slider round"></span>
-                </label>
-              </li>
-              <li className="cursor-pointer">
-                <a
-                  onClick={() => {
-                    update("device", false);
-                  }}
-                >
-                  Nu
-                </a>
-              </li>
-            </ul>
-          </div>
+    <div className="text-start wizard-step-2 justify-content-between">
+      <h4 className="mb-3">Alege pachetul potrivit business-ului tau:</h4>
 
-          <div className="d-flex justify-content-center">
-            <div className="device-card">
-              <div
-                className={
-                  form.device ? "device-card-inner" : "device-card-inner active"
-                }
-              >
-                <div className="flip-card-front d-flex row justify-content-center align-items-center">
-                  <img
-                    className="col-sm-10 col-lg-6"
-                    src={device}
-                    width={200}
-                  />
-                  <p className="text-start col-sm-12 col-lg-6">
-                    <h4 className="mb-2">PAX E800</h4>
-                    Adaugă un plus de eleganță magazinului tău. Îți oferim unul
-                    dintre cele mai moderne și rapide dispozitive care va impune
-                    un standard de calitate ce va fi apreciat de oricare dintre
-                    clienții tăi. Este ușor de integrat cu orice tip de casă de
-                    marcat și alte accesorii necesare pentru a finaliza plățile.
-                  </p>
-                </div>
-                <div className="flip-card-back d-flex flex-row justify-content-center gap-4 ">
-                  <p>Lorem ipsum</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="col-lg-6 col-sm-12">
-          <h4>Vrei accesorii?</h4>
-          <div className="row gap-2 justify-content-center align-items-center accesories-list my-4">
-            {accesoryList.map((item) => {
-              return (
-                <label
-                  className={
-                    form.accesories
-                      .map((device) => device.name)
-                      .includes(item.deviceTitle)
-                      ? "col-lg-4 col-sm-6 active"
-                      : "col-lg-4 col-sm-6"
-                  }
-                  key={item.deviceTitle}
-                  onClick={() => {
-                    updateAccesories({
-                      name: item.deviceTitle,
-                      price: item.price,
-                    });
-                  }}
-                >
-                  <img src={item.image} width={100} />
-                  <span>
-                    {item.deviceTitle} - {item.price} lei/luna
-                  </span>
-                </label>
-              );
-            })}
-          </div>
-        </div>
+      <div className="row justify-content-evenly gap-4">
+        <PricingCard
+          styles={getCardClass("Gratis", "orange")}
+          price={"0"}
+          onClick={() => update("pachet", { name: "Gratis", price: 0 })}
+          title={"Gratis"}
+          link={"#pricing-table"}
+        >
+          <p>
+            Este ideal pentru businessurile care sunt la început de drum și vor
+            să înțeleagă mai clar cum își pot gestiona afacerea. Ai acces la
+            majoritatea funcționalităților care să te ajute în definirea
+            propriului succes
+          </p>
+        </PricingCard>
+        <PricingCard
+          styles={getCardClass("Standard", "blue")}
+          price={"10"}
+          onClick={() => update("pachet", { name: "Standard", price: 10 })}
+          title={"Standard"}
+          link={"#pricing-table"}
+        >
+          <p>
+            Ai deja câțiva ani de activitate, între 2 și 4 magazine și îți
+            dorești să te extinzi. Ce primești în plus sunt:
+          </p>
+          <ul>
+            <li>baza de coduri universală EAN;</li>
+            <li>preintegrare cu NETOPIA Payments pentru plățile online;</li>
+            <li>administrare facilă a mai multor locații.</li>
+          </ul>
+        </PricingCard>
+        <PricingCard
+          styles={getCardClass("Premium", "purple")}
+          price={"80"}
+          onClick={() => update("pachet", { name: "Premium", price: 80 })}
+          title={"Premium"}
+          link={"#pricing-table"}
+        >
+          <p>
+            Afacerea ta face parte dintr-o franciză sau reprezinți o franciză și
+            ai nevoie de un soft de gestiune și administrare vânzări
+            personalizat propriilor nevoi. Scrie-ne și, împreună, vom găsi cea
+            mai bună soluție.
+          </p>
+        </PricingCard>
       </div>
-
-      <Stats {...props} form={form} />
     </div>
   );
 };
