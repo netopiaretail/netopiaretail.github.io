@@ -23,7 +23,7 @@ const SectionFeatures = () => {
           </div>
         </div>
 
-        <div className="features-card row">
+        <div className="features-card row align-items-center">
           <div className="col-lg-6 mb-4 order-1 col-sm-12 p-3 wow fadeInLeftBig">
             <Card
               title={"Retail"}
@@ -49,7 +49,7 @@ const SectionFeatures = () => {
           </div>
         </div>
 
-        <div className="features-card row">
+        <div className="features-card row align-items-center">
           <div
             className="mb-4 col-lg-6 col-md-12 p-3 order-2 order-lg-1 wow fadeInLeftBig ciclegraph"
             style={{ ["--count"]: horecaList.length }}

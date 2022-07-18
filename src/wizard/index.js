@@ -36,7 +36,7 @@ const Wizard = () => {
     }));
 
   return (
-    <div className="container wizard shadow rounded wow fadeInUpBig py-4">
+    <div className="container wizard rounded wow fadeInUpBig py-4">
       <StepWizard
         className="p-4 flex-column-reverse d-flex flex-1 justify-content-between"
         onStepChange={onStepChange}

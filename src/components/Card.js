@@ -7,7 +7,7 @@ const Card = ({ image, imageTitle, title, content, styles }) => {
     >
       {image && (
         <div className="card-image">
-          <img src={image} alt={imageTitle} width={"40%"} />
+          <img src={image} alt={imageTitle} height={"100px"} />
         </div>
       )}
       <div className={`card-content mt-3  ${styles}`}>

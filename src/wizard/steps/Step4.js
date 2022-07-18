@@ -5,22 +5,22 @@ const accessoryList = [
   {
     image: require("../../img/cantar.jpg"),
     deviceTitle: "Cantar",
-    price: 35,
+    price: 5,
   },
   {
     image: require("../../img/dp25.png"),
     deviceTitle: "Imprimantă nonfiscala",
-    price: 20,
+    price: 2,
   },
   {
     image: require("../../img/cititor-coduri.jpg"),
     deviceTitle: "Cititor coduri de bare",
-    price: 40,
+    price: 4,
   },
   {
     image: require("../../img/sertar.jpg"),
     deviceTitle: "Sertar casa de marcat",
-    price: 15,
+    price: 3,
   },
 ];
 
@@ -93,14 +93,14 @@ const Step4 = ({ form, update }) => {
                     src={device}
                     width={200}
                   />
-                  <p className="text-start col-sm-12 col-lg-6">
+                  <div className="text-start col-sm-12 col-lg-6">
                     <h4 className="mb-2">PAX E800</h4>
                     Adaugă un plus de eleganță magazinului tău. Îți oferim unul
                     dintre cele mai moderne și rapide dispozitive care va impune
                     un standard de calitate ce va fi apreciat de oricare dintre
                     clienții tăi. Este ușor de integrat cu orice tip de casă de
                     marcat și alte accesorii necesare pentru a finaliza plățile.
-                  </p>
+                  </div>
                 </div>
                 <div className="flip-card-back d-flex flex-row justify-content-center gap-4 ">
                   <p>Lorem ipsum</p>
@@ -132,7 +132,7 @@ const Step4 = ({ form, update }) => {
                 >
                   <img src={item.image} width={100} />
                   <span>
-                    {item.deviceTitle} - {item.price} lei/luna
+                    {item.deviceTitle} - {item.price} euro/luna
                   </span>
                 </label>
               );

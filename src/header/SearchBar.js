@@ -1,10 +1,11 @@
 import { useState } from "react";
+
 const SearchBar = () => {
   const [show, setShow] = useState(false);
 
   const searchInput = (e) => {
     if (e.target.value.length > 2) {
-      find(e.target.value);
+      window.find(e.target.value);
     }
   };
   const handleSearch = () => {

@@ -1,10 +1,11 @@
 import Header from "./header/Header";
 import SectionFeatures from "./sections/SectionFeatures";
 import SectionCustom from "./sections/SectionCustom";
-import image1 from "./img/Group 1 (8).png";
-import image2 from "./img/section2.svg";
+import image1 from "./img/dashboard.png";
 import image3 from "./img/angajati.png";
 import image4 from "./img/section3.png";
+import image5 from "./img/bg-image2.png";
+import image6 from "./img/bg-image.png";
 import SectionFunctionalities from "./sections/SectionFunctionalities";
 import SectionBenefits from "./sections/SectionBenefits";
 import SectionHardware from "./sections/SectionHardware";
@@ -14,6 +15,7 @@ import WizardStep from "./wizard";
 import { useEffect } from "react";
 import WOW from "wowjs";
 import SectionPricing from "./sections/SectionPricing";
+import SectionAbout from "./sections/SectionAbout";
 
 function App() {
   useEffect(() => {
@@ -37,29 +39,15 @@ function App() {
           "Crește profitul afacerii tale printr-o platformă simplă de folosit și fără costuri. Optimizează operațiunile și eficientizează activitatea angajaților tăi, prin automatizări simple și ușor de înțeles."
         }
         btnLink={""}
+        swap={true}
         btnText={"Începe gratuit"}
-        particles={{
-          color: "#000",
-          width: "50%",
-          extraClass: "left",
-        }}
       />
       <SectionFunctionalities />
-      <SectionCustom
-        id={"about"}
-        image={image2}
-        imageTitle={"Despre noi"}
-        title={"Despre noi"}
-        content={
-          "NETOPIA Retail face parte din NETOPIA Group, un conglomerat de companii românești care de peste 20 de ani sprijină mediul de afaceri românesc din poziția de lider de piață. Datorită experienței acumulate, am înțeles nevoile reale ale afacerilor din HoReCa și Retail. Prin NETOPIA Retail urmărim să ajutăm afacerile mici și mijlocii să devină mai profitabile și să își extindă serviciile."
-        }
-        btnLink={""}
-        btnText={"Începe gratuit"}
-        swap={true}
-      />
+      <SectionAbout />
       <SectionCustom
         id={"employee"}
         image={image3}
+        imgBackground={image5}
         imageTitle={"Angajați"}
         title={"Pentru angajați:"}
         titleSpan={"Intuitiv, simplu, rapid"}
@@ -70,6 +58,7 @@ function App() {
       <SectionCustom
         id={"managers"}
         image={image4}
+        imgBackground={image6}
         imageTitle={"Angajați"}
         title={"Pentru manager:"}
         titleSpan={"Instant, simplu, rapid"}

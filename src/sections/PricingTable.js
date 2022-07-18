@@ -36,7 +36,7 @@ const PricingTable = () => {
   }, []);
 
   return (
-    <section className="section-area py-5">
+    <section>
       <div className="container">
         <div className="pricing-table table-responsive">
           <input type="radio" name="pricing-type" id="free" />

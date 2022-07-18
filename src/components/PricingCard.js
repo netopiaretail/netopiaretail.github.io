@@ -1,4 +1,12 @@
+import React from "react";
+
 const PricingCard = ({ price, title, styles, link, onClick, children }) => {
+  const handleClick = () => {
+    const el = document.getElementById("pricing-btn");
+    el.firstChild.ariaExpanded = "true";
+    el.nextElementSibling.classList.add("show");
+  };
+
   return (
     <div
       className={`pricing-card col-lg-3 col-sm-8 gap-2 wow fadeIn ${styles}`}
@@ -12,8 +20,12 @@ const PricingCard = ({ price, title, styles, link, onClick, children }) => {
       </div>
       <div className={`pricing-card-content gap-2 d-flex flex-column mt-3`}>
         <div className="pricing-card-title">{title}</div>
-        <p className="text">{children}</p>
-        <a href={link} className="pricing-card-link text-center fs-6 fw-light">
+        <div className="text">{children}</div>
+        <a
+          href={link}
+          onClick={handleClick}
+          className="pricing-card-link text-center fs-6 fw-light"
+        >
           Vezi detalii
         </a>
       </div>
