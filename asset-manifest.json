@@ -1,9 +1,12 @@
 {
   "files": {
-    "main.css": "/static/css/main.dc7385bb.css",
-    "main.js": "/static/js/main.adc53a03.js",
+    "main.css": "/static/css/main.8d425ed2.css",
+    "main.js": "/static/js/main.00e40c7d.js",
     "static/media/angajati.png": "/static/media/angajati.c5cd659c47880cc70d8e.png",
     "static/media/section3.png": "/static/media/section3.9d1948ce8177fe1ab6c9.png",
+    "static/media/team2.png": "/static/media/team2.908e47126a98c9d4d898.png",
+    "static/media/team0.jpg": "/static/media/team0.f62434b971a06e5f8ec3.jpg",
+    "static/media/team.jpg": "/static/media/team.01a6d939be33df428d43.jpg",
     "static/media/e800.png": "/static/media/e800.572f2ef2549b90a6d406.png",
     "static/media/Group 1 (8).png": "/static/media/Group 1 (8).ab99711aba5fdb6ce448.png",
     "static/media/dp25.png": "/static/media/dp25.97326a159d303ad55465.png",
@@ -11,26 +14,29 @@
     "static/media/header-hero.png": "/static/media/header-hero.f915d6cf96c480a16520.png",
     "static/media/bluecash-50.png": "/static/media/bluecash-50.d4265a58ee80d0bdedfd.png",
     "static/media/sertar.jpg": "/static/media/sertar.924b3676a3e43e2b046f.jpg",
-    "static/media/section2.svg": "/static/media/section2.2582b7b7f9f299945491bd1e78f5fa55.svg",
     "static/media/E800.jpg": "/static/media/E800.f2d7e1660a99fe1ea93b.jpg",
     "static/media/bg-circle-2.svg": "/static/media/bg-circle-2.b258599e19a62f0d429e.svg",
+    "static/media/integrareNP.svg": "/static/media/integrareNP.ae65139d22401856dcf57488c32346b7.svg",
     "static/media/bg-circle.svg": "/static/media/bg-circle.f8517c77ac567b908833.svg",
+    "static/media/stocks.svg": "/static/media/stocks.fdd9aa6b77b51f39452056a4c1be514c.svg",
+    "static/media/customize.svg": "/static/media/customize.83d13502f63cc76fce9bc12e3b6e694a.svg",
     "static/media/automatizare.svg": "/static/media/automatizare.ef8b75eb1b7981ff13320328eb843556.svg",
     "static/media/analize.svg": "/static/media/analize.78a86448c8e7eb82b40d2fd0fc1bbf3c.svg",
     "static/media/wizard.svg": "/static/media/wizard.d48cb1efe9fc0e0acb361fa53c570bb0.svg",
     "static/media/contact.svg": "/static/media/contact.41892f96a0e110f79249c97f63b6ce5d.svg",
     "static/media/rapoarte.svg": "/static/media/rapoarte.2498220d22f9f591f7ac6810d793a329.svg",
-    "static/media/fidelizare.svg": "/static/media/fidelizare.0deb8f322004590a60bfb3a6e891b138.svg",
+    "static/media/handle.svg": "/static/media/handle.8790ac83c1008208706075d15cee5c99.svg",
+    "static/media/netopiabusiness.svg": "/static/media/netopiabusiness.a67b2752f71ff114232eb21e7d52d3d8.svg",
     "static/media/logo.svg": "/static/media/logo.e26e912c12aca13bff2ee9a20448e742.svg",
     "static/media/logo-blank.svg": "/static/media/logo-blank.2a3e43572746c7acf9ca1915eefb264a.svg",
     "static/media/footer.svg": "/static/media/footer.5631c1f4976200bc820b.svg",
+    "static/media/Group.svg": "/static/media/Group.4a8c85ec6084aab8866d.svg",
     "index.html": "/index.html",
-    "static/media/Rec.svg": "/static/media/Rec.0ab8501b03a3f6912a99.svg",
-    "main.dc7385bb.css.map": "/static/css/main.dc7385bb.css.map",
-    "main.adc53a03.js.map": "/static/js/main.adc53a03.js.map"
+    "main.8d425ed2.css.map": "/static/css/main.8d425ed2.css.map",
+    "main.00e40c7d.js.map": "/static/js/main.00e40c7d.js.map"
   },
   "entrypoints": [
-    "static/css/main.dc7385bb.css",
-    "static/js/main.adc53a03.js"
+    "static/css/main.8d425ed2.css",
+    "static/js/main.00e40c7d.js"
   ]
 }
