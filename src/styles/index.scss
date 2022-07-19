@@ -1049,8 +1049,8 @@ a.more {
       position: relative;
 
       & > img:first-child {
-        width: 90%;
         box-shadow: $box-shadow;
+        width: 90%;
       }
       & > img:last-child {
         position: absolute;
