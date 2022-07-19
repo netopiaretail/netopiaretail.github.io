@@ -3,6 +3,7 @@ import ParticlesComponent from "../components/Particles";
 const SectionCustom = ({
   id,
   image,
+  imgBackground,
   imageTitle,
   title,
   titleSpan,
@@ -23,6 +24,7 @@ const SectionCustom = ({
             className={`col-lg-6 ${order} text-center my-5 ${leftAnimation}`}
           >
             <img src={image} alt={imageTitle} className="rounded" />
+            {imgBackground && <img src={imgBackground} />}
           </div>
           <div className={`col-lg-5 text-start ${rightAnimation}`}>
             <h2 className="title">

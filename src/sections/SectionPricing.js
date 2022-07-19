@@ -3,7 +3,6 @@ import Accordion from "react-bootstrap/Accordion";
 import PricingTable from "./PricingTable";
 
 const SectionPricing = () => {
-  console.log(document.activeElement);
   return (
     <section id="pricing" className="section-area">
       <div className="container">
@@ -57,7 +56,9 @@ const SectionPricing = () => {
 
         <Accordion className="pt-5 wow fadeInUpBig" id="pricing-table">
           <Accordion.Item eventKey="0">
-            <Accordion.Header>Functionalitati Pachete</Accordion.Header>
+            <Accordion.Header id="pricing-btn">
+              Funcționalități Pachete
+            </Accordion.Header>
             <Accordion.Body>
               <PricingTable />
             </Accordion.Body>

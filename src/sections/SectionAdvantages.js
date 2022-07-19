@@ -1,4 +1,7 @@
-import img1 from "../img/E800.jpg";
+import img1 from "../img/integrareNP.svg";
+import img2 from "../img/handle.svg";
+import img3 from "../img/customize.svg";
+import img4 from "../img/netopiabusiness.svg";
 import Card from "../components/Card";
 
 const SectionAdvantages = () => {
@@ -21,7 +24,7 @@ const SectionAdvantages = () => {
           </div>
           <div className="col-lg-3 col-sm-8 my-4 wow fadeInUp">
             <Card
-              image={img1}
+              image={img2}
               imageTitle={"Vanzari"}
               title={"Gestionează vânzările. Simplu, ușor, rapid."}
               content={
@@ -31,7 +34,7 @@ const SectionAdvantages = () => {
           </div>
           <div className="col-lg-3 col-sm-8 my-4 wow fadeInUp">
             <Card
-              image={img1}
+              image={img3}
               imageTitle={"Personalizeaza"}
               title={"Personalizezi platforma după propriile nevoi"}
               content={
@@ -41,7 +44,7 @@ const SectionAdvantages = () => {
           </div>
           <div className="col-lg-3 col-sm-8 my-4 wow fadeInUp">
             <Card
-              image={img1}
+              image={img4}
               imageTitle={"NETOPIA Card"}
               title={"Card bancar tip business NETOPIA"}
               content={

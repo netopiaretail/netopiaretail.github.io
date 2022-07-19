@@ -14,6 +14,7 @@ body {
   color: $dark-color;
   overflow-x: hidden;
   text-align: center;
+  background-color: #d7e6fb26;
 }
 
 * {
@@ -145,10 +146,10 @@ p {
 
 .secondary-btn {
   background: linear-gradient(
-                  90deg,
-                  $white-color 0%,
-                  $tint-color 50%,
-                  $white-color 100%
+    90deg,
+    $white-color 0%,
+    $tint-color 50%,
+    $white-color 100%
   );
   background-size: 200%;
 
@@ -199,10 +200,10 @@ p {
 
 .main-btn {
   background-image: linear-gradient(
-                  90deg,
-                  $secondary-color 0%,
-                  $secondary-color-light 50%,
-                  $secondary-color 100%
+    90deg,
+    $secondary-color 0%,
+    $secondary-color-light 50%,
+    $secondary-color 100%
   );
   background-size: 200%;
   color: $white-color;
@@ -220,10 +221,10 @@ p {
 
 .secondary-btn-gradient {
   background-image: linear-gradient(
-                  90deg,
-                  $primary-color 0%,
-                  $primary-color-light 50%,
-                  $primary-color 100%
+    90deg,
+    $primary-color 0%,
+    $primary-color-light 50%,
+    $primary-color 100%
   );
   background-size: 200%;
   color: $white-color;
@@ -364,9 +365,9 @@ canvas.particles {
   line-height: 40px;
   border-radius: $border-radius;
   background: linear-gradient(
-                  to top left,
-                  $primary-color 0%,
-                  $primary-color-light 100%
+    to top left,
+    $primary-color 0%,
+    $primary-color-light 100%
   );
   text-align: center;
   z-index: 99;
@@ -379,15 +380,15 @@ canvas.particles {
   &:hover {
     color: $white-color;
     background: linear-gradient(
-                    to top left,
-                    $secondary-color 0%,
-                    $secondary-color-light 100%
+      to top left,
+      $secondary-color 0%,
+      $secondary-color-light 100%
     );
   }
 }
 
 .header-area {
-  background-image: url(../img/Rec.svg);
+  background-image: url(../img/path290.svg);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -637,7 +638,7 @@ canvas.particles {
     left: 0;
     height: 100%;
     width: 100%;
-    background-image: url(../img/footer.svg);
+    background-image: url(../img/path2901.svg);
     background-position: top center;
     z-index: -1;
     background-size: cover;
@@ -834,6 +835,7 @@ canvas.particles {
   border-radius: $border-radius;
   border: 1px solid transparent;
   transition: transform 0.3s ease-out;
+  background-color: $white-color;
 
   --color-1: #{$primary-color};
   --color-2: #{$primary-color-light};
@@ -884,10 +886,10 @@ canvas.particles {
     font-size: 2.8rem;
     line-height: 1.2;
     background-image: linear-gradient(
-                    90deg,
-                    var(--color-1) 0%,
-                    var(--color-2) 51%,
-                    var(--color-1) 100%
+      90deg,
+      var(--color-1) 0%,
+      var(--color-2) 51%,
+      var(--color-1) 100%
     );
     background-size: 200% auto;
     transition: all 500ms ease;
@@ -939,9 +941,9 @@ canvas.particles {
 
     &::after {
       background-image: linear-gradient(
-                      90deg,
-                      var(--color-1) 0%,
-                      var(--color-2) 100%
+        90deg,
+        var(--color-1) 0%,
+        var(--color-2) 100%
       );
       content: "";
       width: 0;
@@ -950,7 +952,7 @@ canvas.particles {
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      transition: all .3s ease;
+      transition: all 0.3s ease;
       z-index: -1;
       opacity: 0;
       border-radius: 100%;
@@ -1002,11 +1004,90 @@ a.more {
   }
 }
 
+#about {
+  .about-grid-image {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 15px;
+    align-items: start;
+
+    @media (max-width: 991px) {
+      margin-top: 4rem;
+    }
+
+    img {
+      grid-area: 1 / 1 / 2 / 3;
+      box-shadow: $box-shadow;
+    }
+    img:first-child {
+      grid-area: 1 / 2 / 4 / 4;
+      margin-top: 3rem;
+    }
+
+    img:last-child {
+      grid-area: 2 / 3 / 4 / 6;
+      align-self: end;
+      margin-bottom: 1rem;
+
+      @media (max-width: 475px) {
+        margin-left: 0;
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+#employee {
+  .container > div {
+    @media (max-width: 991px) {
+      flex-direction: column-reverse;
+    }
+
+    & > div {
+      position: relative;
+
+      & > img:first-child {
+        margin-bottom: 30px;
+        z-index: 1;
+        box-shadow: $box-shadow;
+      }
+      & > img:last-child {
+        position: absolute;
+        left: -20px;
+        bottom: 0;
+        z-index: -1;
+        opacity: 70%;
+        width: 75%;
+      }
+    }
+  }
+}
+
+#managers {
+  .container > div > div {
+    position: relative;
+    & > img:first-child {
+      margin-bottom: 30px;
+      z-index: 1;
+      box-shadow: $box-shadow;
+    }
+    & > img:last-child {
+      position: absolute;
+      right: -20px;
+      bottom: 0;
+      z-index: -1;
+      opacity: 70%;
+      width: 75%;
+    }
+  }
+}
+
 #pricing {
   .accordion-item {
     min-height: auto;
     border: none;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+    box-shadow: $box-shadow;
     border-radius: $border-radius;
 
     .accordion-button {
@@ -1030,9 +1111,9 @@ a.more {
 
 .pricing-table {
   background: linear-gradient(
-                  to right,
-                  $primary-color 0%,
-                  $primary-color-light 100%
+    to right,
+    $primary-color 0%,
+    $primary-color-light 100%
   );
   border-radius: $border-radius;
   padding: 2rem;
@@ -1240,11 +1321,14 @@ a.more {
 }
 
 .features-card {
-  margin-bottom: 8rem;
   justify-content: space-between;
 
   @media (max-width: 991px) {
     justify-content: center;
+  }
+
+  @media (max-width: 575px) {
+    margin-bottom: 2rem;
   }
 
   .card {
@@ -1270,6 +1354,16 @@ a.more {
   animation-iteration-count: infinite;
   --init-angle: calc(360deg / var(--count) * var(--index));
 
+  @media (max-width: 575px) {
+    width: 3rem;
+    height: 3rem;
+    position: relative;
+    animation: none;
+    top: 0;
+    left: 0;
+    margin-bottom: 1rem;
+  }
+
   .icon-text {
     font-size: 10px;
     text-transform: uppercase;
@@ -1278,12 +1372,24 @@ a.more {
     letter-spacing: 1.2px;
     font-family: "Nunito", sans-serif;
     color: $dark-color;
+
+    @media (max-width: 575px) {
+      left: 65px;
+      font-size: 12px;
+      text-align: left;
+      width: max-content;
+    }
   }
 
   .icon-card {
     font-size: 3rem;
     opacity: 10%;
     color: $secondary-color;
+
+    @media (max-width: 575px) {
+      font-size: 1.5rem;
+      opacity: 80%;
+    }
   }
 }
 
@@ -1302,12 +1408,17 @@ a.more {
   }
 
   @media (max-width: 575px) {
-    height: 350px;
-    --radius: 150px;
+    height: auto;
+    background-image: none;
+    margin-top: 0;
   }
 
   &:first-child {
     background-image: url(../img/bg-circle-2.svg);
+
+    @media (max-width: 575px) {
+      background-image: none;
+    }
 
     .icon-card {
       color: $primary-color;
@@ -1316,23 +1427,33 @@ a.more {
 
   @keyframes tesiMove {
     0% {
-      transform: translate(-50%, -50%) rotate(calc(var(--init-angle) + 0deg)) translateX(calc(var(--radius) - 25px)) rotate(calc((var(--init-angle) + 0deg) * -1));
+      transform: translate(-50%, -50%) rotate(calc(var(--init-angle) + 0deg))
+        translateX(calc(var(--radius) - 25px))
+        rotate(calc((var(--init-angle) + 0deg) * -1));
     }
 
     25% {
-      transform: translate(-50%, -50%) rotate(calc(var(--init-angle) + 90deg)) translateX(calc(var(--radius) - 25px)) rotate(calc((var(--init-angle) + 90deg) * -1));
+      transform: translate(-50%, -50%) rotate(calc(var(--init-angle) + 90deg))
+        translateX(calc(var(--radius) - 25px))
+        rotate(calc((var(--init-angle) + 90deg) * -1));
     }
 
     50% {
-      transform: translate(-50%, -50%) rotate(calc(var(--init-angle) + 180deg)) translateX(calc(var(--radius) - 25px)) rotate(calc((var(--init-angle) + 180deg) * -1));
+      transform: translate(-50%, -50%) rotate(calc(var(--init-angle) + 180deg))
+        translateX(calc(var(--radius) - 25px))
+        rotate(calc((var(--init-angle) + 180deg) * -1));
     }
 
     75% {
-      transform: translate(-50%, -50%) rotate(calc(var(--init-angle) + 270deg)) translateX(calc(var(--radius) - 25px)) rotate(calc((var(--init-angle) + 270deg) * -1));
+      transform: translate(-50%, -50%) rotate(calc(var(--init-angle) + 270deg))
+        translateX(calc(var(--radius) - 25px))
+        rotate(calc((var(--init-angle) + 270deg) * -1));
     }
 
     100% {
-      transform: translate(-50%, -50%) rotate(calc(var(--init-angle) + 360deg)) translateX(calc(var(--radius) - 25px)) rotate(calc((var(--init-angle) + 360deg) * -1));
+      transform: translate(-50%, -50%) rotate(calc(var(--init-angle) + 360deg))
+        translateX(calc(var(--radius) - 25px))
+        rotate(calc((var(--init-angle) + 360deg) * -1));
     }
   }
 }
@@ -1342,6 +1463,8 @@ a.more {
   overflow: hidden;
   height: 55rem;
   display: flex;
+  box-shadow: $box-shadow;
+  background-color: $white-color;
   flex-direction: column;
 
   @media (max-width: 991px) {
@@ -1381,9 +1504,9 @@ a.more {
         &.active {
           &::before {
             background: linear-gradient(
-                            -90deg,
-                            $primary-color-light 0%,
-                            $primary-color 100%
+              -90deg,
+              $primary-color-light 0%,
+              $primary-color 100%
             );
           }
 
@@ -1666,9 +1789,9 @@ a.more {
           -webkit-transition: 0.4s;
           transition: 0.4s;
           background-image: linear-gradient(
-                          90deg,
-                          $primary-color 0%,
-                          $primary-color-light 100%
+            90deg,
+            $primary-color 0%,
+            $primary-color-light 100%
           );
           box-shadow: 0px 20px 20px 0px rgb(0 0 0 / 3%);
           border-radius: 30px;

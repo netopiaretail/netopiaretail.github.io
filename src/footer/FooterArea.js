@@ -65,7 +65,7 @@ const FooterArea = () => {
                       placeholder="Tipul de afacere"
                     />
                   </div>
-                  <div>
+                  <div className="mb-4">
                     <textarea
                       className="form-control"
                       id="message"

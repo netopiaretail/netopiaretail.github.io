@@ -1,7 +1,7 @@
 import Card from "../components/Card";
 import img1 from "../img/automatizare.svg";
 import img2 from "../img/analize.svg";
-import img3 from "../img/fidelizare.svg";
+import img3 from "../img/stocks.svg";
 import img4 from "../img/rapoarte.svg";
 
 const SectionBenefits = () => {
