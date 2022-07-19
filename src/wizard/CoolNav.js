@@ -9,20 +9,25 @@ const CoolNav = (props) => {
     const isChecked = currentStep > i;
 
     steps.push(
-      <li
-        className={`col-2 ${isActive ? "active" : isChecked ? "check" : ""}`}
-        key={i}
+      <div
+        className={`progress-item ${
+          isActive ? "active" : isChecked ? "check" : ""
+        }`}
       >
-        <div className={`${isActive ? "active" : isChecked ? "check" : ""}`}>
+        <div
+          className={`progress-counter ${
+            isActive ? "active" : isChecked ? "check" : ""
+          }`}
+        >
           {isActive || isChecked ? <i className="fa-solid fa-check" /> : i}
         </div>
-      </li>
+      </div>
     );
   }
 
   return (
     <nav className="app-progress-bar">
-      <ul>{steps}</ul>
+      <div className="progress-wrapper">{steps}</div>
       <Stats {...props} />
     </nav>
   );

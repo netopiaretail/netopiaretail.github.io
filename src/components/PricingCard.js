@@ -3,8 +3,7 @@ import React from "react";
 const PricingCard = ({ price, title, styles, link, onClick, children }) => {
   const handleClick = () => {
     const el = document.getElementById("pricing-btn");
-    el.firstChild.ariaExpanded = "true";
-    el.nextElementSibling.classList.add("show");
+    el.firstChild.click();
   };
 
   return (

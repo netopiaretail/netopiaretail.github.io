@@ -26,7 +26,7 @@ const Step3 = ({ form, update }) => {
             Este ideal pentru businessurile care sunt la început de drum și vor
             să înțeleagă mai clar cum își pot gestiona afacerea. Ai acces la
             majoritatea funcționalităților care să te ajute în definirea
-            propriului succes
+            propriului succes.
           </p>
         </PricingCard>
         <PricingCard
@@ -37,8 +37,8 @@ const Step3 = ({ form, update }) => {
           link={"#pricing-table"}
         >
           <p>
-            Ai deja câțiva ani de activitate, între 2 și 4 magazine și îți
-            dorești să te extinzi. Ce primești în plus sunt:
+            Ai deja câțiva ani de activitate și îți dorești să te extinzi. Ce
+            primești în plus sunt:
           </p>
           <ul>
             <li>baza de coduri universală EAN;</li>
@@ -48,8 +48,8 @@ const Step3 = ({ form, update }) => {
         </PricingCard>
         <PricingCard
           styles={getCardClass("Premium", "purple")}
-          price={"80"}
-          onClick={() => update("pachet", { name: "Premium", price: 80 })}
+          price={"20"}
+          onClick={() => update("pachet", { name: "Premium", price: 20 })}
           title={"Premium"}
           link={"#pricing-table"}
         >

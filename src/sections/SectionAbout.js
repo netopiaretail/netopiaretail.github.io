@@ -19,7 +19,7 @@ const SectionAbout = () => {
 
             <p className="text">
               NETOPIA Retail face parte din NETOPIA Group, un conglomerat de
-              companii românești care de peste 20 de ani sprijină mediul de
+              companii românești care de aproape 20 de ani sprijină mediul de
               afaceri românesc din poziția de lider de piață. Datorită
               experienței acumulate, am înțeles nevoile reale ale afacerilor din
               HoReCa și Retail. Prin NETOPIA Retail urmărim să ajutăm afacerile

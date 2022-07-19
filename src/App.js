@@ -1,7 +1,8 @@
 import Header from "./header/Header";
 import SectionFeatures from "./sections/SectionFeatures";
 import SectionCustom from "./sections/SectionCustom";
-import image1 from "./img/dashboard.png";
+import image1 from "./img/screenDash.png";
+import image11 from "./img/graph.png";
 import image3 from "./img/angajati.png";
 import image4 from "./img/section3.png";
 import image5 from "./img/bg-image2.png";
@@ -32,6 +33,7 @@ function App() {
       <SectionCustom
         id={"onePlatform"}
         image={image1}
+        imgBackground={image11}
         imageTitle={"Dashboard"}
         title={"O singură platformă"}
         titleSpan={"pentru orice afacere"}

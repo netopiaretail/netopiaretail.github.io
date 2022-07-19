@@ -14,24 +14,24 @@ const SectionPricing = () => {
             styles={("Gratis", "orange")}
             price={"0"}
             title={"Gratis"}
-            link={"#pricing"}
+            link={"#pricing-table"}
           >
             <p>
               Este ideal pentru businessurile care sunt la început de drum și
               vor să înțeleagă mai clar cum își pot gestiona afacerea. Ai acces
               la majoritatea funcționalităților care să te ajute în definirea
-              propriului succes
+              propriului succes.
             </p>
           </PricingCard>
           <PricingCard
             styles={("Standard", "blue")}
             price={"10"}
             title={"Standard"}
-            link={"#pricing"}
+            link={"#pricing-table"}
           >
             <p>
-              Ai deja câțiva ani de activitate, între 2 și 4 magazine și îți
-              dorești să te extinzi. Ce primești în plus sunt:
+              Ai deja câțiva ani de activitate și îți dorești să te extinzi. Ce
+              primești în plus sunt:
             </p>
             <ul>
               <li>baza de coduri universală EAN;</li>
@@ -41,9 +41,9 @@ const SectionPricing = () => {
           </PricingCard>
           <PricingCard
             styles={("Premium", "purple")}
-            price={"80"}
+            price={"20"}
             title={"Premium"}
-            link={"#pricing"}
+            link={"#pricing-table"}
           >
             <p>
               Afacerea ta face parte dintr-o franciză sau reprezinți o franciză
@@ -57,7 +57,7 @@ const SectionPricing = () => {
         <Accordion className="pt-5 wow fadeInUpBig" id="pricing-table">
           <Accordion.Item eventKey="0">
             <Accordion.Header id="pricing-btn">
-              Funcționalități Pachete
+              Funcționalități pachete și diferențe
             </Accordion.Header>
             <Accordion.Body>
               <PricingTable />

@@ -1,6 +1,11 @@
 import Accordion from "react-bootstrap/Accordion";
 
 const SectionFunctionalities = () => {
+  const handleClick = () => {
+    const el = document.getElementById("pricing-btn");
+    el.firstChild.click();
+  };
+
   return (
     <section id="functionalitati" className="section-area">
       <div className="container">
@@ -52,7 +57,11 @@ const SectionFunctionalities = () => {
                     <b> Manager</b> și, în plus, poate să adauge atât conturi de
                     Casier și Manager, cât și companii.
                   </p>
-                  <a className="more" href="#pricing">
+                  <a
+                    className="more"
+                    onClick={handleClick}
+                    href="#pricing-table"
+                  >
                     Află mai multe<i className="fa-solid fa-angle-right"></i>
                   </a>
                 </Accordion.Body>
@@ -88,7 +97,11 @@ const SectionFunctionalities = () => {
                     manual codurile de bară și stocul se actualizează automat în
                     funcție de produs.
                   </p>
-                  <a className="more" href="#pricing">
+                  <a
+                    className="more"
+                    onClick={handleClick}
+                    href="#pricing-table"
+                  >
                     Află mai multe<i className="fa-solid fa-angle-right"></i>
                   </a>
                 </Accordion.Body>
@@ -125,7 +138,11 @@ const SectionFunctionalities = () => {
                     mai repede, astfel încât să îți aprovizionezi businessul,
                     constant, cu produse care te ajută să ai profit.
                   </p>
-                  <a className="more" href="#pricing">
+                  <a
+                    className="more"
+                    onClick={handleClick}
+                    href="#pricing-table"
+                  >
                     Află mai multe<i className="fa-solid fa-angle-right"></i>
                   </a>
                 </Accordion.Body>
@@ -157,7 +174,11 @@ const SectionFunctionalities = () => {
                     funcția de Calcul Automat de Sold, care îți spune în orice
                     moment cât trebuie să încasezi sau să achiți.
                   </p>
-                  <a className="more" href="#pricing">
+                  <a
+                    className="more"
+                    onClick={handleClick}
+                    href="#pricing-table"
+                  >
                     Află mai multe<i className="fa-solid fa-angle-right"></i>
                   </a>
                 </Accordion.Body>
@@ -187,13 +208,17 @@ const SectionFunctionalities = () => {
                   </p>
                   <p className="py-2">
                     Prin funcționalitățile noastre vezi în timp real cum
-                    evoluează fluxul de numerar. Astfel,
-                    <b>Managerul</b> poate analiza în fiecare lună fluxul de
-                    numerar și să ia decizii pentru îmbunătățirea acestuia,
-                    astfel încât în fiecare lună afacerea să aibă mai multe
-                    intrări (de numerar) decât ieșiri (de numerar).
+                    evoluează fluxul de numerar. Astfel, <b>Managerul</b> poate
+                    analiza în fiecare lună fluxul de numerar și să ia decizii
+                    pentru îmbunătățirea acestuia, astfel încât în fiecare lună
+                    afacerea să aibă mai multe intrări (de numerar) decât ieșiri
+                    (de numerar).
                   </p>
-                  <a className="more" href="#pricing">
+                  <a
+                    className="more"
+                    onClick={handleClick}
+                    href="#pricing-table"
+                  >
                     Află mai multe<i className="fa-solid fa-angle-right"></i>
                   </a>
                 </Accordion.Body>
@@ -230,7 +255,11 @@ const SectionFunctionalities = () => {
                     <li>;</li>
                     <li>;</li>
                   </ul>
-                  <a className="more" href="#pricing">
+                  <a
+                    className="more"
+                    onClick={handleClick}
+                    href="#pricing-table"
+                  >
                     Află mai multe<i className="fa-solid fa-angle-right"></i>
                   </a>
                 </Accordion.Body>

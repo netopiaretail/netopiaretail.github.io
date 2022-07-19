@@ -36,20 +36,22 @@ const Wizard = () => {
     }));
 
   return (
-    <div className="container wizard rounded wow fadeInUpBig py-4">
-      <StepWizard
-        className="p-4 flex-column-reverse d-flex flex-1 justify-content-between"
-        onStepChange={onStepChange}
-        instance={setInstance}
-        nav={<CoolNav currentStep={state.currentStep} form={state.form} />}
-      >
-        <Step1 />
-        <Step2 update={updateForm} form={state.form} />
-        <Step3 update={updateForm} form={state.form} />
-        <Step4 update={updateForm} form={state.form} />
-        <Step5 update={updateForm} form={state.form} />
-      </StepWizard>
-    </div>
+    <section className="section-area">
+      <div className="container wizard rounded wow fadeInUpBig py-4">
+        <StepWizard
+          className="py-4 flex-column-reverse d-flex flex-1 justify-content-between"
+          onStepChange={onStepChange}
+          instance={setInstance}
+          nav={<CoolNav currentStep={state.currentStep} form={state.form} />}
+        >
+          <Step1 />
+          <Step2 update={updateForm} form={state.form} />
+          <Step3 update={updateForm} form={state.form} />
+          <Step4 update={updateForm} form={state.form} />
+          <Step5 update={updateForm} form={state.form} />
+        </StepWizard>
+      </div>
+    </section>
   );
 };
 

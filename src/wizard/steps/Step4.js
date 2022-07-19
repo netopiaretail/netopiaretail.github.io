@@ -4,7 +4,7 @@ import device from "../../img/e800.png";
 const accessoryList = [
   {
     image: require("../../img/cantar.jpg"),
-    deviceTitle: "Cantar",
+    deviceTitle: "Cântar.",
     price: 5,
   },
   {
@@ -19,7 +19,7 @@ const accessoryList = [
   },
   {
     image: require("../../img/sertar.jpg"),
-    deviceTitle: "Sertar casa de marcat",
+    deviceTitle: "Sertar casă de marcat",
     price: 3,
   },
 ];
@@ -41,7 +41,7 @@ const Step4 = ({ form, update }) => {
   return (
     <div className="wizard-step-3">
       <div className="d-flex row text-center">
-        <div className="col-lg-6 col-sm-12">
+        <div className="col-lg-7 col-sm-12">
           <h4>Vrei dispozitivul nostru?</h4>
           <div className="row fs-5 my-4">
             <ul
@@ -88,30 +88,81 @@ const Step4 = ({ form, update }) => {
                 }
               >
                 <div className="flip-card-front d-flex row justify-content-center align-items-center">
-                  <img
-                    className="col-sm-10 col-lg-6"
-                    src={device}
-                    width={200}
-                  />
-                  <div className="text-start col-sm-12 col-lg-6">
+                  <div className="col-sm-6 col-lg-4">
+                    <img src={device} />
+                  </div>
+
+                  <div className="text-start col-sm-12 col-lg-8">
                     <h4 className="mb-2">PAX E800</h4>
-                    Adaugă un plus de eleganță magazinului tău. Îți oferim unul
-                    dintre cele mai moderne și rapide dispozitive care va impune
-                    un standard de calitate ce va fi apreciat de oricare dintre
-                    clienții tăi. Este ușor de integrat cu orice tip de casă de
-                    marcat și alte accesorii necesare pentru a finaliza plățile.
+                    <p>
+                      Îți oferim unul dintre cele mai moderne și rapide
+                      dispozitive de pe piață, ușor de integrat cu orice tip de
+                      casă de marcat și alte accesorii necesare pentru a
+                      finaliza plățile. Pax e800 dispune de 2 ecrane
+                      touchscreen:
+                    </p>
+                    <ul>
+                      <li>
+                        ecranul 1 are 20 de centimetri și poate fi folosit
+                        ca&nbsp;
+                        <b>spațiu publicitar</b> (pentru oferte, magazin,
+                        parteneri și altele);
+                      </li>
+                      <li>
+                        ecranul 2 are 31.75 centimentri pentru ca angajații tăi
+                        să fie mai eficienți și să scadă timpul pe care îl
+                        petrece clientul tău la casă.
+                      </li>
+                    </ul>
                   </div>
                 </div>
-                <div className="flip-card-back d-flex flex-row justify-content-center gap-4 ">
-                  <p>Lorem ipsum</p>
+                <div className="flip-card-back d-flex row gap-3 align-content-center text-start">
+                  <h5 className="mb-2">
+                    Dacă nu vrei să folosești dispozitivul nostru, nu este nicio
+                    problemă. Însă, dispozitivul tău trebuie să îndeplinească un
+                    număr de cerințe tehnice obligatorii:
+                  </h5>
+                  <div className="d-flex column gap-2 align-items-center">
+                    <i className="fa fa-android"></i>
+                    <p>
+                      Să aibă minimum versiunea de <b>Android 6</b>;
+                    </p>
+                  </div>
+                  <div className="d-flex column gap-2 align-items-center">
+                    <i className="fa-brands fa-usb"></i>
+                    <p>
+                      Să aibă{" "}
+                      <b>
+                        port USB dedicat pentru casa de marcat (sau blueetooth)
+                      </b>
+                      ;
+                    </p>
+                  </div>
+                  <div className="d-flex column gap-2 align-items-center">
+                    <i className="fa-solid fa-barcode"></i>
+                    <p>
+                      Să aibă un{" "}
+                      <b>
+                        port USB dedicat pentru cititorul de cod de bare (sau
+                        blueetooth)
+                      </b>
+                      ;
+                    </p>
+                  </div>
+                  <div className="d-flex column gap-2 align-items-center">
+                    <i className="fa-solid fa-weight-scale"></i>
+                    <p>
+                      Să aibă un <b>port USB dedicat pentru cântar.</b>
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div className="col-lg-6 col-sm-12">
+        <div className="col-lg-5 col-sm-12">
           <h4>Vrei accesorii?</h4>
-          <div className="row gap-2 justify-content-center align-items-center accessories-list my-4">
+          <div className="row gap-4 justify-content-center align-items-center accesories-list my-4">
             {accessoryList.map((item) => {
               return (
                 <label
@@ -130,10 +181,18 @@ const Step4 = ({ form, update }) => {
                     });
                   }}
                 >
-                  <img src={item.image} width={100} />
-                  <span>
-                    {item.deviceTitle} - {item.price} euro/luna
-                  </span>
+                  <div className="accesories-icon">
+                    {form.accessories
+                      .map((device) => device.name)
+                      .includes(item.deviceTitle) ? (
+                      <i className="fas fa-minus"></i>
+                    ) : (
+                      <i className="fas fa-plus"></i>
+                    )}
+                  </div>
+                  <img src={item.image} height={100} />
+                  <span>{item.deviceTitle}</span>
+                  <span>{item.price} &euro;/luna</span>
                 </label>
               );
             })}
