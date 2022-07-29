@@ -1,50 +1,50 @@
 [
   {
-    "name": "Administrare",
+    "name": "section10.c1",
     "features": [
       {
-        "name": "Creare cont Casier (aplicație/user)",
-        "textTier1": "X conturi de Casier",
-        "textTier2": "număr nelimitat de Casierr",
-        "textTier3": "număr nelimitat de Casier"
+        "name": "section10.c2",
+        "textTier1": "section10.c3",
+        "textTier2": "section10.c4",
+        "textTier3": "section10.c4"
       },
       {
-        "name": "Creare cont de Administrator/Francizat (user backend)",
-        "textTier1": "X conturi de Administrator",
-        "textTier2": "număr nelimitat de Administrator",
-        "textTier3": "număr nelimitat de Administrator (per companie)"
+        "name": "section10.c5",
+        "textTier1": "section10.c3",
+        "textTier2": "section10.c4",
+        "textTier3": "section10.c4"
       },
       {
-        "name": "Număr de locații",
-        "textTier1": "o singură locație",
-        "textTier2": "număr nelimitat de locații",
-        "textTier3": "număr nelimitat de locații de la mai multe companii (parte a aceluiași grup)"
+        "name": "section10.c6",
+        "textTier1": "section10.c7",
+        "textTier2": "section10.c4",
+        "textTier3": "section10.c4"
       },
       {
-        "name": "Număr de conturi de administrare",
-        "textTier1": "o singură entitate de administrare a contului",
-        "textTier2": "nelimitat entități de administrare a contului",
-        "textTier3": "nelimitat entități de administrare a contului"
+        "name": "section10.c8",
+        "textTier1": "section10.c9",
+        "textTier2": "section10.c4",
+        "textTier3": "section10.c4"
       }
     ]
   },
   {
-    "name": "Catalog",
+    "name": "section10.c10",
     "features": [
       {
-        "name": "Număr nelimitat de produse și categorii pe care le poți administra",
+        "name": "section10.c11",
         "iconTier1": "fa-solid fa-check",
         "iconTier2": "fa-solid fa-check",
         "iconTier3": "fa-solid fa-check"
       },
       {
-        "name": "SKU - căutare pe bază de caracteristici ce înapoiază rezultate totale precum - cantitate, locație sau categorie",
+        "name": "section10.c12",
         "iconTier1": "fa-solid fa-check",
         "iconTier2": "fa-solid fa-check",
         "iconTier3": "fa-solid fa-check"
       },
       {
-        "name": "Acces la baza de date universală Barcode EAN",
+        "name": "section10.c13",
         "iconTier1": "fa-solid fa-minus",
         "iconTier2": "fa-solid fa-check",
         "iconTier3": "fa-solid fa-check"
@@ -52,58 +52,58 @@
     ]
   },
   {
-    "name": "Dashboard / Rapoarte",
+    "name": "section3.b5",
     "features": [
       {
-        "name": "Interogare încasări în timp real",
+        "name": "section10.c14",
         "iconTier1": "fa-solid fa-check",
         "iconTier2": "fa-solid fa-check",
         "iconTier3": "fa-solid fa-check"
       },
       {
-        "name": "Interogare încasări pe intervale de timp: zi, săptămână, lună",
+        "name": "section10.c15",
         "iconTier1": "fa-solid fa-check",
         "iconTier2": "fa-solid fa-check",
         "iconTier3": "fa-solid fa-check"
       },
       {
-        "name": "Interogare produse vândute în timp real",
+        "name": "section10.c16",
         "iconTier1": "fa-solid fa-check",
         "iconTier2": "fa-solid fa-check",
         "iconTier3": "fa-solid fa-check"
       },
       {
-        "name": "Interogare produse vândute pe intervale de timp: zi, săptămână, lună",
+        "name": "section10.c17",
         "iconTier1": "fa-solid fa-check",
         "iconTier2": "fa-solid fa-check",
         "iconTier3": "fa-solid fa-check"
       },
       {
-        "name": "Top 10 produse / categorii / locații / clienți",
+        "name": "section10.c18",
         "iconTier1": "fa-solid fa-check",
         "iconTier2": "fa-solid fa-check",
         "iconTier3": "fa-solid fa-check"
       },
       {
-        "name": "Rapoarte complete de vânzări, pe produse sau pe categorii",
+        "name": "section10.c19",
         "iconTier1": "fa-solid fa-check",
         "iconTier2": "fa-solid fa-check",
         "iconTier3": "fa-solid fa-check"
       },
       {
-        "name": "Registru de casă",
-        "textTier1": "Un singur registru de casă",
-        "textTier2": "număr nelimitat",
-        "textTier3": "număr nelimitat"
+        "name": "section10.c20",
+        "textTier1": "section10.c21",
+        "textTier2": "section10.c4",
+        "textTier3": "section10.c4"
       },
       {
-        "name": "Registru de casă în lei",
+        "name": "section10.c22",
         "iconTier1": "fa-solid fa-check",
         "iconTier2": "fa-solid fa-check",
         "iconTier3": "fa-solid fa-check"
       },
       {
-        "name": "Registru de casă în valută",
+        "name": "section10.c23",
         "iconTier1": "fa-solid fa-minus",
         "iconTier2": "fa-solid fa-minus",
         "iconTier3": "fa-solid fa-check"
@@ -111,22 +111,22 @@
     ]
   },
   {
-    "name": "Facturare",
+    "name": "section3.b2",
     "features": [
       {
-        "name": "Administrare facturi (emise și încasate pentru fiecare furnizor sau partener în parte)",
+        "name": "section10.c24",
         "iconTier1": "fa-solid fa-check",
         "iconTier2": "fa-solid fa-check",
         "iconTier3": "fa-solid fa-check"
       },
       {
-        "name": "Calcul automat de sold (pentru a ști cât trebuie să încasezi sau să achiți)",
+        "name": "section10.c25",
         "iconTier1": "fa-solid fa-check",
         "iconTier2": "fa-solid fa-check",
         "iconTier3": "fa-solid fa-check"
       },
       {
-        "name": "Administrare de chitanțe fiscale pentru plățile cash",
+        "name": "section10.c26",
         "iconTier1": "fa-solid fa-check",
         "iconTier2": "fa-solid fa-check",
         "iconTier3": "fa-solid fa-check"
@@ -134,22 +134,22 @@
     ]
   },
   {
-    "name": "POS",
+    "name": "section10.c27",
     "features": [
       {
-        "name": "Terminal bancar",
+        "name": "section10.c28",
         "iconTier1": "fa-solid fa-minus",
         "iconTier2": "fa-solid fa-check",
         "iconTier3": "fa-solid fa-check"
       },
       {
-        "name": "Aplicație POS pentru smartphone (android)",
+        "name": "section10.c29",
         "iconTier1": "fa-solid fa-check",
         "iconTier2": "fa-solid fa-check",
         "iconTier3": "fa-solid fa-check"
       },
       {
-        "name": "Sincronizare instantă cu platforma de retail, casa de marcat, cântar, prin aplicația POS pentru smartphone",
+        "name": "section10.c30",
         "iconTier1": "fa-solid fa-check",
         "iconTier2": "fa-solid fa-check",
         "iconTier3": "fa-solid fa-check"
@@ -157,10 +157,10 @@
     ]
   },
   {
-    "name": "Online",
+    "name": "section10.c31",
     "features": [
       {
-        "name": "Integrare cu platforme de ecommerce",
+        "name": "section10.c32",
         "iconTier1": "fa-solid fa-check",
         "iconTier2": "fa-solid fa-check",
         "iconTier3": "fa-solid fa-check"
@@ -168,51 +168,28 @@
     ]
   },
   {
-    "name": "Marketing",
+    "name": "section10.c33",
     "features": [
       {
-        "name": "Integrare cu serviciul web2sms",
+        "name": "section10.c34",
         "iconTier1": "fa-solid fa-check",
         "iconTier2": "fa-solid fa-check",
         "iconTier3": "fa-solid fa-check"
       },
       {
-        "name": "Personalizare platformă cu propriul logo",
+        "name": "section10.c50",
+        "textTier1": "10",
+        "textTier2": "20",
+        "textTier3": "50"
+      },
+      {
+        "name": "section10.c35",
         "iconTier1": "fa-solid fa-minus",
         "iconTier2": "fa-solid fa-minus",
         "iconTier3": "fa-solid fa-check"
       },
       {
-        "name": "Imprimare logo pe bonul fiscal",
-        "iconTier1": "fa-solid fa-minus",
-        "iconTier2": "fa-solid fa-minus",
-        "iconTier3": "fa-solid fa-check"
-      }
-    ]
-  },
-  {
-    "name": "Procesare de card",
-    "features": [
-      {
-        "name": "Posibilitatea integrării pentru plata cu cardul",
-        "iconTier1": "fa-solid fa-check",
-        "iconTier2": "fa-solid fa-check",
-        "iconTier3": "fa-solid fa-check"
-      },
-      {
-        "name": "Procesarea tranzacțiilor cu cardul preintegrat cu NETOPIA Payments",
-        "iconTier1": "fa-solid fa-minus",
-        "iconTier2": "fa-solid fa-check",
-        "iconTier3": "fa-solid fa-check"
-      },
-      {
-        "name": "Comision 0 până depășești X număr de vânzări pe lună",
-        "iconTier1": "fa-solid fa-minus",
-        "iconTier2": "fa-solid fa-check",
-        "iconTier3": "fa-solid fa-minus"
-      },
-      {
-        "name": "Comision 0 pe toată durata contractului",
+        "name": "section10.c36",
         "iconTier1": "fa-solid fa-minus",
         "iconTier2": "fa-solid fa-minus",
         "iconTier3": "fa-solid fa-check"
@@ -220,28 +197,57 @@
     ]
   },
   {
-    "name": "Suport",
+    "name": "section10.c37",
     "features": [
       {
-        "name": "Suport tehnic",
+        "name": "section10.c38",
+        "iconTier1": "fa-solid fa-check",
+        "iconTier2": "fa-solid fa-check",
+        "iconTier3": "fa-solid fa-check"
+      },
+      {
+        "name": "section10.c39",
         "iconTier1": "fa-solid fa-minus",
         "iconTier2": "fa-solid fa-check",
         "iconTier3": "fa-solid fa-check"
       },
       {
-        "name": "Suport B2B pentru angajații tăi (presupun ca suport pentru angajatii interni ai francizei)",
+        "name": "section10.c40",
+        "iconTier1": "fa-solid fa-minus",
+        "iconTier2": "fa-solid fa-check",
+        "iconTier3": "fa-solid fa-check"
+      },
+      {
+        "name": "section10.c41",
+        "iconTier1": "fa-solid fa-minus",
+        "iconTier2": "fa-solid fa-minus",
+        "iconTier3": "fa-solid fa-check"
+      }
+    ]
+  },
+  {
+    "name": "section10.c42",
+    "features": [
+      {
+        "name": "section10.c43",
+        "iconTier1": "fa-solid fa-minus",
+        "iconTier2": "fa-solid fa-check",
+        "iconTier3": "fa-solid fa-check"
+      },
+      {
+        "name": "section10.c44",
         "iconTier1": "fa-solid fa-minus",
         "iconTier2": "fa-solid fa-minus",
         "iconTier3": "fa-solid fa-check"
       },
       {
-        "name": "Suport B2C către consumatorul tău final (presupun ca merge vb despre casier, formularea nu este prea clara)",
+        "name": "section10.c45",
         "iconTier1": "fa-solid fa-minus",
         "iconTier2": "fa-solid fa-check",
         "iconTier3": "fa-solid fa-check"
       },
       {
-        "name": "Training suport ",
+        "name": "section10.c46",
         "iconTier1": "fa-solid fa-minus",
         "iconTier2": "fa-solid fa-check",
         "iconTier3": "fa-solid fa-check"
@@ -249,16 +255,16 @@
     ]
   },
   {
-    "name": "Integrare custom",
+    "name": "section10.c47",
     "features": [
       {
-        "name": "Personalizarea soluției NETOPIA Retail pentru propriile nevoi de business",
+        "name": "section10.c48",
         "iconTier1": "fa-solid fa-minus",
         "iconTier2": "fa-solid fa-minus",
         "iconTier3": "fa-solid fa-check"
       },
       {
-        "name": "Integrare custom tehnică",
+        "name": "section10.c49",
         "iconTier1": "fa-solid fa-minus",
         "iconTier2": "fa-solid fa-minus",
         "iconTier3": "fa-solid fa-check"

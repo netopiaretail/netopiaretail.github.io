@@ -5,6 +5,9 @@ import Step2 from "./steps/Step2";
 import Step3 from "./steps/Step3";
 import Step4 from "./steps/Step4";
 import Step5 from "./steps/Step5";
+import Step6 from "./steps/Step6";
+import Step7 from "./steps/Step7";
+import Step8 from "./steps/Step8";
 import CoolNav from "./CoolNav";
 
 const Wizard = () => {
@@ -12,10 +15,30 @@ const Wizard = () => {
     form: {
       accessories: [],
       device: true,
+      printer: true,
     },
   });
 
-  const updateForm = (key, value) =>
+  const canGoNext = () => {
+    switch (state.currentStep) {
+      case 1:
+        return true;
+      case 2:
+        return state.form.domain;
+      case 3:
+        return state.form.shopType;
+      case 4:
+        return state.form.pachet;
+      case 5:
+        return typeof state.form.device == "boolean";
+      case 6:
+        return typeof state.form.printer == "boolean";
+      case 7:
+        return typeof state.form.accessories;
+    }
+  };
+
+  const updateForm = (key, value) => {
     updateState((oldState) => ({
       ...oldState,
       form: {
@@ -23,17 +46,25 @@ const Wizard = () => {
         [key]: value,
       },
     }));
+  };
+
+  const validate = () => {
+    if (canGoNext()) {
+      state.nextStep();
+    }
+  };
 
   // Do something on step change
   const onStepChange = (stats) => {
     console.log("ss", stats);
   };
 
-  const setInstance = (SW) =>
+  const setInstance = (SW) => {
     updateState((oldState) => ({
       ...oldState,
       SW,
     }));
+  };
 
   return (
     <section className="section-area">
@@ -45,10 +76,13 @@ const Wizard = () => {
           nav={<CoolNav currentStep={state.currentStep} form={state.form} />}
         >
           <Step1 />
-          <Step2 update={updateForm} form={state.form} />
-          <Step3 update={updateForm} form={state.form} />
-          <Step4 update={updateForm} form={state.form} />
+          <Step2 update={updateForm} form={state.form} nextStep={validate()} />
+          <Step3 update={updateForm} form={state.form} nextStep={validate()} />
+          <Step4 update={updateForm} form={state.form} nextStep={validate()} />
           <Step5 update={updateForm} form={state.form} />
+          <Step6 update={updateForm} form={state.form} />
+          <Step7 update={updateForm} form={state.form} />
+          <Step8 update={updateForm} form={state.form} />
         </StepWizard>
       </div>
     </section>

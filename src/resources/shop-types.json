@@ -1,14 +1,14 @@
 [
   {
-    "name": "Fizic",
-    "icon": "fa-solid fa-shop"
+    "name": "section11.s21",
+    "icon": "offline.svg"
   },
   {
-    "name": "Fizic și online",
-    "icon": "fa-solid fa-house-laptop"
+    "name": "section11.s22",
+    "icon": "onlineoffline.svg"
   },
   {
-    "name": "Online",
-    "icon": "fa-solid fa-globe"
+    "name": "section11.s23",
+    "icon": "online.svg"
   }
 ]

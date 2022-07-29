@@ -1,42 +1,42 @@
 [
   {
     "icon": "fa-solid fa-utensils",
-    "iconTitle": "Restaurant"
+    "iconTitle": "section1.horeca.c3"
   },
   {
     "icon": "fas fa-mug-hot",
-    "iconTitle": "Ceainărie"
+    "iconTitle": "section1.horeca.c4"
   },
   {
     "icon": "fas fa-cake-candles",
-    "iconTitle": "Cofetărie"
+    "iconTitle": "section1.horeca.c5"
   },
   {
     "icon": "fas fa-mug-saucer",
-    "iconTitle": "Cafenea"
+    "iconTitle": "section1.horeca.c6"
   },
   {
     "icon": "fas fa-wheat-awn",
-    "iconTitle": "Brutărie"
+    "iconTitle": "section1.horeca.c7"
   },
   {
     "icon": "fas fa-bread-slice",
-    "iconTitle": "Patiserie & Covrigărie"
+    "iconTitle": "section1.horeca.c8"
   },
   {
     "icon": "fas fa-martini-glass-citrus",
-    "iconTitle": "Pub"
+    "iconTitle": "section1.horeca.c9"
   },
   {
     "icon": "fas fa-blender",
-    "iconTitle": "Berărie"
+    "iconTitle": "section1.horeca.c10"
   },
   {
     "icon": "fas fa-wine-glass",
-    "iconTitle": "Vinotecă & Cramă"
+    "iconTitle": "section1.horeca.c1"
   },
   {
     "icon": "fas fa-fish-fins",
-    "iconTitle": "Pescărie"
+    "iconTitle": "section1.horeca.c2"
   }
 ]

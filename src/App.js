@@ -17,8 +17,11 @@ import { useEffect } from "react";
 import WOW from "wowjs";
 import SectionPricing from "./sections/SectionPricing";
 import SectionAbout from "./sections/SectionAbout";
+import { useTranslation } from "react-i18next";
 
 function App() {
+  const { t } = useTranslation();
+
   useEffect(() => {
     new WOW.WOW({
       live: false,
@@ -35,14 +38,12 @@ function App() {
         image={image1}
         imgBackground={image11}
         imageTitle={"Dashboard"}
-        title={"O singură platformă"}
-        titleSpan={"pentru orice afacere"}
-        content={
-          "Crește profitul afacerii tale printr-o platformă simplă de folosit și fără costuri. Optimizează operațiunile și eficientizează activitatea angajaților tăi, prin automatizări simple și ușor de înțeles."
-        }
+        title={t("section2.title")}
+        titleSpan={t("section2.subtitle")}
+        content={t("section2.text")}
         btnLink={""}
         swap={true}
-        btnText={"Începe gratuit"}
+        btnText={t("hero.btn")}
       />
       <SectionFunctionalities />
       <SectionAbout />
@@ -51,24 +52,20 @@ function App() {
         image={image3}
         imgBackground={image5}
         imageTitle={"Angajați"}
-        title={"Pentru angajați:"}
-        titleSpan={"Intuitiv, simplu, rapid"}
-        content={
-          "Am dezvoltat un soft de gestiune și vânzare care nu are nevoie de training special. Platforma noastră este creată pentru optimizarea maximă a procesului de învățare, astfel încât orice angajat va putea să vândă într-un timp foarte scurt. Procesul de vânzare este ușor de urmărit și rapid, astfel încât timpul de așteptare al clienților să fie cât mai mic."
-        }
+        title={t("section5.title")}
+        titleSpan={t("section5.subtitle")}
+        content={t("section5.text")}
       />
       <SectionCustom
         id={"managers"}
         image={image4}
         imgBackground={image6}
         imageTitle={"Angajați"}
-        title={"Pentru manager:"}
-        titleSpan={"Instant, simplu, rapid"}
-        content={
-          "Când ai de administrat o afacere, stocuri, parteneri, facturi, angajați, ai nevoie de ajutor, pentru a putea fi eficient, atât în ceea ce privește timpul, dar și costurile. NETOPIA Retail îți permite să ai o viziune clară asupra a tot ce ceea ce înseamnă afacerea ta, din câteva click-uri, atât pe telefonul mobil, cât și pe desktop. Cele mai importante informații îți vor fi prezentate, întotdeauna, atunci când te loghezi, iar meniul îți permite să ajungi instant în secțiunea de care ai nevoie."
-        }
+        title={t("section6.title")}
+        titleSpan={t("section6.subtitle")}
+        content={t("section6.text")}
         btnLink={""}
-        btnText={"Începe gratuit"}
+        btnText={t("hero.btn")}
         swap={true}
       />
       <SectionBenefits />

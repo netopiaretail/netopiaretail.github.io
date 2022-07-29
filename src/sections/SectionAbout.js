@@ -1,8 +1,11 @@
 import img1 from "../img/team0.jpg";
 import img2 from "../img/team.jpg";
 import img3 from "../img/team2.png";
+import { useTranslation } from "react-i18next";
 
 const SectionAbout = () => {
+  const { t } = useTranslation();
+
   return (
     <section className="bg-color section-area" id={"about"}>
       <div className="container">
@@ -15,19 +18,11 @@ const SectionAbout = () => {
             <img src={img2} className="rounded wow fadeInUp" />
           </div>
           <div className={`col-lg-5 text-start wow fadeInRightBig`}>
-            <h2 className="title">Despre noi</h2>
+            <h2 className="title">{t("section4.title")}</h2>
 
-            <p className="text">
-              NETOPIA Retail face parte din NETOPIA Group, un conglomerat de
-              companii românești care de aproape 20 de ani sprijină mediul de
-              afaceri românesc din poziția de lider de piață. Datorită
-              experienței acumulate, am înțeles nevoile reale ale afacerilor din
-              HoReCa și Retail. Prin NETOPIA Retail urmărim să ajutăm afacerile
-              mici și mijlocii să devină mai profitabile și să își extindă
-              serviciile.
-            </p>
+            <p className="text">{t("section4.text")}</p>
             <a href={"#"} className="btn main-btn mt-4">
-              Începe gratuit
+              {t("hero.btn")}
             </a>
           </div>
         </div>

@@ -1,65 +1,32 @@
 import React from "react";
-import PricingCard from "../../components/PricingCard";
+import { useTranslation } from "react-i18next";
 
-const Step3 = ({ form, update }) => {
-  const getCardClass = (name, color) => {
-    return form.pachet?.name === name
-      ? `active ${color}`
-      : form.pachet?.name
-      ? `${color} inactive`
-      : color;
-  };
+import shopTypes from "../../resources/shop-types.json";
+
+const Step3 = ({ form, update, nextStep }) => {
+  const { t } = useTranslation();
 
   return (
-    <div className="text-start wizard-step-2 justify-content-between">
-      <h4 className="mb-3">Alege pachetul potrivit business-ului tau:</h4>
-
-      <div className="row justify-content-evenly gap-4">
-        <PricingCard
-          styles={getCardClass("Gratis", "orange")}
-          price={"0"}
-          onClick={() => update("pachet", { name: "Gratis", price: 0 })}
-          title={"Gratis"}
-          link={"#pricing-table"}
-        >
-          <p>
-            Este ideal pentru businessurile care sunt la început de drum și vor
-            să înțeleagă mai clar cum își pot gestiona afacerea. Ai acces la
-            majoritatea funcționalităților care să te ajute în definirea
-            propriului succes.
-          </p>
-        </PricingCard>
-        <PricingCard
-          styles={getCardClass("Standard", "blue")}
-          price={"10"}
-          onClick={() => update("pachet", { name: "Standard", price: 10 })}
-          title={"Standard"}
-          link={"#pricing-table"}
-        >
-          <p>
-            Ai deja câțiva ani de activitate și îți dorești să te extinzi. Ce
-            primești în plus sunt:
-          </p>
-          <ul>
-            <li>baza de coduri universală EAN;</li>
-            <li>preintegrare cu NETOPIA Payments pentru plățile online;</li>
-            <li>administrare facilă a mai multor locații.</li>
-          </ul>
-        </PricingCard>
-        <PricingCard
-          styles={getCardClass("Premium", "purple")}
-          price={"20"}
-          onClick={() => update("pachet", { name: "Premium", price: 20 })}
-          title={"Premium"}
-          link={"#pricing-table"}
-        >
-          <p>
-            Afacerea ta face parte dintr-o franciză sau reprezinți o franciză și
-            ai nevoie de un soft de gestiune și administrare vânzări
-            personalizat propriilor nevoi. Scrie-ne și, împreună, vom găsi cea
-            mai bună soluție.
-          </p>
-        </PricingCard>
+    <div className="wizard-step-1">
+      <h4>{t("section11.s2")}</h4>
+      <div className="wizard-block wizard-shop-type fs-4 mt-5">
+        {shopTypes.map((shopType) => (
+          <label
+            key={shopType.name}
+            className={form.shopType === shopType.name ? "active" : ""}
+            onClick={() => {
+              update("shopType", t(shopType.name));
+              nextStep();
+            }}
+          >
+            <img
+              src={require(`../../img/${shopType.icon}`)}
+              className="mb-4"
+              height={200}
+            />{" "}
+            {t(shopType.name)}
+          </label>
+        ))}
       </div>
     </div>
   );

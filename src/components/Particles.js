@@ -19,7 +19,7 @@ const ParticlesComponent = ({ id, color, extraClass }) => {
             value: 80,
             density: {
               enable: true,
-              value_area: 800,
+              value_area: 900,
             },
           },
           color: {
@@ -31,7 +31,7 @@ const ParticlesComponent = ({ id, color, extraClass }) => {
             anim: {
               enable: false,
               speed: 1,
-              opacity_min: 0.1,
+              opacity_min: 0,
               sync: false,
             },
           },

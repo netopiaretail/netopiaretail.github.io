@@ -2,13 +2,13 @@ import React from "react";
 import device from "../../img/e800.png";
 import { useTranslation } from "react-i18next";
 
-const Step5 = ({ form, update }) => {
+const Step6 = ({ form, update }) => {
   const { t } = useTranslation();
 
   return (
     <div className="wizard-step-3">
       <div className="d-flex row text-center">
-        <h4>{t("section11.s4")}</h4>
+        <h4>{t("section11.s6")}</h4>
         <div className="row fs-5 my-4">
           <ul
             className="list-inline text-center switch-toggler"
@@ -18,7 +18,7 @@ const Step5 = ({ form, update }) => {
             <li className="cursor-pointer">
               <a
                 onClick={() => {
-                  update("device", true);
+                  update("printer", true);
                 }}
               >
                 {t("yes")}
@@ -26,9 +26,9 @@ const Step5 = ({ form, update }) => {
             </li>
             <li>
               <label
-                className={form.device ? "on switch" : "off switch"}
+                className={form.printer ? "on switch" : "off switch"}
                 onClick={() => {
-                  update("device", !form.device);
+                  update("printer", !form.printer);
                 }}
               >
                 <span className="slider round"></span>
@@ -37,7 +37,7 @@ const Step5 = ({ form, update }) => {
             <li className="cursor-pointer">
               <a
                 onClick={() => {
-                  update("device", false);
+                  update("printer", false);
                 }}
               >
                 {t("no")}
@@ -94,4 +94,4 @@ const Step5 = ({ form, update }) => {
   );
 };
 
-export default Step5;
+export default Step6;

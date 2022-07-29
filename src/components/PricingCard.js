@@ -1,6 +1,17 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
-const PricingCard = ({ price, title, styles, link, onClick, children }) => {
+const PricingCard = ({
+  price,
+  title,
+  styles,
+  link,
+  onClick,
+  children,
+  from,
+}) => {
+  const { t } = useTranslation();
+
   const handleClick = () => {
     const el = document.getElementById("pricing-btn");
     el.firstChild.click();
@@ -14,8 +25,9 @@ const PricingCard = ({ price, title, styles, link, onClick, children }) => {
       onClick={onClick}
     >
       <div className="pricing-card-price">
+        {from && <span>{t("from")}</span>}
         {price}
-        <span>&euro;/lună</span>
+        <span>&euro;/{t("month")}</span>
       </div>
       <div className={`pricing-card-content gap-2 d-flex flex-column mt-3`}>
         <div className="pricing-card-title">{title}</div>

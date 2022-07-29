@@ -1,44 +1,55 @@
 import img from "../img/contact.svg";
 import logo from "../img/logo-blank.svg";
 import ParticlesComponent from "../components/Particles";
+import { useState } from "react";
+import Form from "react-bootstrap/Form";
+import { Trans, useTranslation } from "react-i18next";
+import InputSugesstions from "../components/InputSugesstions";
 
 const FooterArea = () => {
+  const { t } = useTranslation();
+
+  const [validated, setValidated] = useState(false);
+
+  const handleSubmit = (event) => {
+    const form = event.currentTarget;
+    if (form.checkValidity() === false) {
+      event.preventDefault();
+      event.stopPropagation();
+    }
+
+    setValidated(true);
+  };
+
   return (
     <footer id="contact" className="footer-area relative py-5">
       <div className="container text-start">
-        <div className="subscribe-area wow fadeIn">
+        <div className="contact-area wow fadeIn">
           <div className="row justify-content-center">
             <div className="col-lg-6">
-              <div className="subscribe-content mt-4">
+              <div className="contact-content mt-4">
                 <div className="text-center">
                   <img width="70%" src={img} alt="Contact" />
                 </div>
-                <h2 className="mt-5 subscribe-title">Contact</h2>
+                <h2 className="mt-5 contact-title">{t("menu.l7")}</h2>
 
                 <p className="mt-4 fs-6">
-                  Ne poți adresa orice întrebare legat de NETOPIA Retail.
-                  Vizitează și pagina de <a href="/">Documentație</a> unde am
-                  răspuns celor mai frecvente întrebări.
+                  <Trans i18nKey="section12.text">
+                    <a href="/">Documentație</a>
+                  </Trans>
                 </p>
               </div>
             </div>
             <div className="col-lg-6">
               <div className="mt-4">
-                <form action="#">
+                <Form noValidate validated={validated} onSubmit={handleSubmit}>
                   <div className="mb-4">
                     <input
                       type="text"
                       className="form-control"
                       id="name"
-                      placeholder="Nume"
-                    />
-                  </div>
-                  <div className="mb-4">
-                    <input
-                      type="phone"
-                      className="form-control"
-                      id="phone"
-                      placeholder="Telefon"
+                      placeholder={t("section12.f1") + "*"}
+                      required
                     />
                   </div>
                   <div className="mb-4">
@@ -46,60 +57,34 @@ const FooterArea = () => {
                       type="email"
                       className="form-control"
                       id="name"
-                      placeholder="Email"
+                      placeholder={t("section12.f2") + "*"}
+                      required
                     />
                   </div>
                   <div className="mb-4">
                     <input
                       type="text"
                       className="form-control"
-                      id="city"
-                      placeholder="Oraș"
+                      id="cui"
+                      placeholder={t("section12.f3") + "*"}
                     />
                   </div>
                   <div className="mb-4">
-                    <input
-                      type="text"
-                      className="form-control"
-                      id="type"
-                      placeholder="Tipul de afacere"
-                    />
+                    <InputSugesstions />
                   </div>
                   <div className="mb-4">
                     <textarea
                       className="form-control"
                       id="message"
                       rows="3"
-                      placeholder="Mesaj"
+                      maxLength="2000"
+                      placeholder={t("section12.f5") + "*"}
                     ></textarea>
                   </div>
-                  <label>Metoda preferată de contact</label>
-                  <div className="form-check">
-                    <input
-                      className="form-check-input"
-                      type="checkbox"
-                      value="telefon"
-                      id="telefon"
-                    />
-                    <label className="form-check-label" htmlFor="telefon">
-                      Telefon
-                    </label>
-                  </div>
-                  <div className="form-check">
-                    <input
-                      className="form-check-input"
-                      type="checkbox"
-                      value="Email"
-                      id="email"
-                    />
-                    <label className="form-check-label" htmlFor="email">
-                      Email
-                    </label>
-                  </div>
                   <button type="submit" className="btn main-btn mt-3">
-                    Trimite
+                    {t("send")}
                   </button>
-                </form>
+                </Form>
               </div>
             </div>
           </div>
@@ -130,17 +115,17 @@ const FooterArea = () => {
                   data-wow-delay="0.6s"
                 >
                   <div className="footer-title">
-                    <h4 className="title">Links</h4>
+                    <h4 className="title">{t("footer.title")}</h4>
                   </div>
                   <ul className="link">
                     <li>
-                      <a href="/">Politică cookies</a>
+                      <a href="/">{t("footer.l1")}</a>
                     </li>
                     <li>
-                      <a href="/">Politică confidențialitate</a>
+                      <a href="/">{t("footer.l2")}</a>
                     </li>
                     <li>
-                      <a href="/">Termeni și Condiții Generale</a>
+                      <a href="/">{t("footer.l3")}</a>
                     </li>
                   </ul>
                 </div>
@@ -153,7 +138,7 @@ const FooterArea = () => {
                 data-wow-delay="0.8s"
               >
                 <div className="footer-title">
-                  <h4 className="title">Contact</h4>
+                  <h4 className="title">{t("menu.l7")}</h4>
                 </div>
                 <ul className="contact">
                   <li>info@netopia.com</li>

@@ -1,52 +1,52 @@
 [
   {
     "icon": "fas fa-store",
-    "iconTitle": "Magazin universal"
+    "iconTitle": "section1.retail.c9"
   },
 
   {
     "icon": "fas fa-shirt",
-    "iconTitle": "Magazin de îmbrăcăminte"
+    "iconTitle": "section1.retail.c10"
   },
   {
     "icon": "fas fa-user",
-    "iconTitle": "Farmacie"
+    "iconTitle": "section1.retail.c11"
   },
   {
     "icon": "fas fa-eye-dropper",
-    "iconTitle": "Beauty"
+    "iconTitle": "section1.retail.c12"
   },
 
   {
     "icon": "fas fa-cart-shopping",
-    "iconTitle": "Hypermarket"
+    "iconTitle": "section1.retail.c1"
   },
   {
     "icon": "fas fa-cart-flatbed",
-    "iconTitle": "Supermarket"
+    "iconTitle": "section1.retail.c2"
   },
   {
     "icon": "fas fa-percent",
-    "iconTitle": "Discounter"
+    "iconTitle": "section1.retail.c3"
   },
   {
     "icon": "fas fa-shop",
-    "iconTitle": "Proximitate"
+    "iconTitle": "section1.retail.c4"
   },
   {
     "icon": "fas fa-cash-register",
-    "iconTitle": "Cash & Carry"
+    "iconTitle": "section1.retail.c5"
   },
   {
     "icon": "fas fa-basket-shopping",
-    "iconTitle": "Magazin IT&C & Electrocasnice"
+    "iconTitle": "section1.retail.c6"
   },
   {
     "icon": "fas fa-newspaper",
-    "iconTitle": "News & Convenience"
+    "iconTitle": "section1.retail.c7"
   },
   {
     "icon": "fas fa-book",
-    "iconTitle": "Librărie & Papetărie"
+    "iconTitle": "section1.retail.c8"
   }
 ]

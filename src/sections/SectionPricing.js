@@ -1,63 +1,54 @@
 import PricingCard from "../components/PricingCard";
 import Accordion from "react-bootstrap/Accordion";
 import PricingTable from "./PricingTable";
+import { useTranslation } from "react-i18next";
 
 const SectionPricing = () => {
+  const { t } = useTranslation();
+
   return (
     <section id="pricing" className="section-area">
       <div className="container">
         <div className="text-center pb-4">
-          <h3 className="title">Pachete</h3>
+          <h3 className="title">{t("menu.l4")}</h3>
         </div>
         <div className="row justify-content-evenly gap-4">
           <PricingCard
             styles={("Gratis", "orange")}
             price={"0"}
-            title={"Gratis"}
+            title={t("section10.free")}
             link={"#pricing-table"}
           >
-            <p>
-              Este ideal pentru businessurile care sunt la început de drum și
-              vor să înțeleagă mai clar cum își pot gestiona afacerea. Ai acces
-              la majoritatea funcționalităților care să te ajute în definirea
-              propriului succes.
-            </p>
+            <p>{t("section10.freeText")}</p>
           </PricingCard>
           <PricingCard
             styles={("Standard", "blue")}
             price={"10"}
-            title={"Standard"}
+            title={t("section10.standard")}
             link={"#pricing-table"}
           >
-            <p>
-              Ai deja câțiva ani de activitate și îți dorești să te extinzi. Ce
-              primești în plus sunt:
-            </p>
+            <p>{t("section10.standardText")}</p>
             <ul>
-              <li>baza de coduri universală EAN;</li>
-              <li>preintegrare cu NETOPIA Payments pentru plățile online;</li>
-              <li>administrare facilă a mai multor locații.</li>
+              <li>{t("section10.standardText1")}</li>
+              <li>{t("section10.standardText2")}</li>
+              <li>{t("section10.standardText3")}</li>
             </ul>
           </PricingCard>
           <PricingCard
             styles={("Premium", "purple")}
-            price={"20"}
-            title={"Premium"}
+            price={"99"}
+            from={true}
+            title={t("section10.premium")}
             link={"#pricing-table"}
           >
-            <p>
-              Afacerea ta face parte dintr-o franciză sau reprezinți o franciză
-              și ai nevoie de un soft de gestiune și administrare vânzări
-              personalizat propriilor nevoi. Scrie-ne și, împreună, vom găsi cea
-              mai bună soluție.
-            </p>
+            <p>{t("section10.premiumText")}</p>
           </PricingCard>
         </div>
 
         <Accordion className="pt-5 wow fadeInUpBig" id="pricing-table">
           <Accordion.Item eventKey="0">
             <Accordion.Header id="pricing-btn">
-              Funcționalități pachete și diferențe
+              {t("section10.title")}
             </Accordion.Header>
             <Accordion.Body>
               <PricingTable />

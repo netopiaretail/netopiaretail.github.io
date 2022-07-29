@@ -3,52 +3,57 @@ import img2 from "../img/handle.svg";
 import img3 from "../img/customize.svg";
 import img4 from "../img/netopiabusiness.svg";
 import Card from "../components/Card";
+import { Trans, useTranslation } from "react-i18next";
 
 const SectionAdvantages = () => {
+  const { t } = useTranslation();
+
   return (
     <section id="avantaje" className="section-area">
       <div className="container">
         <div className="text-center">
-          <h3 className="title">Principalele avantaje</h3>
+          <h3 className="title">{t("section9.title")}</h3>
         </div>
         <div className="row justify-content-center">
           <div className="col-lg-3 col-sm-8 my-4 wow fadeInUp">
             <Card
               image={img1}
               imageTitle={"NETOPIA Payments"}
-              title={"Integrare cu metoda de plată NETOPIA Payments"}
-              content={
-                "Iți oferim acces la o paletă largă de servicii de plată, inovație constantă și standarde internaționale de siguranță și securitate a datelor. Vei putea accepta plăți prin card cu discount preferențial, dar și posibilitatea de a accepta cryptomonede."
-              }
+              title={t("section9.b1")}
+              content={t("section9.b1Text")}
             />
           </div>
           <div className="col-lg-3 col-sm-8 my-4 wow fadeInUp">
             <Card
               image={img2}
               imageTitle={"Vanzari"}
-              title={"Gestionează vânzările. Simplu, ușor, rapid."}
-              content={
-                "NETOPIA Retail a dezvoltat funcția de Calcul Automat de Sold pentru a ști în orice moment cât ai de încasat sau de plătit, pe baza istoricului de facturi."
-              }
+              title={t("section9.b2")}
+              content={t("section9.b2Text")}
             />
           </div>
           <div className="col-lg-3 col-sm-8 my-4 wow fadeInUp">
             <Card
               image={img3}
               imageTitle={"Personalizeaza"}
-              title={"Personalizezi platforma după propriile nevoi"}
-              content={
-                "NETOPIA Retail este o platformă intuitivă, ușor de folosit și de înțeles. Orice produs poate fi adăugat în câteva minute și poți aranja produsele și categoriile în funcție de cele mai vândute sau cost."
-              }
+              title={t("section9.b3")}
+              content={t("section9.b3Text")}
             />
           </div>
           <div className="col-lg-3 col-sm-8 my-4 wow fadeInUp">
             <Card
               image={img4}
               imageTitle={"NETOPIA Card"}
-              title={"Card bancar tip business NETOPIA"}
+              title={t("section9.b4")}
               content={
-                "Cardul de business NETOPIA este instrumentul modern și elegant al oamenilor de afaceri din România. Optimizează costurile afacerii tale prin beneficiile unice oferite de cardul de business NETOPIA."
+                <Trans i18nKey="section9.b4Text">
+                  <a
+                    href="https://netopia-payments.com/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    business NETOPIA
+                  </a>
+                </Trans>
               }
             />
           </div>

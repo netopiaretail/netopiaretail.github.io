@@ -4,10 +4,13 @@ import logo2 from "../img/logo.svg";
 import device from "../img/header-hero.png";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import ParticlesComponent from "../components/Particles";
-import SearchBar from "./SearchBar";
+// import SearchBar from "./SearchBar";
+import LngSwitcher from "../components/LngSwitcher";
+import { useTranslation } from "react-i18next";
 
 const Header = () => {
   const [navbar, setNavbar] = useState(false);
+  const { t } = useTranslation();
 
   const changeBackground = () => {
     if (window.scrollY >= 66) {
@@ -48,28 +51,29 @@ const Header = () => {
             className={"justify-content-end rounded"}
           >
             <Nav className={navbar ? "gap-1" : "gap-1 text-white"}>
-              <Nav.Link href="#features">Soluții</Nav.Link>
-              <Nav.Link href="#about">Despre noi</Nav.Link>
-              <Nav.Link href="#hardware">Hardware</Nav.Link>
-              <Nav.Link href="#pricing">Pachete</Nav.Link>
-              <Nav.Link href="#documentatie">Documentație</Nav.Link>
+              <Nav.Link href="#features">{t("menu.l1")}</Nav.Link>
+              <Nav.Link href="#about">{t("menu.l2")}</Nav.Link>
+              <Nav.Link href="#hardware">{t("menu.l3")}</Nav.Link>
+              <Nav.Link href="#pricing">{t("menu.l4")}</Nav.Link>
+              <Nav.Link href="#documentatie">{t("menu.l5")}</Nav.Link>
               <Nav.Link
                 href="https://sites.google.com/netopia-system.com/netopia-retail-faq"
                 target="_blank"
               >
-                FAQ
+                {t("menu.l6")}
               </Nav.Link>
-              <Nav.Link href="#contact">Contact</Nav.Link>
+              <Nav.Link href="#contact">{t("menu.l7")}</Nav.Link>
               <Nav.Link className="btn main-btn fw-bold" href="/">
-                Înscrie-te
+                {t("menu.btn1")}
               </Nav.Link>
               <Nav.Link
                 className="login fw-bold"
                 href="https://backend.netopia-retail.ro/"
               >
-                Login
+                {t("menu.btn2")}
               </Nav.Link>
-              <SearchBar />
+              {/* <SearchBar /> */}
+              <LngSwitcher />
             </Nav>
           </Navbar.Collapse>
         </Container>
@@ -85,14 +89,14 @@ const Header = () => {
                   data-wow-duration="1.3s"
                   data-wow-delay="0.5s"
                 >
-                  One-stop-shop
+                  {t("hero.text")}
                 </h2>
                 <h3
                   className="header-sub-title wow fadeInUp mb-3"
                   data-wow-duration="1.3s"
                   data-wow-delay="0.2s"
                 >
-                  pentru nevoile tale de business
+                  {t("hero.text1")}
                 </h3>
                 <div className="mb-4">
                   <a
@@ -101,7 +105,7 @@ const Header = () => {
                     data-wow-duration="1.3s"
                     data-wow-delay="1.1s"
                   >
-                    Pachete
+                    {t("menu.l4")}
                   </a>
 
                   <a
@@ -111,7 +115,7 @@ const Header = () => {
                     data-scroll-nav="0"
                     href="/"
                   >
-                    <b>Începe gratuit</b>
+                    <b>{t("hero.btn")}</b>
                   </a>
                 </div>
               </div>

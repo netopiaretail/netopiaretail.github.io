@@ -1,21 +1,24 @@
 import { useCallback } from "react";
 import featureCategories from "../resources/pricing.json";
+import { useTranslation } from "react-i18next";
 
 const PricingTable = () => {
+  const { t } = useTranslation();
+
   const renderFeature = useCallback((feature) => {
     return (
       <tr key={feature.name}>
-        <td className="feature-name">{feature.name}</td>
+        <td className="feature-name">{t(feature.name)}</td>
         <td>
-          {feature.textTier1 && feature.textTier1}
+          {t(feature.textTier1) && t(feature.textTier1)}
           {feature.iconTier1 && <i className={feature.iconTier1} />}
         </td>
         <td>
-          {feature.textTier2 && feature.textTier2}
+          {t(feature.textTier2) && t(feature.textTier2)}
           {feature.iconTier2 && <i className={feature.iconTier2} />}
         </td>
         <td>
-          {feature.textTier3 && feature.textTier3}
+          {t(feature.textTier3) && t(feature.textTier3)}
           {feature.iconTier3 && <i className={feature.iconTier3} />}
         </td>
       </tr>
@@ -25,7 +28,7 @@ const PricingTable = () => {
     return (
       <>
         <tr>
-          <td className="feature-category-name">{featureCategory.name}</td>
+          <td className="feature-category-name">{t(featureCategory.name)}</td>
           <td></td>
           <td></td>
           <td></td>
@@ -44,49 +47,49 @@ const PricingTable = () => {
           <input type="radio" name="pricing-type" id="premium" />
           <div id="labels" className="pb-3 text-center">
             <label htmlFor="free" className="p-2">
-              Gratis
+              {t("section10.gratis")}
             </label>
             <label htmlFor="standard" className="p-2">
-              Standard
+              {t("section10.standard")}
             </label>
             <label htmlFor="premium" className="p-2">
-              Premium
+              {t("section10.premium")}
             </label>
           </div>
           <table className="table">
             <thead>
               <tr>
                 <th className="text-start align-middle">
-                  <div className="fs-1">Pachete</div>
+                  <div className="fs-1">{t("menu.l4")}</div>
                 </th>
                 <th>
-                  <span className="fw-normal">Gratis</span>
+                  <span className="fw-normal"> {t("section10.gratis")}</span>
                   <br />
                   <span className="price">0 &euro;</span>
-                  <span className="period">/luna</span>
+                  <span className="period">/{t("month")}</span>
                   <br />
                   <span className="link">
-                    <a href="/">Alege pachetul</a>
+                    <a href="/">{t("choose")}</a>
                   </span>
                 </th>
                 <th>
-                  <span className="fw-normal">Standard</span>
+                  <span className="fw-normal"> {t("section10.standard")}</span>
                   <br />
                   <span className="price">10 &euro;</span>
-                  <span className="period">/luna</span>
+                  <span className="period">/{t("month")}</span>
                   <br />
                   <span className="link">
-                    <a href="/">Alege pachetul</a>
+                    <a href="/">{t("choose")}</a>
                   </span>
                 </th>
                 <th>
-                  <span className="fw-normal">Premium</span>
+                  <span className="fw-normal"> {t("section10.premium")}</span>
                   <br />
                   <span className="price">20 &euro;</span>
-                  <span className="period">/luna</span>
+                  <span className="period">/{t("month")}</span>
                   <br />
                   <span className="link">
-                    <a href="/">Alege pachetul</a>
+                    <a href="/">{t("choose")}</a>
                   </span>
                 </th>
               </tr>
@@ -97,17 +100,17 @@ const PricingTable = () => {
                 <td>&nbsp;</td>
                 <td>
                   <a className="btn main-btn" href="/">
-                    Începe gratuit
+                    {t("hero.btn")}
                   </a>
                 </td>
                 <td>
                   <a className="btn main-btn" href="/">
-                    Înscrie-te
+                    {t("menu.btn1")}
                   </a>
                 </td>
                 <td>
                   <a className="btn main-btn" href="#contact">
-                    Contactează-ne
+                    {t("contactUs")}
                   </a>
                 </td>
               </tr>

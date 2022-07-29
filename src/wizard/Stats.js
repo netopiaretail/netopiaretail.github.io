@@ -2,18 +2,27 @@ import React from "react";
 import Modal from "react-bootstrap/Modal";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
+import { useTranslation } from "react-i18next";
 
 const Stats = ({ nextStep, previousStep, totalSteps, currentStep, form }) => {
+  const { t } = useTranslation();
+
   const canGoNext = () => {
     switch (currentStep) {
       case 1:
         return true;
       case 2:
-        return form.activityType && form.domain && form.shopType;
+        return form.domain;
       case 3:
-        return form.pachet;
+        return form.shopType;
       case 4:
+        return form.pachet;
+      case 5:
         return typeof form.device == "boolean";
+      case 6:
+        return typeof form.printer == "boolean";
+      case 7:
+        return typeof form.accessories;
     }
   };
 
@@ -43,15 +52,26 @@ const Stats = ({ nextStep, previousStep, totalSteps, currentStep, form }) => {
           &nbsp;Înapoi
         </div>
       )}
-      {currentStep < totalSteps ? (
+      {currentStep === 1 && (
         <button
           className="btn main-btn next"
           onClick={() => validate()}
           disabled={!canGoNext()}
         >
-          {currentStep === 1 ? "Începe" : "Continuă"}
+          Începe
         </button>
-      ) : (
+      )}
+      {currentStep > 4 && currentStep < totalSteps && (
+        <button
+          className="btn main-btn next"
+          onClick={() => validate()}
+          disabled={!canGoNext()}
+        >
+          Continua
+        </button>
+      )}
+
+      {currentStep === totalSteps && (
         <div className="d-flex row align-items-center justify-content-center gap-4">
           <button
             onClick={handleShow}
@@ -104,7 +124,7 @@ const Stats = ({ nextStep, previousStep, totalSteps, currentStep, form }) => {
                 onClick={handleClose}
                 disabled={!checked}
               >
-                Submit
+                {t("send")}
               </button>
             </Modal.Footer>
           </Modal>
