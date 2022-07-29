@@ -15,7 +15,7 @@ const SectionFeatures = () => {
             <div className="text-center pb-4">
               <h3 className="title fw-normal">
                 <Trans i18nKey="section1.title">
-                  <span className="text-nowrap fw-bold">
+                  <span className="fw-bold">
                     Softul de gestiune și administrare vânzări NETOPIA Retail{" "}
                   </span>
                   conține soluții și programe IT de tip On Cloud și Android
