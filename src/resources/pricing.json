@@ -168,13 +168,42 @@
     ]
   },
   {
+    "name": "section10.c321",
+    "features": [
+      {
+        "name": "",
+        "iconTier1": "fa-solid fa-minus",
+        "iconTier2": "fa-solid fa-minus",
+        "iconTier3": "fa-solid fa-check"
+      }
+    ]
+  },
+  {
+    "name": "section10.c322",
+    "features": [
+      {
+        "name": "section10.c323",
+        "iconTier1": "fa-solid fa-minus",
+        "iconTier2": "fa-solid fa-check",
+        "iconTier3": "fa-solid fa-check"
+      },
+      {
+        "name": "section10.c324",
+        "iconTier1": "fa-solid fa-minus",
+        "iconTier2": "fa-solid fa-check",
+        "iconTier3": "fa-solid fa-check"
+      }
+    ]
+  },
+  {
     "name": "section10.c33",
     "features": [
       {
         "name": "section10.c34",
         "iconTier1": "fa-solid fa-check",
         "iconTier2": "fa-solid fa-check",
-        "iconTier3": "fa-solid fa-check"
+        "iconTier3": "fa-solid fa-check",
+        "link": "https://www.web2sms.ro/"
       },
       {
         "name": "section10.c50",
@@ -202,12 +231,6 @@
       {
         "name": "section10.c38",
         "iconTier1": "fa-solid fa-check",
-        "iconTier2": "fa-solid fa-check",
-        "iconTier3": "fa-solid fa-check"
-      },
-      {
-        "name": "section10.c39",
-        "iconTier1": "fa-solid fa-minus",
         "iconTier2": "fa-solid fa-check",
         "iconTier3": "fa-solid fa-check"
       },
@@ -242,6 +265,12 @@
       },
       {
         "name": "section10.c45",
+        "iconTier1": "fa-solid fa-minus",
+        "iconTier2": "fa-solid fa-check",
+        "iconTier3": "fa-solid fa-check"
+      },
+      {
+        "name": "section10.c451",
         "iconTier1": "fa-solid fa-minus",
         "iconTier2": "fa-solid fa-check",
         "iconTier3": "fa-solid fa-check"

@@ -1,6 +1,6 @@
 import { useCallback } from "react";
 import featureCategories from "../resources/pricing.json";
-import { useTranslation } from "react-i18next";
+import { Trans, useTranslation } from "react-i18next";
 
 const PricingTable = () => {
   const { t } = useTranslation();
@@ -8,7 +8,17 @@ const PricingTable = () => {
   const renderFeature = useCallback((feature) => {
     return (
       <tr key={feature.name}>
-        <td className="feature-name">{t(feature.name)}</td>
+        <td className="feature-name">
+          <Trans i18nKey={feature.name}>
+            {feature.link ? (
+              <a href={feature.link} target="_blank" rel="noreferrer">
+                {feature.name}
+              </a>
+            ) : (
+              feature.name
+            )}
+          </Trans>
+        </td>
         <td>
           {t(feature.textTier1) && t(feature.textTier1)}
           {feature.iconTier1 && <i className={feature.iconTier1} />}
@@ -47,7 +57,7 @@ const PricingTable = () => {
           <input type="radio" name="pricing-type" id="premium" />
           <div id="labels" className="pb-3 text-center">
             <label htmlFor="free" className="p-2">
-              {t("section10.gratis")}
+              {t("section10.free")}
             </label>
             <label htmlFor="standard" className="p-2">
               {t("section10.standard")}
@@ -63,7 +73,7 @@ const PricingTable = () => {
                   <div className="fs-1">{t("menu.l4")}</div>
                 </th>
                 <th>
-                  <span className="fw-normal"> {t("section10.gratis")}</span>
+                  <span className="fw-normal"> {t("section10.free")}</span>
                   <br />
                   <span className="price">0 &euro;</span>
                   <span className="period">/{t("month")}</span>

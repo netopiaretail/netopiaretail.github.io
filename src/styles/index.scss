@@ -1717,6 +1717,7 @@ a.more {
     .wizard-block {
       display: flex;
       align-items: center;
+      flex-wrap: wrap;
       gap: 10px;
       justify-content: space-around;
       color: $primary-color !important;
@@ -1834,6 +1835,11 @@ a.more {
 
       .accesories-icon {
         position: absolute;
+        display: flex;
+        width: 34px;
+        height: 34px;
+        justify-content: center;
+        align-items: center;
         top: -20px;
         right: -20px;
         padding: 5px 10px;
@@ -2027,6 +2033,13 @@ a.more {
     }
 
     .choices-list {
+      & > div {
+        margin-bottom: 2rem;
+
+        @media (max-width: 991px) {
+          margin-bottom: 0;
+        }
+      }
       & > div > div {
         margin-bottom: 8px;
         font-size: 0.8rem;

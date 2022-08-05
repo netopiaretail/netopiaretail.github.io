@@ -18,7 +18,7 @@ const SectionHardware = () => {
           <h3 className="title">{t("section8.title")}</h3>
         </div>
         <div className="row gap-2 justify-content-center">
-          <div className="card col-lg-4 col-sm-8 my-4 wow fadeInLeftBig">
+          <div className="card col-lg-8 col-sm-8 my-4 wow fadeInRightBig">
             <Carousel variant="dark" indicators={false}>
               <Carousel.Item>
                 <img className="d-block m-auto" src={img1} alt="Pax E800" />
@@ -53,7 +53,7 @@ const SectionHardware = () => {
               <p>{t("section8.b1Text")}</p>
             </div>
           </div>
-          <div className="card col-lg-4 col-sm-8 my-4 wow fadeInRightBig">
+          <div className="card col-lg-4 col-sm-8 my-4 wow fadeInLeftBig">
             <Carousel variant="dark" indicators={false}>
               <Carousel.Item>
                 <img className="d-block m-auto" src={img2} alt="First slide" />
@@ -88,7 +88,7 @@ const SectionHardware = () => {
               <p>{t("section8.b2Text")}</p>
             </div>
           </div>
-          <div className="card col-lg-8 col-sm-8 my-4 wow fadeInRightBig">
+          <div className="card col-lg-4 col-sm-8 my-4 wow fadeInRightBig">
             <Carousel variant="dark" indicators={false}>
               <Carousel.Item>
                 <img className="d-block m-auto" src={img2} alt="First slide" />

@@ -37,7 +37,7 @@ const PricingCard = ({
           onClick={handleClick}
           className="pricing-card-link text-center fs-6 fw-light"
         >
-          Vezi detalii
+          {t("details")}
         </a>
       </div>
     </div>

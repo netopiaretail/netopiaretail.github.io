@@ -1,5 +1,5 @@
 import React from "react";
-import device from "../../img/e800.png";
+import device from "../../img/printer.jpg";
 import { useTranslation } from "react-i18next";
 
 const Step6 = ({ form, update }) => {
@@ -50,7 +50,7 @@ const Step6 = ({ form, update }) => {
           <div className="device-card">
             <div
               className={
-                form.device ? "device-card-inner" : "device-card-inner active"
+                form.printer ? "device-card-inner" : "device-card-inner active"
               }
             >
               <div className="flip-card-front d-flex row justify-content-center align-items-center">

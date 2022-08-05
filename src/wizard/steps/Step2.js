@@ -12,7 +12,7 @@ const Step2 = ({ form, update, nextStep }) => {
         {domains.map((domain) => (
           <label
             key={domain.name}
-            className={form.domain === domain.name ? "active" : ""}
+            className={form.domain === t(domain.name) ? "active" : ""}
             onClick={() => {
               update("domain", domain.name);
               nextStep();

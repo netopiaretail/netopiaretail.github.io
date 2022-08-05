@@ -41,28 +41,22 @@ const Step8 = ({ form }) => {
             <div className="row d-flex justify-content-around gap-2">
               <div className="col-lg-3">
                 {t("device")}
-                <div>
-                  {device === "true"
-                    ? device.replace("true", "Da")
-                    : device.replace("false", "Nu")}
-                </div>
+                <div>{device === "true" ? t("yes") : t("no")}</div>
               </div>
               <div className="col-lg-3">
                 {t("section11.s5P2")}
-                <div>
-                  {printer === "true"
-                    ? printer.replace("true", "Da")
-                    : printer.replace("false", "Nu")}
-                </div>
+                <div>{printer === "true" ? t("yes") : t("no")}</div>
               </div>
-              <div className="col-lg-3">
-                {t("accesories")}
-                <div>
-                  {form.accessories.map((device) => (
-                    <div key={device.name}>{t(device.name)}</div>
-                  ))}
+              {form.accessories.lenght > 0 && (
+                <div className="col-lg-3">
+                  {t("accesories")}
+                  <div>
+                    {form.accessories.map((device) => (
+                      <div key={device.name}>{t(device.name)}</div>
+                    ))}
+                  </div>
                 </div>
-              </div>
+              )}
             </div>
           </div>
         </div>

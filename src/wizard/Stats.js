@@ -49,7 +49,7 @@ const Stats = ({ nextStep, previousStep, totalSteps, currentStep, form }) => {
       {currentStep > 1 && (
         <div className="back-btn" onClick={previousStep}>
           <i className="fa-solid fa-chevron-left" onClick={previousStep}></i>
-          &nbsp;Înapoi
+          &nbsp;{t("back")}
         </div>
       )}
       {currentStep === 1 && (
@@ -58,7 +58,7 @@ const Stats = ({ nextStep, previousStep, totalSteps, currentStep, form }) => {
           onClick={() => validate()}
           disabled={!canGoNext()}
         >
-          Începe
+          {t("start")}
         </button>
       )}
       {currentStep > 4 && currentStep < totalSteps && (
@@ -67,7 +67,7 @@ const Stats = ({ nextStep, previousStep, totalSteps, currentStep, form }) => {
           onClick={() => validate()}
           disabled={!canGoNext()}
         >
-          Continua
+          {t("next")}
         </button>
       )}
 
@@ -77,11 +77,10 @@ const Stats = ({ nextStep, previousStep, totalSteps, currentStep, form }) => {
             onClick={handleShow}
             className="btn secondary-btn-gradient w-auto"
           >
-            <i className="fa-solid fa-paper-plane"></i> Trimite configurația pe
-            email
+            <i className="fa-solid fa-paper-plane"></i> {t("section11.btn")}
           </button>
           <button className="btn main-btn w-auto">
-            <i className="fa-solid fa-user-plus"></i> Înscrie-te
+            <i className="fa-solid fa-user-plus"></i> {t("menu.btn1")}
           </button>
 
           <Modal
@@ -93,7 +92,9 @@ const Stats = ({ nextStep, previousStep, totalSteps, currentStep, form }) => {
             <Modal.Body className="text-start">
               <Form>
                 <Form.Group className="mb-3" controlId="form.ControlInput1">
-                  <Form.Label className="fs-5 fw-bold">Email</Form.Label>
+                  <Form.Label className="fs-5 fw-bold">
+                    {t("section12.f2")}
+                  </Form.Label>
                   <Form.Control
                     type="email"
                     placeholder="name@example.com"
@@ -104,9 +105,7 @@ const Stats = ({ nextStep, previousStep, totalSteps, currentStep, form }) => {
                   <Form.Check
                     type={"checkbox"}
                     onChange={handleChange}
-                    label={
-                      "Sunt de acord ca datele mele trimise să fie colectate și stocate."
-                    }
+                    label={t("agree")}
                   />
                 </Form.Group>
               </Form>
@@ -117,7 +116,7 @@ const Stats = ({ nextStep, previousStep, totalSteps, currentStep, form }) => {
                 className="btn"
                 onClick={handleClose}
               >
-                Închide
+                {t("close")}
               </Button>
               <button
                 className="btn main-btn"
