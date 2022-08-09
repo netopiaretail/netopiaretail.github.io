@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.dcad7157.css",
-    "main.js": "/static/js/main.882ec5c6.js",
+    "main.css": "/static/css/main.e38e818d.css",
+    "main.js": "/static/js/main.95b122f0.js",
     "static/media/team2 1.png": "/static/media/team2 1.908e47126a98c9d4d898.png",
     "static/media/angajati.png": "/static/media/angajati.c4f6c48b24841586d831.png",
     "static/media/section3.png": "/static/media/section3.8ca5cf68ce4769f43ee3.png",
@@ -18,6 +18,7 @@
     "static/media/e800.png": "/static/media/e800.ab73f040eda6a01e3e96.png",
     "static/media/dashboard.png": "/static/media/dashboard.1518a310461f8ec8a0db.png",
     "static/media/sertar.jpg": "/static/media/sertar.924b3676a3e43e2b046f.jpg",
+    "static/media/role.jpg": "/static/media/role.5f747a9ce98b243d1aa0.jpg",
     "static/media/section2.svg": "/static/media/section2.2582b7b7f9f299945491.svg",
     "static/media/1BlueCash-50.png": "/static/media/1BlueCash-50.d9c2ee329272a46d4cb2.png",
     "static/media/pax2.png": "/static/media/pax2.3e3af55d85e4251afe00.png",
@@ -56,11 +57,11 @@
     "static/media/path290.svg": "/static/media/path290.4d90cdf75f7a94b6b41d.svg",
     "static/media/1.svg": "/static/media/1.7a2f1d2302a0838f9e33.svg",
     "static/media/2.svg": "/static/media/2.c90e66c097d1eae2465f.svg",
-    "main.dcad7157.css.map": "/static/css/main.dcad7157.css.map",
-    "main.882ec5c6.js.map": "/static/js/main.882ec5c6.js.map"
+    "main.e38e818d.css.map": "/static/css/main.e38e818d.css.map",
+    "main.95b122f0.js.map": "/static/js/main.95b122f0.js.map"
   },
   "entrypoints": [
-    "static/css/main.dcad7157.css",
-    "static/js/main.882ec5c6.js"
+    "static/css/main.e38e818d.css",
+    "static/js/main.95b122f0.js"
   ]
 }
