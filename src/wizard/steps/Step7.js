@@ -17,6 +17,11 @@ const accessoryList = [
     accTitle: "section11.s5P4",
     price: 3,
   },
+  {
+    image: require("../../img/dp25.png"),
+    accTitle: "section8.c4",
+    price: 3,
+  },
 ];
 
 const Step7 = ({ form, update }) => {
@@ -37,9 +42,9 @@ const Step7 = ({ form, update }) => {
 
   return (
     <div className="wizard-step-3">
-      <div className="d-flex row text-center">
+      <div className="d-flex row text-center justify-content-center">
         <h4>{t("section11.s5")}</h4>
-        <div className="row gap-4 justify-content-center align-items-center accesories-list my-4">
+        <div className="row col-8 gap-4 justify-content-center align-items-center accesories-list my-4">
           {accessoryList.map((item) => {
             return (
               <label

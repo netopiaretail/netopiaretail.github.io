@@ -823,7 +823,7 @@ canvas.particles {
   -ms-transition: all 0.3s ease-out 0s;
   -o-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
-  padding: 50px 30px;
+  padding: 30px;
   border: 2px solid transparent;
   border-radius: $border-radius;
 
@@ -1101,20 +1101,22 @@ a.more {
 
       & > img:first-child {
         box-shadow: $box-shadow;
-        width: 90%;
-        animation: ImgBounce 5s ease-in-out 0s infinite alternate;
+        padding: 10px;
+        background: #fff;
+        // width: 90%;
+        // animation: ImgBounce 5s ease-in-out 0s infinite alternate;
       }
-      & > img:last-child {
-        position: absolute;
-        right: 0px;
-        bottom: -90px;
-        width: 70%;
-        box-shadow: $box-shadow-primary;
-        animation: ImgBounce 5s ease-in-out 0s infinite alternate;
-        @media (max-width: 575px) {
-          margin-bottom: 2rem;
-        }
-      }
+      // & > img:last-child {
+      //   position: absolute;
+      //   right: 0px;
+      //   bottom: -90px;
+      //   width: 70%;
+      //   box-shadow: $box-shadow-primary;
+      //   animation: ImgBounce 5s ease-in-out 0s infinite alternate;
+      //   @media (max-width: 575px) {
+      //     margin-bottom: 2rem;
+      //   }
+      // }
     }
   }
 }
@@ -1247,6 +1249,16 @@ a.more {
 
     .feature-name {
       text-align: left;
+
+      a {
+        color: inherit;
+        text-decoration: underline;
+      }
+
+      span {
+        font-size: 1.4rem;
+        font-weight: 600;
+      }
     }
 
     thead {
@@ -1780,6 +1792,7 @@ a.more {
 
         @media (max-width: 475px) {
           padding: 3rem 1rem;
+          gap: 3rem;
         }
       }
 
@@ -1799,10 +1812,10 @@ a.more {
   .wizard-step-3 {
     .accesories-list {
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
       padding: 2rem;
 
-      @media (max-width: 761px) {
+      @media (max-width: 768px) {
         grid-template-columns: 1fr;
       }
 

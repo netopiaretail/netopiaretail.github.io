@@ -15,7 +15,7 @@ const PricingTable = () => {
                 {feature.name}
               </a>
             ) : (
-              feature.name
+              <span>{feature.name}</span>
             )}
           </Trans>
         </td>

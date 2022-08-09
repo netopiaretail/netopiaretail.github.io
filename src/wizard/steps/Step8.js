@@ -6,6 +6,7 @@ const Step8 = ({ form }) => {
   const printer = form.printer.toString();
 
   const { t } = useTranslation();
+  console.log(form.accessories.length);
 
   return (
     <div className="wizard-step-4">
@@ -47,7 +48,7 @@ const Step8 = ({ form }) => {
                 {t("section11.s5P2")}
                 <div>{printer === "true" ? t("yes") : t("no")}</div>
               </div>
-              {form.accessories.lenght > 0 && (
+              {form.accessories.length > 0 && (
                 <div className="col-lg-3">
                   {t("accesories")}
                   <div>

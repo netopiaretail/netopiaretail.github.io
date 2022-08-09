@@ -1,5 +1,6 @@
 import React from "react";
 import device from "../../img/printer.jpg";
+import printers from "../../img/printers.png";
 import { useTranslation } from "react-i18next";
 
 const Step6 = ({ form, update }) => {
@@ -59,32 +60,14 @@ const Step6 = ({ form, update }) => {
                 </div>
 
                 <div className="text-start col-sm-12 col-lg-8">
-                  <h4 className="mb-2">PAX E800</h4>
-                  <p>{t("section11.s4P1")}</p>
-                  <ul>
-                    <li>{t("section11.s4P2")}</li>
-                    <li>{t("section11.s4P3")}</li>
-                  </ul>
+                  <h4 className="mb-2">{t("section11.s6P1")}</h4>
+                  <p>{t("section11.s6P2")}</p>
                 </div>
               </div>
-              <div className="flip-card-back d-flex row gap-3 align-content-center text-start">
-                <h5 className="mb-2">{t("section11.s4P21")}</h5>
-                <div className="d-flex column gap-2 align-items-center">
-                  <i className="fa fa-android"></i>
-                  <p>{t("section11.s4P22")}</p>
-                </div>
-                <div className="d-flex column gap-2 align-items-center">
-                  <i className="fa-brands fa-usb"></i>
-                  <p>{t("section11.s4P23")}</p>
-                </div>
-                <div className="d-flex column gap-2 align-items-center">
-                  <i className="fa-solid fa-barcode"></i>
-                  <p>{t("section11.s4P24")}</p>
-                </div>
-                <div className="d-flex column gap-2 align-items-center">
-                  <i className="fa-solid fa-weight-scale"></i>
-                  <p>{t("section11.s4P25")}</p>
-                </div>
+              <div className="flip-card-back d-flex row gap-3 align-content-center justify-content-center text-start">
+                <img width={300} src={printers} />
+
+                <h5 className="mb-2">{t("section11.s6P3")}</h5>
               </div>
             </div>
           </div>
