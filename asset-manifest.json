@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.10e15d2f.css",
-    "main.js": "/static/js/main.9b4fc6e4.js",
+    "main.css": "/static/css/main.dcad7157.css",
+    "main.js": "/static/js/main.882ec5c6.js",
     "static/media/team2 1.png": "/static/media/team2 1.908e47126a98c9d4d898.png",
     "static/media/angajati.png": "/static/media/angajati.c4f6c48b24841586d831.png",
     "static/media/section3.png": "/static/media/section3.8ca5cf68ce4769f43ee3.png",
@@ -22,6 +22,7 @@
     "static/media/1BlueCash-50.png": "/static/media/1BlueCash-50.d9c2ee329272a46d4cb2.png",
     "static/media/pax2.png": "/static/media/pax2.3e3af55d85e4251afe00.png",
     "static/media/dp25.png": "/static/media/dp25.a2dcead641d05c94f090.png",
+    "static/media/PAX E800+.pdf": "/static/media/PAX E800+.6ffd54af66d7a6f70dc0.pdf",
     "static/media/E800.jpg": "/static/media/E800.c0935fbe8847b6574d74.jpg",
     "static/media/onlineoffline.svg": "/static/media/onlineoffline.69d48ada38d50f93ba3c.svg",
     "static/media/bg-circle-2.svg": "/static/media/bg-circle-2.b258599e19a62f0d429e.svg",
@@ -55,11 +56,11 @@
     "static/media/path290.svg": "/static/media/path290.4d90cdf75f7a94b6b41d.svg",
     "static/media/1.svg": "/static/media/1.7a2f1d2302a0838f9e33.svg",
     "static/media/2.svg": "/static/media/2.c90e66c097d1eae2465f.svg",
-    "main.10e15d2f.css.map": "/static/css/main.10e15d2f.css.map",
-    "main.9b4fc6e4.js.map": "/static/js/main.9b4fc6e4.js.map"
+    "main.dcad7157.css.map": "/static/css/main.dcad7157.css.map",
+    "main.882ec5c6.js.map": "/static/js/main.882ec5c6.js.map"
   },
   "entrypoints": [
-    "static/css/main.10e15d2f.css",
-    "static/js/main.9b4fc6e4.js"
+    "static/css/main.dcad7157.css",
+    "static/js/main.882ec5c6.js"
   ]
 }
