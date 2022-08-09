@@ -260,7 +260,7 @@
     "btn": "Send configuration by email"
   },
   "section12": {
-    "text": "You can send us any questions you might have about NETOPIA Retail. You can visit our Documentation where we answered to the frequently asked questions. ",
+    "text": "You can send us any questions you might have about NETOPIA Retail. You can visit our <0>Documentation</0> where we answered to the frequently asked questions. ",
     "f1": "First name, Last Name",
     "f2": "Email",
     "f3": "CUI",
@@ -268,6 +268,9 @@
     "f5": "Message"
   },
   "footer": {
-    "title": "Links"
+    "title": "Links",
+    "l1": "Cookies",
+    "l2": "Privacy policy",
+    "l3": "Terms of service"
   }
 }

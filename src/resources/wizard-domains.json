@@ -1,11 +1,11 @@
 [
   {
-    "name": "retail",
+    "name": "Retail",
     "label": "Retail",
     "icon": "retail.svg"
   },
   {
-    "name": "horeca",
+    "name": "HoReCa",
     "label": "HoReCa",
     "icon": "horeca.svg"
   }

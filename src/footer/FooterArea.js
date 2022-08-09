@@ -35,7 +35,7 @@ const FooterArea = () => {
 
                 <p className="mt-4 fs-6">
                   <Trans i18nKey="section12.text">
-                    <a href="/">Documentație</a>
+                    <a href="/">{t("menu.l5")}</a>
                   </Trans>
                 </p>
               </div>

@@ -22,6 +22,11 @@ const accessoryList = [
     accTitle: "section8.c4",
     price: 3,
   },
+  {
+    image: require("../../img/role.jpg"),
+    accTitle: "section8.c7",
+    price: 3,
+  },
 ];
 
 const Step7 = ({ form, update }) => {
