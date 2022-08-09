@@ -112,12 +112,12 @@
     "text": "NETOPIA Retail is part of NETOPIA Group, a conglomerate of Romanian companies that support the Romanian business landscape. Our constant drive for both technological and business innovation quickly positioned us as market leaders in multiple domains. We created an ecosystem of innovative technologies that cover the needs of businesses in both Retail and HoReCa. NETOPIA Retail is meant to help small and medium businesses to become more profitable and grow their services."
   },
   "section5": {
-    "title": "For employees",
+    "title": "For employees:",
     "subtitle": "Simple, intuitive and fast",
     "text": "We have developed management and sales software that does not need special training. Our platform is created for the maximum optimization of the learning process so that any employee will be able to sell in a very short time. The sales process is easy to follow and fast so that the waiting time of customers is as short as possible."
   },
   "section6": {
-    "title": "For managers",
+    "title": "For managers:",
     "subtitle": "Efficient, complex, instant",
     "text": "When you manage stocks, partners, invoices, and employees, you need help to be efficient in terms of time and costs. NETOPIA Retail gives you a clear vision of everything your business means, with a few clicks, both on your mobile phone and desktop. Our dashboard shows an instant overview of everything you need to know, and you can personalize it according to your needs. The menu allows you to do a deep dive inside your business and better understand how to improve it."
   },
@@ -138,7 +138,7 @@
     "d2": "Ecran touchscreen HD de 15'', construit pentru eficiența angajaților",
     "d3": "Use the 8'' screen to promote your discounts or partnerships",
     "b1": "Our devices",
-    "b1Text": "NETOPIA Retail was developed to run on PAX E800+.",
+    "b1Text": "NETOPIA Retail was developed to run on <0>PAX E800+.</0>",
     "b2": "Your devices",
     "b2Text": "NETOPIA Retail software is developed to run smoothly on devices that have at least Android 6 and an USB port for: cash register, barcode reader/scanner and scale.",
     "b2D1": "DATECS BlueCash 50",
@@ -163,7 +163,7 @@
     "b3": "Personalize our platform according to your needs",
     "b3Text": "NETOPIA Retail is an intuitive platform, easy to use and understand. Any product can be added in minutes, and you can arrange products and categories according to best sellers or cost.",
     "b4": "NETOPIA business bank card",
-    "b4Text": "The NETOPIA business card is the modern and elegant tool of Romanian businessmen. Optimize your business costs through the unique benefits offered by the NETOPIA business card."
+    "b4Text": "The <0>NETOPIA business card</0> is the modern and elegant tool of Romanian businessmen. Optimize your business costs through the unique benefits offered by the NETOPIA business card."
   },
   "section10": {
     "free": "Free",
@@ -205,7 +205,7 @@
     "c27": "POS",
     "c28": "Instantly synchronized with POS terminal",
     "c29": "POS terminal app for smartphone (android)",
-    "c30": "POS terminal app for smartphone is instantly synchronized with retail/HoReCa platform, the cash register, and scale",
+    "c30": "POS terminal app for smartphone is instantly synchronized with Retail platform, the cash register, and scale",
     "c31": "Online",
     "c32": "e-commerce integrations available",
     "c321": "Integration with food delivery apps",
@@ -219,8 +219,8 @@
     "c36": "Availability to print the logo on receipts",
     "c37": "Card processing ",
     "c38": "Availability to integrate the platform with payment solutions",
-    "c40": "0% commission until you exceed X number of sales/month",
-    "c41": "0% commission for the duration of the contract ",
+    "c40": "<0>0%</0> commission until you exceed X number of sales/month",
+    "c41": "<0>0%</0> commission for the duration of the contract ",
     "c42": "Support",
     "c43": "Technical support for devices and accessories",
     "c44": "B2B support for your employees/ franchisee",
