@@ -23,7 +23,7 @@ const SectionPricing = () => {
           </PricingCard>
           <PricingCard
             styles={("Standard", "blue")}
-            price={"10"}
+            price={"100"}
             title={t("section10.standard")}
             link={"#pricing-table"}
           >
@@ -36,7 +36,7 @@ const SectionPricing = () => {
           </PricingCard>
           <PricingCard
             styles={("Premium", "purple")}
-            price={"99"}
+            price={"200"}
             from={true}
             title={t("section10.premium")}
             link={"#pricing-table"}

@@ -33,7 +33,7 @@ const Step4 = ({ form, update, nextStep }) => {
           styles={getCardClass("Standard", "blue")}
           price={"10"}
           onClick={() => {
-            update("pachet", { name: "Standard", price: 10 });
+            update("pachet", { name: "Standard", price: 100 });
             nextStep();
           }}
           title={t("section10.standard")}
@@ -51,7 +51,7 @@ const Step4 = ({ form, update, nextStep }) => {
           price={"99"}
           from={true}
           onClick={() => {
-            update("pachet", { name: "Premium", price: 99 });
+            update("pachet", { name: "Premium", price: 200 });
             nextStep();
           }}
           title={t("section10.premium")}

@@ -85,7 +85,7 @@ const PricingTable = () => {
                 <th>
                   <span className="fw-normal"> {t("section10.standard")}</span>
                   <br />
-                  <span className="price">10 &euro;</span>
+                  <span className="price">100 &euro;</span>
                   <span className="period">/{t("month")}</span>
                   <br />
                   <span className="link">
@@ -95,7 +95,7 @@ const PricingTable = () => {
                 <th>
                   <span className="fw-normal"> {t("section10.premium")}</span>
                   <br />
-                  <span className="price">20 &euro;</span>
+                  <span className="price">200 &euro;</span>
                   <span className="period">/{t("month")}</span>
                   <br />
                   <span className="link">
