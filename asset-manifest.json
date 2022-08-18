@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.a745e45a.css",
-    "main.js": "/static/js/main.a5891a82.js",
+    "main.js": "/static/js/main.a4b460a9.js",
     "static/media/team2 1.png": "/static/media/team2 1.908e47126a98c9d4d898.png",
     "static/media/angajati.png": "/static/media/angajati.c4f6c48b24841586d831.png",
     "static/media/section3.png": "/static/media/section3.8ca5cf68ce4769f43ee3.png",
@@ -17,6 +17,7 @@
     "static/media/graph.png": "/static/media/graph.ecf9a4963b73260178a8.png",
     "static/media/e800.png": "/static/media/e800.ab73f040eda6a01e3e96.png",
     "static/media/dashboard.png": "/static/media/dashboard.1518a310461f8ec8a0db.png",
+    "static/media/NETOPIA Retail.pdf": "/static/media/NETOPIA Retail.f76c0135896aee8ab7cd.pdf",
     "static/media/sertar.jpg": "/static/media/sertar.924b3676a3e43e2b046f.jpg",
     "static/media/role.jpg": "/static/media/role.5f747a9ce98b243d1aa0.jpg",
     "static/media/section2.svg": "/static/media/section2.2582b7b7f9f299945491.svg",
@@ -58,10 +59,10 @@
     "static/media/1.svg": "/static/media/1.7a2f1d2302a0838f9e33.svg",
     "static/media/2.svg": "/static/media/2.c90e66c097d1eae2465f.svg",
     "main.a745e45a.css.map": "/static/css/main.a745e45a.css.map",
-    "main.a5891a82.js.map": "/static/js/main.a5891a82.js.map"
+    "main.a4b460a9.js.map": "/static/js/main.a4b460a9.js.map"
   },
   "entrypoints": [
     "static/css/main.a745e45a.css",
-    "static/js/main.a5891a82.js"
+    "static/js/main.a4b460a9.js"
   ]
 }
