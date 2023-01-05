@@ -141,7 +141,7 @@ const FooterArea = () => {
                   <h4 className="title">{t("menu.l7")}</h4>
                 </div>
                 <ul className="contact">
-                  <li>info@netopia.com</li>
+                  <li>info@netopia.ro</li>
                   <li>
                     Bd. Dimitrie Pompeiu nr 9-9A, Iride Business Park, Cladirea
                     nr. 24, camera 4A, et. 4, sector 2, 020335 BUCUREȘTI
