@@ -35,7 +35,13 @@ const FooterArea = () => {
 
                 <p className="mt-4 fs-6">
                   <Trans i18nKey="section12.text">
-                    <a href="/">{t("menu.l5")}</a>
+                    <a
+                      href="https://docs.netopia-retail.ro/"
+                      rel="noreferrer"
+                      target="_blank"
+                    >
+                      {t("menu.l5")}
+                    </a>
                   </Trans>
                 </p>
               </div>

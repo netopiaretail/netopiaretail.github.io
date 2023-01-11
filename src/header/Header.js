@@ -55,7 +55,9 @@ const Header = () => {
               <Nav.Link href="#about">{t("menu.l2")}</Nav.Link>
               <Nav.Link href="#hardware">{t("menu.l3")}</Nav.Link>
               <Nav.Link href="#pricing">{t("menu.l4")}</Nav.Link>
-              <Nav.Link href="#documentatie">{t("menu.l5")}</Nav.Link>
+              <Nav.Link href="https://docs.netopia-retail.ro/" target="_blank">
+                {t("menu.l5")}
+              </Nav.Link>
               <Nav.Link
                 href="https://sites.google.com/netopia-system.com/netopia-retail-faq"
                 target="_blank"
