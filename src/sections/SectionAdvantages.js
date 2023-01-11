@@ -1,9 +1,9 @@
 import img1 from "../img/integrareNP.svg";
 import img2 from "../img/handle.svg";
 import img3 from "../img/customize.svg";
-import img4 from "../img/netopiabusiness.svg";
+// import img4 from "../img/netopiabusiness.svg";
 import Card from "../components/Card";
-import { Trans, useTranslation } from "react-i18next";
+import { useTranslation } from "react-i18next";
 
 const SectionAdvantages = () => {
   const { t } = useTranslation();
@@ -39,7 +39,7 @@ const SectionAdvantages = () => {
               content={t("section9.b3Text")}
             />
           </div>
-          <div className="col-lg-3 col-sm-8 my-4 wow fadeInUp">
+          {/* <div className="col-lg-3 col-sm-8 my-4 wow fadeInUp">
             <Card
               image={img4}
               imageTitle={"NETOPIA Card"}
@@ -56,7 +56,7 @@ const SectionAdvantages = () => {
                 </Trans>
               }
             />
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

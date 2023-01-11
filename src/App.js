@@ -11,10 +11,10 @@ import SectionBenefits from "./sections/SectionBenefits";
 import SectionHardware from "./sections/SectionHardware";
 import SectionAdvantages from "./sections/SectionAdvantages";
 import FooterArea from "./footer/FooterArea";
-import WizardStep from "./wizard";
+// import WizardStep from "./wizard";
 import { useEffect } from "react";
 import WOW from "wowjs";
-import SectionPricing from "./sections/SectionPricing";
+// import SectionPricing from "./sections/SectionPricing";
 import SectionAbout from "./sections/SectionAbout";
 import { useTranslation } from "react-i18next";
 
@@ -69,8 +69,8 @@ function App() {
       <SectionBenefits />
       <SectionHardware />
       <SectionAdvantages />
-      <SectionPricing />
-      <WizardStep />
+      {/* <SectionPricing />
+      <WizardStep /> */}
       <FooterArea />
       <a href="#" className="back-to-top">
         <i className="fa-solid fa-arrow-up"></i>

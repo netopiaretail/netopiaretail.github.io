@@ -54,7 +54,7 @@ const Header = () => {
               <Nav.Link href="#features">{t("menu.l1")}</Nav.Link>
               <Nav.Link href="#about">{t("menu.l2")}</Nav.Link>
               <Nav.Link href="#hardware">{t("menu.l3")}</Nav.Link>
-              <Nav.Link href="#pricing">{t("menu.l4")}</Nav.Link>
+              {/* <Nav.Link href="#pricing">{t("menu.l4")}</Nav.Link> */}
               <Nav.Link href="https://docs.netopia-retail.ro/" target="_blank">
                 {t("menu.l5")}
               </Nav.Link>
@@ -101,14 +101,14 @@ const Header = () => {
                   {t("hero.text1")}
                 </h3>
                 <div className="mb-4">
-                  <a
+                  {/* <a
                     href="#pricing"
                     className="btn secondary-btn primary-color wow fadeInUp"
                     data-wow-duration="1.3s"
                     data-wow-delay="1.1s"
                   >
                     {t("menu.l4")}
-                  </a>
+                  </a> */}
 
                   <a
                     className="btn main-btn ms-4 wow fadeInUp"
