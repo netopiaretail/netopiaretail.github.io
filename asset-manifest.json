@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.a745e45a.css",
-    "main.js": "/static/js/main.3dce8979.js",
+    "main.css": "/static/css/main.1270ad29.css",
+    "main.js": "/static/js/main.c401b0be.js",
     "static/media/angajati.png": "/static/media/angajati.c4f6c48b24841586d831.png",
     "static/media/section3.png": "/static/media/section3.8ca5cf68ce4769f43ee3.png",
     "static/media/team2.png": "/static/media/team2.5548fa702c5498ef2552.png",
@@ -10,6 +10,7 @@
     "static/media/system.png": "/static/media/system.713ca0c1badec3578eef.png",
     "static/media/pax1.png": "/static/media/pax1.733d4a51222e32ddec08.png",
     "static/media/team.jpg": "/static/media/team.88e84d91c5c345e0a93e.jpg",
+    "static/media/header-hero.png": "/static/media/header-hero.d2f68f46c5145de50f2e.png",
     "static/media/sertar.jpg": "/static/media/sertar.924b3676a3e43e2b046f.jpg",
     "static/media/pax2.png": "/static/media/pax2.3e3af55d85e4251afe00.png",
     "static/media/dp25.png": "/static/media/dp25.a2dcead641d05c94f090.png",
@@ -19,7 +20,6 @@
     "static/media/integrareNP.svg": "/static/media/integrareNP.ae65139d22401856dcf57488c32346b7.svg",
     "static/media/cantar.jpg": "/static/media/cantar.9cb9744e90d25309f682.jpg",
     "static/media/bg-circle.svg": "/static/media/bg-circle.f8517c77ac567b908833.svg",
-    "static/media/header-hero.png": "/static/media/header-hero.c98dbe5bbbf94432edca.png",
     "static/media/bluecash-50.png": "/static/media/bluecash-50.04b0a779b21f827ba66a.png",
     "static/media/stocks.svg": "/static/media/stocks.fdd9aa6b77b51f39452056a4c1be514c.svg",
     "static/media/customize.svg": "/static/media/customize.83d13502f63cc76fce9bc12e3b6e694a.svg",
@@ -33,11 +33,11 @@
     "index.html": "/index.html",
     "static/media/1.svg": "/static/media/1.7a2f1d2302a0838f9e33.svg",
     "static/media/2.svg": "/static/media/2.c90e66c097d1eae2465f.svg",
-    "main.a745e45a.css.map": "/static/css/main.a745e45a.css.map",
-    "main.3dce8979.js.map": "/static/js/main.3dce8979.js.map"
+    "main.1270ad29.css.map": "/static/css/main.1270ad29.css.map",
+    "main.c401b0be.js.map": "/static/js/main.c401b0be.js.map"
   },
   "entrypoints": [
-    "static/css/main.a745e45a.css",
-    "static/js/main.3dce8979.js"
+    "static/css/main.1270ad29.css",
+    "static/js/main.c401b0be.js"
   ]
 }
