@@ -2,12 +2,12 @@ import img1 from "../img/E800.jpg";
 import img2 from "../img/cititor-coduri.jpg";
 import img3 from "../img/bluecash-50.png";
 import img4 from "../img/cantar.jpg";
-import img5 from "../img/pax1.png";
-import img6 from "../img/pax2.png";
+import img5 from "../img/pax1.jpg";
+import img6 from "../img/pax2.jpg";
 import img7 from "../img/sertar.jpg";
 import img8 from "../img/printer.jpg";
 import img9 from "../img/dp25.png";
-import img10 from "../img/devices.png";
+import img10 from "../img/devices.jpg";
 import pdf from "../img/PAX E800+.pdf";
 
 import Carousel from "react-bootstrap/Carousel";

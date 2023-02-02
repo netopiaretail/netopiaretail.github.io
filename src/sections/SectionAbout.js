@@ -1,6 +1,6 @@
 import img1 from "../img/team0.jpg";
 import img2 from "../img/team.jpg";
-import img3 from "../img/team2.png";
+import img3 from "../img/team2.jpg";
 import { useTranslation } from "react-i18next";
 
 const SectionAbout = () => {

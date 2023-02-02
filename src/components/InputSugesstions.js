@@ -44,7 +44,7 @@ const InputSugesstions = () => {
           placeholder={t("section12.f4")}
           className="form-control"
           type="search"
-          id="input"
+          id="type"
           onKeyUp={handleChange}
         />
       </div>

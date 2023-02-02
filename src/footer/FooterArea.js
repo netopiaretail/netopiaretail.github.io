@@ -3,7 +3,7 @@ import logo from "../img/logo-blank.svg";
 import ParticlesComponent from "../components/Particles";
 import { useState } from "react";
 import Form from "react-bootstrap/Form";
-import { Trans, useTranslation } from "react-i18next";
+import { useTranslation, Trans } from "react-i18next";
 import InputSugesstions from "../components/InputSugesstions";
 
 const FooterArea = () => {
@@ -11,14 +11,31 @@ const FooterArea = () => {
 
   const [validated, setValidated] = useState(false);
 
-  const handleSubmit = (event) => {
-    const form = event.currentTarget;
+  const handleSubmit = async (e) => {
+    const form = e.currentTarget;
     if (form.checkValidity() === false) {
-      event.preventDefault();
-      event.stopPropagation();
+      e.preventDefault();
+      e.stopPropagation();
     }
-
     setValidated(true);
+
+    const { name, email, type, cui, message } = e.target.elements;
+    let details = {
+      name: name.value,
+      email: email.value,
+      cui: cui.value,
+      type: type.value,
+      message: message.value,
+    };
+    let response = await fetch("http://localhost:3000/contact", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json;charset=utf-8",
+      },
+      body: JSON.stringify(details),
+    });
+    let result = await response.json();
+    alert(result.status);
   };
 
   return (
@@ -35,13 +52,13 @@ const FooterArea = () => {
 
                 <p className="mt-4 fs-6">
                   <Trans i18nKey="section12.text">
-                    <a
+                    {/* <a
                       href="https://docs.netopia-retail.ro/"
                       rel="noreferrer"
                       target="_blank"
-                    >
-                      {t("menu.l5")}
-                    </a>
+                    > */}
+                    {t("menu.l5")}
+                    {/* </a> */}
                   </Trans>
                 </p>
               </div>
@@ -62,7 +79,7 @@ const FooterArea = () => {
                     <input
                       type="email"
                       className="form-control"
-                      id="name"
+                      id="email"
                       placeholder={t("section12.f2") + "*"}
                       required
                     />
