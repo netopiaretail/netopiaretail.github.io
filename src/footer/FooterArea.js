@@ -5,6 +5,7 @@ import { useState } from "react";
 import Form from "react-bootstrap/Form";
 import { useTranslation, Trans } from "react-i18next";
 import InputSugesstions from "../components/InputSugesstions";
+import sendEmail from "../mail";
 
 const FooterArea = () => {
   const { t } = useTranslation();
@@ -12,11 +13,11 @@ const FooterArea = () => {
   const [validated, setValidated] = useState(false);
 
   const handleSubmit = async (e) => {
-    const form = e.currentTarget;
-    if (form.checkValidity() === false) {
-      e.preventDefault();
-      e.stopPropagation();
-    }
+    e.preventDefault();
+    e.stopPropagation();
+    // const form = e.currentTarget;
+    // if (form.checkValidity() === false) {
+    // }
     setValidated(true);
 
     const { name, email, type, cui, message } = e.target.elements;
@@ -27,15 +28,18 @@ const FooterArea = () => {
       type: type.value,
       message: message.value,
     };
-    let response = await fetch("http://localhost:3000/contact", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json;charset=utf-8",
-      },
-      body: JSON.stringify(details),
-    });
-    let result = await response.json();
-    alert(result.status);
+    try {
+      const response = await sendEmail([
+        `Nume: ${details.name}`,
+        `Email: ${details.email}`,
+        `CUI: ${details.cui}`,
+        `Tip: ${details.type}`,
+        `Mesaj: ${details.message}`,
+      ]);
+      console.info(response);
+    } catch (e) {
+      console.error(e);
+    }
   };
 
   return (
