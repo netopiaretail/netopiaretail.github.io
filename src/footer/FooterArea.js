@@ -49,7 +49,7 @@ const FooterArea = () => {
 
       setTimeout(() => {
         setShow(false);
-      }, 3000);
+      }, 2000);
     } catch (e) {
       console.error(e);
     }

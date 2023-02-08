@@ -8,11 +8,7 @@ const sendEmail = (body) => {
     templateId: "dynamic_template_multiline.html",
     subject: "Contact NETOPIA Retail",
     from: "support@netopia-retail.ro",
-    to: [
-      // "contact@netopia-retail.ro",
-      // "ion@netopia-system.com",
-      "ioana.ilie@netopia-system.com",
-    ],
+    to: ["contact@netopia-retail.ro"],
     payload: JSON.stringify(payload),
   });
   return fetch(
