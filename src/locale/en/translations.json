@@ -271,6 +271,9 @@
     "title": "Links",
     "l1": "Cookies",
     "l2": "Privacy policy",
-    "l3": "Terms of service"
+    "l3": "Terms of service",
+    "gdpr": "I agree to the collection and storage of my submitted data.",
+    "contactSuccess": "Thanks for contacting us! We will be in touch with you shortly.",
+    "gdprValidation": "You must agree before submitting."
   }
 }

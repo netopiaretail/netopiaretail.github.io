@@ -277,6 +277,9 @@
     "title": "Links",
     "l1": "Politică cookies",
     "l2": "Politică confidențialitate",
-    "l3": "Termeni și Condiții Generale"
+    "l3": "Termeni și Condiții Generale",
+    "gdpr": "Sunt de acord ca datele mele trimise să fie colectate și stocate.",
+    "contactSuccess": "Mulțumim că ne-ai contactat! Te vom contacta în curând.",
+    "gdprValidation": "Trebuie să fii de acord înainte să trimiți."
   }
 }

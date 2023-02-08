@@ -6,37 +6,50 @@ import Form from "react-bootstrap/Form";
 import { useTranslation, Trans } from "react-i18next";
 import InputSugesstions from "../components/InputSugesstions";
 import sendEmail from "../mail";
+import Button from "react-bootstrap/Button";
+import { Alert } from "react-bootstrap";
 
 const FooterArea = () => {
   const { t } = useTranslation();
 
   const [validated, setValidated] = useState(false);
+  const [show, setShow] = useState(false);
 
   const handleSubmit = async (e) => {
+    const form = e.currentTarget;
     e.preventDefault();
     e.stopPropagation();
-    // const form = e.currentTarget;
-    // if (form.checkValidity() === false) {
-    // }
+
     setValidated(true);
 
-    const { name, email, type, cui, message } = e.target.elements;
+    if (form.checkValidity() === false) {
+      return;
+    }
+
+    const { name, email, businessType, cui, message } = e.target.elements;
+
     let details = {
       name: name.value,
       email: email.value,
       cui: cui.value,
-      type: type.value,
+      businessType: businessType.value,
       message: message.value,
     };
     try {
-      const response = await sendEmail([
+      await sendEmail([
         `Nume: ${details.name}`,
         `Email: ${details.email}`,
         `CUI: ${details.cui}`,
-        `Tip: ${details.type}`,
+        `Tip: ${details.businessType}`,
         `Mesaj: ${details.message}`,
       ]);
-      console.info(response);
+      form.reset();
+      setShow(true);
+      setValidated(false);
+
+      setTimeout(() => {
+        setShow(false);
+      }, 3000);
     } catch (e) {
       console.error(e);
     }
@@ -70,51 +83,66 @@ const FooterArea = () => {
             <div className="col-lg-6">
               <div className="mt-4">
                 <Form noValidate validated={validated} onSubmit={handleSubmit}>
-                  <div className="mb-4">
-                    <input
+                  <Form.Group className="mb-3">
+                    <Form.Control
                       type="text"
                       className="form-control"
                       id="name"
                       placeholder={t("section12.f1") + "*"}
                       required
                     />
-                  </div>
-                  <div className="mb-4">
-                    <input
+                  </Form.Group>
+                  <Form.Group className="mb-3">
+                    <Form.Control
                       type="email"
                       className="form-control"
                       id="email"
                       placeholder={t("section12.f2") + "*"}
                       required
                     />
-                  </div>
-                  <div className="mb-4">
-                    <input
+                  </Form.Group>
+                  <Form.Group className="mb-3">
+                    <Form.Control
                       type="text"
                       className="form-control"
                       id="cui"
                       placeholder={t("section12.f3") + "*"}
+                      required
                     />
-                  </div>
-                  <div className="mb-4">
+                  </Form.Group>
+                  <Form.Group className="mb-3">
                     <InputSugesstions />
-                  </div>
-                  <div className="mb-4">
-                    <textarea
+                  </Form.Group>
+                  <Form.Group className="mb-3">
+                    <Form.Control
+                      as="textarea"
                       className="form-control"
                       id="message"
                       rows="3"
                       maxLength="2000"
-                      placeholder={t("section12.f5") + "*"}
-                    ></textarea>
-                  </div>
-                  <button type="submit" className="btn main-btn mt-3">
+                      placeholder={t("section12.f5")}
+                    ></Form.Control>
+                  </Form.Group>
+                  <Form.Group className="mb-3">
+                    <Form.Check
+                      type="checkbox"
+                      id="disabledFieldsetCheck"
+                      feedback={t("footer.gdprValidation")}
+                      feedbackType="invalid"
+                      label={t("footer.gdpr")}
+                      required
+                    />
+                  </Form.Group>
+                  <Button type="submit" className="btn main-btn mt-3">
                     {t("send")}
-                  </button>
+                  </Button>
                 </Form>
               </div>
             </div>
           </div>
+          <Alert variant={"success"} show={show} className="mt-4">
+            {t("footer.contactSuccess")}
+          </Alert>
         </div>
 
         <div className="footer-widget pb-5">
@@ -168,7 +196,7 @@ const FooterArea = () => {
                   <h4 className="title">{t("menu.l7")}</h4>
                 </div>
                 <ul className="contact">
-                  <li>info@netopia.ro</li>
+                  <li>contact@netopia.ro</li>
                   <li>
                     Bd. Dimitrie Pompeiu nr 9-9A, Iride Business Park, Cladirea
                     nr. 24, camera 4A, et. 4, sector 2, 020335 BUCUREȘTI

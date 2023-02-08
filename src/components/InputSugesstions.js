@@ -5,7 +5,7 @@ import data1 from "../resources/horeca-types.json";
 
 const InputSugesstions = () => {
   const { t } = useTranslation();
-  let inputField = document.getElementById("input");
+  let inputField = document.getElementById("businessType");
   let ulField = document.getElementById("suggestions");
 
   const autoComplete = (inputValue) => {
@@ -39,15 +39,14 @@ const InputSugesstions = () => {
 
   return (
     <div className="suggestion-container">
-      <div>
-        <input
-          placeholder={t("section12.f4")}
-          className="form-control"
-          type="search"
-          id="type"
-          onKeyUp={handleChange}
-        />
-      </div>
+      <input
+        placeholder={t("section12.f4") + "*"}
+        className="form-control"
+        type="search"
+        id="businessType"
+        onKeyUp={handleChange}
+        required
+      />
       <div className="list">
         <ul id="suggestions"></ul>
       </div>
