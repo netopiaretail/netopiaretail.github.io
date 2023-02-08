@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/static/css/main.93de8324.css",
-    "main.js": "/static/js/main.61d5516d.js",
-    "static/media/angajati.png": "/static/media/angajati.c4f6c48b24841586d831.png",
-    "static/media/section3.png": "/static/media/section3.8ca5cf68ce4769f43ee3.png",
-    "static/media/team2.png": "/static/media/team2.5548fa702c5498ef2552.png",
-    "static/media/devices.png": "/static/media/devices.448cd68f8460e4cf24ae.png",
+    "main.js": "/static/js/main.fb7decac.js",
     "static/media/team0.jpg": "/static/media/team0.3fd152426932887fb9aa.jpg",
-    "static/media/system.png": "/static/media/system.713ca0c1badec3578eef.png",
-    "static/media/pax1.png": "/static/media/pax1.733d4a51222e32ddec08.png",
-    "static/media/team.jpg": "/static/media/team.88e84d91c5c345e0a93e.jpg",
-    "static/media/header-hero.png": "/static/media/header-hero.d2f68f46c5145de50f2e.png",
-    "static/media/sertar.jpg": "/static/media/sertar.924b3676a3e43e2b046f.jpg",
-    "static/media/pax2.png": "/static/media/pax2.3e3af55d85e4251afe00.png",
+    "static/media/angajati.jpg": "/static/media/angajati.ddccaf7f1c3f4089946e.jpg",
+    "static/media/section3.jpg": "/static/media/section3.40e9fc40ba6e00c328bc.jpg",
+    "static/media/team2.jpg": "/static/media/team2.de3ff7ced7d5af96a426.jpg",
+    "static/media/system.jpg": "/static/media/system.d07295e6ef4d5c2f88c3.jpg",
+    "static/media/pax1.jpg": "/static/media/pax1.6bf2981eb779cf1e24c4.jpg",
+    "static/media/header-hero.png": "/static/media/header-hero.a4170037a9b3a99d877c.png",
+    "static/media/devices.jpg": "/static/media/devices.16ae8ea276ad77d089a7.jpg",
+    "static/media/team.jpg": "/static/media/team.e8b01df9689ed902cbea.jpg",
     "static/media/dp25.png": "/static/media/dp25.a2dcead641d05c94f090.png",
     "static/media/PAX E800+.pdf": "/static/media/PAX E800+.6ffd54af66d7a6f70dc0.pdf",
+    "static/media/sertar.jpg": "/static/media/sertar.aed0ed0469b0a76eeb29.jpg",
     "static/media/E800.jpg": "/static/media/E800.c0935fbe8847b6574d74.jpg",
     "static/media/bg-circle-2.svg": "/static/media/bg-circle-2.b258599e19a62f0d429e.svg",
+    "static/media/pax2.jpg": "/static/media/pax2.f85e84743d65341ef40f.jpg",
     "static/media/integrareNP.svg": "/static/media/integrareNP.ae65139d22401856dcf57488c32346b7.svg",
     "static/media/cantar.jpg": "/static/media/cantar.9cb9744e90d25309f682.jpg",
     "static/media/bg-circle.svg": "/static/media/bg-circle.f8517c77ac567b908833.svg",
@@ -34,10 +34,10 @@
     "static/media/1.svg": "/static/media/1.7a2f1d2302a0838f9e33.svg",
     "static/media/2.svg": "/static/media/2.c90e66c097d1eae2465f.svg",
     "main.93de8324.css.map": "/static/css/main.93de8324.css.map",
-    "main.61d5516d.js.map": "/static/js/main.61d5516d.js.map"
+    "main.fb7decac.js.map": "/static/js/main.fb7decac.js.map"
   },
   "entrypoints": [
     "static/css/main.93de8324.css",
-    "static/js/main.61d5516d.js"
+    "static/js/main.fb7decac.js"
   ]
 }
