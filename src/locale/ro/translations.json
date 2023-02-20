@@ -39,7 +39,7 @@
     "title": "<0>Softul de gestiune și administrare vânzări NETOPIA Retail</0> conține soluții și programe IT de tip On Cloud și Android pentru:",
     "retail": {
       "title": "Retail",
-      "text": "Administrezi fiecare aspect al afacerii tale dintr-un mediu sigur. Gestionezi afacerea prin funcționalități de: facturare, inventar, stocuri și vânzări. Ai acces nelimitat la rapoarte clare, pe baza cărora să îți structurezi deciziile de business și să îți crești afacerea, dintr-o singură platformă simplă și intuitivă.",
+      "text": "Administrezi fiecare aspect al afacerii tale dintr-un mediu sigur. Gestionezi afacerea prin funcționalități de: facturare, inventar, stocuri și vânzări. Ai acces nelimitat la rapoarte detaliate, în baza cărora să îți structurezi deciziile de business și să îți crești afacerea, dintr-o singură platformă simplă și intuitivă.",
       "c1": "Hypermarket",
       "c2": "Supermarket",
       "c3": "Discounter",
@@ -55,7 +55,7 @@
     },
     "horeca": {
       "title": "HoReCa",
-      "text": "Indiferent de specificul afacerii tale, produsele tale se bazează pe o rețetă care conține materii prime. Prin NETOPIA Retail poți gestiona fiecare rețetă în funcție de cantitatea de materie primă folosită pe zi, săptămână sau lună. Împreună cu funcțiile de gestiune de stocuri, inventar, vânzări și facturare, îți oferim toate instrumentele necesare pentru a găsi rețeta de succes a afacerii tale, dintr-o singură platformă simplă și intuitivă.",
+      "text": "Indiferent de specificul afacerii tale, produsele tale se bazează pe o rețetă care conține materii prime. Prin NETOPIA Retail poți gestiona fiecare rețetă în funcție de cantitatea de materie primă folosită pe zi, săptămână sau lună. Iti oferim toate instrumentele necesare intr-o singura platforma simpla si intuitiva, stocurile, inventarul, vazarile si facturarea.",
       "c1": "Vinotecă & cramă",
       "c2": "Pescărie",
       "c3": "Restaurant",
@@ -71,24 +71,24 @@
   "section2": {
     "title": "O singură platformă",
     "subtitle": "pentru orice tip de afacere",
-    "text": "Crește profitul afacerii tale prin ecosistemul NETOPIA Retail. Simplu de folosit și fără costuri, softul nostru de gestiune și administrare vânzări este o platformă care folosește inovația pentru a-ți dezvolta business-ul."
+    "text": "Crește profitul afacerii tale prin ecosistemul NETOPIA Retail. Ușor de folosit și fără costuri, softul nostru de gestiune și administrare vânzări folosește inovația pentru a-ți dezvolta business-ul."
   },
   "section3": {
     "title": "Acces gratuit <1>la funcționalități cheie</1>",
 
     "b1": "Administrare",
     "b1Description": "Poți administra întreaga activitate a companiei dintr-o singură pagină web. Creezi conturi de Casier/Ospătar și Manager, cu drepturi limitate.",
-    "b1P1": "<0>Contul de Casier/Ospătar</0> este destinat angajatului care interacționează cu clienții și care scanează produsele, le înregistrează în casă. Nu poate să adauge sau să elimine produse, sau orice alte tipuri de informații despre companie.",
+    "b1P1": "<0>Contul de Casier/Ospătar</0> este destinat angajatului care interacționează cu clienții și care scanează produsele. Nu poate fi folosit pentru adăugarea sau eliminarea produselor, sau orice alte tipuri de informații despre companie.",
     "b1P2": "<0>Contul de Manager</0> poate să adauge sau să scoată produse din platformă, dar și să creeze noi categorii de produse. În același timp, poate să:",
     "b1P3": "administreze toate facturile emise și încasate pentru fiecare furnizor sau partener în parte;",
-    "b1P4": "vadă vânzările pe oră, zi, săptămână sau lună;",
-    "b1P5": "vizualizeze toate rapoartele;",
-    "b1P6": "<0>Contul de Admin</0> are aceleași drepturi ca cel de <1>Manager</1> și, în plus, poate să adauge atât conturi de Casier/Ospătar și Manager, cât și companii.",
+    "b1P4": "urmărească vânzările pe oră, zi, săptămână sau lună;",
+    "b1P5": "vizualizeze în timp real rapoartele necesare gestiunii afacerii tale;",
+    "b1P6": "<0>Contul de Admin</0> are aceleași drepturi ca cel de <1>Manager</1>; în plus, poate să adauge conturi noi de Casier/ Ospătar și Manager, cât și companii.",
 
     "b2": "Facturare",
     "b2Description": "Automatizează procesul de facturare și administrează facturile emise și încasate pentru fiecare furnizor sau partener în parte.",
-    "b2P1": "Facturarea este una dintre cele mai importante activități ale unei afaceri. De aceea, am conceput un mecanism de facturare extrem de ușor de folosit și care îți oferă cele mai relevante informații din câteva click-uri.",
-    "b2P2": "Îți înțelegi și calculezi mult mai bine cash flow-ul prin funcția de Calcul Automat de Sold, care îți spune în orice moment cât trebuie să încasezi sau să achiți.",
+    "b2P1": "Am conceput un mecanism de facturare ușor de folosit și care îți oferă cele mai relevante informații din câteva click-uri.",
+    "b2P2": "Urmărești și calculezi eficient cash flow-ul prin funcția de Calcul Automat de Sold, care îți spune în orice moment cât trebuie să încasezi sau să achiți.",
 
     "b3": "Catalog produse",
     "b3Description": " Poți să adaugi un număr nelimitat de materii prime, produse și categorii, indiferent de specificul magazinului/businessului sau de pachetul ales. Ai funcția de SKU integrată.",
@@ -98,43 +98,42 @@
 
     "b4": "Vânzări",
     "b4Description": "Casierii/Ospătarii pot emite un număr nelimitat de facturi pentru clienți, în doar câteva secunde. Managerii pot administra bonurile fiscale, facturile și chitanțele pentru plățile cash și card.",
-    "b4P1": "Lipsa banilor este principalul motiv pentru care întreprinderile mici și mijlocii intră în faliment. Ai nevoie de un aport regulat de numerar, care să-ți permită să plătești facturi, salarii și să investești în dezvoltarea afacerii.",
     "b4P2": "Prin funcționalitățile noastre vezi în timp real cum evoluează fluxul de numerar. <0>Managerul</0> poate analiza în fiecare lună fluxul de numerar și să ia decizii pentru îmbunătățirea acestuia, astfel încât în fiecare lună afacerea să aibă mai multe intrări (de numerar) decât ieșiri (de numerar).",
 
     "b5": "Rapoarte/Dashboard",
-    "b5Description": "Toate pachetele noastre (Gratuit, Standard, Premium) îți oferă informații complete despre afacerea ta, actualizate instant, disponibile atât pe desktop, cât și pe mobile.",
-    "b5P1": "Trebuie să îți refaci stocul? Folosește rapoartele actualizate instant pe care ți le punem la dispoziție și analizează care produse s-au vândut mai bine.",
-    "b5P2": "Dacă lucrezi în HoReCa vei scădea costurile cu produsele la care trebuie să renunți, din cauza termenelor de valabilitate, deoarece știi dinainte ce tip de produs este preferat de clienții tăi.",
-    "b5P3": "Dacă lucrezi în Retail ai oportunitatea de a înțelege comportamentul de consum și ce categorii de produse se vând mai repede, astfel încât să îți aprovizionezi businessul, constant, cu produse care te ajută să ai profit.",
+    "b5Description": "Toate pachetele noastre (Gratuit, Standard, Premium) îți oferă informații complete despre afacerea ta; actualizare instant, disponibilitate atât de pe desktop, cât și de pe smartphone și tablete.",
+    "b5P1": "Trebuie să îți refaci stocul? Rapoartele la care ai acces în timp real te ajută să analizezi topul produselor vândute.",
+    "b5P2": "Pentru industria HoReCa această funcționalitate te ajută să minimizezi costurile prin identificarea în timp real a termenelor de valabilitate.",
+    "b5P3": "Pentru industria Retail rapoartele reprezintă și o modalitate de a înțelege preferințele clienților tăi. Vezi constant statistica produselor cele mai relevante și optimizezi costurile de aprovizionare.",
 
     "b6": "Plata cu cardul",
-    "b6Description": "Anumite terminale pe care le furnizăm vin cu terminal de plata (POS) și softul NETOPIA Retail integrat. Ai posibilitatea de a folosi o aplicație de terminal de plată (POS) pentru smartphone.",
-    "b6P1": "Dacă folosești NETOPIA Retail îți oferim și o aplicație de smartphone, doar pentru Android, care să funcționeze ca un terminal de plată.",
+    "b6Description": "Anumite terminale pe care le furnizam vin cu POS si softul NETOPIA Retail integrat. Ai posibilitatea de a folosi o aplicație de terminal de plată (POS) dezvoltat pentru smartphone.",
+    "b6P1": "Dacă folosești NETOPIA Retail îți oferim și o aplicație pentru smartphone (doar sistem Android), care funcționează ca un terminal de plată.",
     "b6P2": "Dacă alegi pachetul standard îți oferim, gratuit, dispozitive care să te ajute în administrarea magazinului și în vânzare.",
     "b6P3": "Îți oferim:"
   },
   "section4": {
     "title": "Despre noi",
-    "text": "NETOPIA Retail face parte din NETOPIA Group, un conglomerat de companii românești care de aproape 20 de ani sprijină mediul de afaceri românesc din poziția de lider de piață. Datorită experienței acumulate, am creat un ecosistem de tehnologii inovatoare care să acopere nevoile reale ale afacerilor din HoReCa și Retail. Prin NETOPIA Retail urmărim să ajutăm afacerile mici și mijlocii să devină mai profitabile și să își extindă serviciile."
+    "text": "NETOPIA Retail face parte din NETOPIA Group, un conglomerat de companii românești care de aproape 20 de ani sprijină mediul de afaceri românesc din poziția de lider de piață. Datorită experienței acumulate, am creat un ecosistem de tehnologii inovatoare care să acopere nevoile reale ale afacerilor din HoReCa și Retail."
   },
   "section5": {
-    "title": "Pentru angajați:",
+    "title": "Pentru toți membrii echipei tale",
     "subtitle": "Intuitiv, simplu, rapid",
-    "text": "Am dezvoltat un soft de gestiune și vânzare care nu are nevoie de training special. Platforma noastră este creată pentru optimizarea maximă a procesului de învățare, astfel încât orice angajat va putea să vândă într-un timp foarte scurt. Procesul de vânzare este ușor de urmărit și rapid, astfel încât timpul de așteptare al clienților să fie cât mai mic."
+    "text": "Am dezvoltat un soft de gestiune și vânzare care nu are nevoie de training special. Fiind intuitivă, platforma noastră este ușor de utilizat de oricare dintre membri echipei tale. Procesul de vânzare este rapid, asftel încât timpul de așteptare al clienților este diminuat semnificativ."
   },
   "section6": {
-    "title": "Pentru manager:",
-    "subtitle": "Instant, simplu, rapid",
-    "text": "Când ai de administrat o afacere, stocuri, parteneri, facturi, angajați, ai nevoie de ajutor, pentru a putea fi eficient, atât în ceea ce privește timpul, dar și costurile. NETOPIA Retail îți permite să ai o viziune clară asupra a tot ce ceea ce înseamnă afacerea ta, din câteva click-uri, atât pe telefonul mobil, cât și pe desktop. Cele mai importante informații îți vor fi prezentate, întotdeauna, atunci când te loghezi, iar meniul îți permite să ajungi instant în secțiunea de care ai nevoie."
+    "title": "Pentru tine și echipa ta de management",
+    "subtitle": "Eficient, transparent, instant",
+    "text": "Când ai de administrat o afacere, stocuri, parteneri, facturi, angajați, ai nevoie de ajutor în timp real, pentru a putea fi eficient, atât în ceea ce privește timpul, dar mai ales costurile. NETOPIA Retail îți permite să ai o imagine de ansamblu clară asupra a tot ce ceea ce înseamnă afacerea ta, din câteva click-uri, atât de pe telefonul mobil, cât și de pe desktop. Cele mai importante informații îți vor fi prezentate, întotdeauna, atunci când te loghezi, iar meniul îți permite să ajungi instant în secțiunea de care ai nevoie."
   },
   "section7": {
     "title": "Principalele beneficii",
     "b1": "Automatizarea proceselor de lucru",
-    "b1Text": "Eficientizează afacerea ta cu NETOPIA Retail, printr-un control total asupra activităților de vânzare cu amănuntul: de la gestionarea stocurilor, efectuarea inventarului sau definirea politicii comerciale, până la soluții de fidelizare a clienților și crearea diverselor promoții.",
+    "b1Text": "Eficientizează afacerea ta cu NETOPIA Retail, printr-un control total asupra activităților de vânzare cu amănuntul: de la efectuarea inventarului sau definirea politicii comerciale, până la soluții de fidelizare a clienților și crearea diverselor promoții.",
     "b2": "Analize avansate în timp real",
-    "b2Text": "Prin NETOPIA Retail, cataloagele de produse sunt administrate centralizat. Responsabilii vor putea defini și gestiona în timp real caracteristicile produselor, codurile de bare, etichetele, listele de prețuri generale, listele de discounturi, promoțiile și altele; pentru a fi întotdeauna aproape de cerințele clienților tăi.",
+    "b2Text": "Prin NETOPIA Retail, cataloagele de produse sunt administrate centralizat. Responsabilii vor putea defini și gestiona în timp real caracteristicile produselor, codurile de bare, listele de prețuri, discounturi, promoții și altele pentru a fi întotdeauna aproape de cerințele clienților tăi.",
     "b3": "Administrare de stocuri",
-    "b3Text": "Inventarierea cantitativă a tuturor categoriilor de stoc este automatizată. Poți avea o imagine de ansamblu asupra activității de inventariere, în funcție de politica companiei, pe grupe de produse, subgrupe, loturi.",
+    "b3Text": "Inventarierea cantitativă a tuturor categoriilor de stoc este automatizată. Ai o imagine de ansamblu asupra activității de inventariere, în funcție de politica companiei, pe grupe de produse, subgrupe, loturi.",
     "b4": "Rapoarte avansate și identificarea comportamentului de consum",
     "b4Text": "Analizele avansate de vânzări și profitabilitate din NETOPIA Retail te informează care sunt cele mai vândute produse dar și zonele unde se înregistrează pierderi. Vei identifica și defini o multitudine de criterii care influențează vânzările: perioada, prețul, tipul de produs etc. Astfel, vei putea lua decizii de aprovizionare, discount sau vânzare accelerată informate și care să îți crească profitul."
   },
@@ -163,24 +162,26 @@
   "section9": {
     "title": "Principalele avantaje",
     "b1": "Integrare cu metoda de plată NETOPIA Payments",
-    "b1Text": "Iți oferim acces la o paletă largă de servicii de plată, inovație constantă și standarde internaționale de siguranță și securitate a datelor. Vei putea accepta plăți prin card cu discount preferențial, dar și posibilitatea de a accepta cryptomonede.",
+    "b1Text": "Iți oferim acces la o paletă largă de servicii de plată, inovație constantă și standarde internaționale de siguranță și securitate a datelor. Vei putea accepta plăți prin card cu discount preferențial.",
     "b2": "Gestionează vânzările. Simplu, ușor, rapid.",
-    "b2Text": "NETOPIA Retail a dezvoltat funcția de Calcul Automat de Sold pentru a ști în orice moment cât ai de încasat sau de plătit, pe baza istoricului de facturi.",
+    "b2Text": "NETOPIA Retail a dezvoltat funcția de Interogare Sold care se actualizează în mod automat, în baza istoricului de facturi. Astfel, în orice moment, vezi care este suma pe care trebuie să o încasezi sau să o plătești.",
     "b3": "Personalizezi platforma după propriile nevoi",
-    "b3Text": "NETOPIA Retail este o platformă CMS dezvoltată pentru a fi intuitivă și ușor de folosit. Orice produs poate fi adăugat în câteva minute și poți aranja produsele și categoriile în funcție de cele mai vândute sau cost.",
+    "b3Text": "NETOPIA Retail este o platformă CMS dezvoltată pentru a fi intuitivă și ușor de folosit, iar orice produs poate fi adăugat în câteva click-uri. Îți aranjezi produsele și categoriile în ordinea în care îți dorești să fie afișate pe POS.",
     "b4": "Card bancar tip business NETOPIA",
-    "b4Text": "Cardul de <0>business NETOPIA</0> este instrumentul modern și elegant al oamenilor de afaceri din România. Optimizează costurile afacerii tale prin beneficiile unice oferite de cardul de business NETOPIA."
+    "b4Text": "Cardul de <0>business NETOPIA</0> este instrumentul de plată modern și remarcabil al oamenilor de afaceri din România. Optimizează costurile afacerii tale prin beneficiile unice oferite de cardul de business NETOPIA, cum ar fi:",
+    "b4Text1": "1. recuperarea, într-o mare parte, a comisionului de procesare",
+    "b4Text2": "2. cash back pentru anumite categorii"
   },
   "section10": {
-    "free": "Gratis",
-    "freeText": "Este ideal pentru businessurile care sunt la început de drum și vor să înțeleagă mai clar cum își pot gestiona afacerea. Ai acces la majoritatea funcționalităților care să te ajute în definirea propriului succes.",
+    "free": "Starter",
+    "freeText": "Este ideal pentru afacerile care sunt la început de drum. Îți oferim un sistem modern și intuitiv care să te ajute în gestionarea vânzărilor și administrarea businessului. Înțelegem importanța primilor pași și îți oferim acces rapid la funcționalitățile cheie de care orice afacere are nevoie pentru un start eficient și în siguranță. ",
     "standard": "Standard",
-    "standardText": "Ai deja câțiva ani de activitate și îți dorești să treci la următorul nivel. Ce primești în plus sunt:",
+    "standardText": "Vrei să îți dezvolți afacerea și ai nevoie de anumite funcționalități care să te ajute să treci la următorul nivel. Ce primești în plus sunt:",
     "standardText1": "baza de coduri universală EAN;",
     "standardText2": "preintegrare cu NETOPIA Payments pentru plățile online;",
     "standardText3": "administrare facilă a mai multor locații.",
     "premium": "Premium",
-    "premiumText": "Afacerea ta face parte dintr-o franciză sau reprezinți o franciză și ai nevoie de un soft de gestiune și administrare vânzări personalizat propriilor nevoi. Scrie-ne și, împreună, vom găsi cea mai bună soluție.",
+    "premiumText": "Ai o afacere tip lanț de magazine (multi-store / franciză) sau restaurante și ai nevoie de un soft de gestiune și administrare vânzări personalizat propriilor nevoi. Scrie-ne și, împreună, vom găsi cea mai bună soluție.",
     "title": "Funcționalități pachete și diferențe",
     "c1": "Administrare",
     "c2": "Creare cont Casier/Ospătar (aplicație/user)",

@@ -161,7 +161,6 @@ const SectionFunctionalities = () => {
                   {t("section3.b4Description")}
                 </Accordion.Header>
                 <Accordion.Body>
-                  <p>{t("section3.b4P1")}</p>
                   <p className="py-2">
                     <Trans i18nKey="section3.b4P2">
                       <b>Managerul</b>
