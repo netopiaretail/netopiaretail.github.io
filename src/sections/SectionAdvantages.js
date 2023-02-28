@@ -12,7 +12,7 @@ const SectionAdvantages = () => {
     <section id="avantaje" className="section-area">
       <div className="container">
         <div className="text-center">
-          <h3 className="title">{t("section9.title")}</h3>
+          <h3 className="heading">{t("section9.title")}</h3>
         </div>
         <div className="row justify-content-center">
           <div className="col-lg-3 col-sm-8 my-4 wow fadeInUp">

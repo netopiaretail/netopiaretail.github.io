@@ -10,7 +10,7 @@ const SectionPricing = () => {
     <section id="pricing" className="section-area">
       <div className="container">
         <div className="text-center pb-4">
-          <h3 className="title">{t("menu.l4")}</h3>
+          <h3 className="heading">{t("menu.l4")}</h3>
         </div>
         <div className="row justify-content-evenly gap-4">
           <PricingCard

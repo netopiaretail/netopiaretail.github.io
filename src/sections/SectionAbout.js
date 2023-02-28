@@ -18,7 +18,7 @@ const SectionAbout = () => {
             <img src={img2} className="rounded wow fadeInUp" />
           </div>
           <div className={`col-lg-5 text-start wow fadeInRightBig`}>
-            <h2 className="title">{t("section4.title")}</h2>
+            <h2 className="heading">{t("section4.title")}</h2>
 
             <p className="text">{t("section4.text")}</p>
             <a href={"#"} className="btn main-btn mt-4">

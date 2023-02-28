@@ -20,7 +20,7 @@ const SectionHardware = () => {
     <section id="hardware" className="section-area">
       <div className="container">
         <div className="text-center">
-          <h3 className="title">{t("section8.title")}</h3>
+          <h3 className="heading">{t("section8.title")}</h3>
         </div>
         <div className="row gap-2 justify-content-center">
           <div className="card col-lg-8 col-sm-8 my-3 h-auto wow fadeInRightBig">

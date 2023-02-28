@@ -27,7 +27,7 @@ const SectionCustom = ({
             {imgBackground && <img src={imgBackground} />}
           </div>
           <div className={`col-lg-5 text-start ${rightAnimation}`}>
-            <h2 className="title">
+            <h2 className="heading">
               {title} <span>{titleSpan}</span>
             </h2>
 

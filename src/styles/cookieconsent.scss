@@ -1,0 +1,62 @@
+.theme_funky {
+  --cc-bg: #f9faff;
+  --cc-text: #112954;
+  --cc-btn-primary-bg: #14499e;
+  --cc-btn-primary-text: var(--cc-bg);
+  --cc-btn-primary-hover-bg: #1d2e38;
+  --cc-btn-secondary-bg: #dfe7f9;
+  --cc-btn-secondary-text: var(--cc-text);
+  --cc-btn-secondary-hover-bg: #c6d1ea;
+  --cc-toggle-bg-off: #8fa8d6;
+  --cc-toggle-bg-on: #14499e;
+  --cc-toggle-bg-readonly: #cbd8f1;
+  --cc-toggle-knob-bg: #fff;
+  --cc-toggle-knob-icon-color: #ecf2fa;
+  --cc-block-text: var(--cc-text);
+  --cc-cookie-category-block-bg: #ebeff9;
+  --cc-cookie-category-block-bg-hover: #dbe5f9;
+  --cc-section-border: #f1f3f5;
+  --cc-cookie-table-border: #e1e7f3;
+  --cc-overlay-bg: rgba(230, 235, 255, 0.85);
+  --cc-webkit-scrollbar-bg: #ebeff9;
+  --cc-webkit-scrollbar-bg-hover: #14499e;
+}
+
+.theme_funky #c-ttl {
+  color: var(--cc-btn-primary-bg);
+}
+
+/* Custom border radius */
+.theme_funky #cm,
+.theme_funky #s-bl .act .b-acc,
+.theme_funky #s-inr,
+.theme_funky .cc_div .b-tl,
+.theme_funky .cc_div .c-bl {
+  border-radius: 1.2em;
+}
+
+.theme_funky .cc_div .c-bn {
+  border-radius: 0.7em;
+}
+
+.cookie-btn {
+  font-size: 20px;
+  color: #fff;
+  position: fixed;
+  left: 20px;
+  bottom: 20px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 8px;
+  background: linear-gradient(to top left, #14499e 0%, #2e82ef 100%);
+  text-align: center;
+  z-index: 99;
+  transition: all 0.3s ease-out 0s;
+  border: none;
+
+  &:hover {
+    color: #fff;
+    background: linear-gradient(to top left, #ff4000 0%, #f4a503 100%);
+  }
+}

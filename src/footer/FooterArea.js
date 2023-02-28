@@ -170,7 +170,7 @@ const FooterArea = () => {
                   data-wow-delay="0.6s"
                 >
                   <div className="footer-title">
-                    <h4 className="title">{t("footer.title")}</h4>
+                    <h4 className="heading">{t("footer.title")}</h4>
                   </div>
                   <ul className="link">
                     <li>
@@ -193,7 +193,7 @@ const FooterArea = () => {
                 data-wow-delay="0.8s"
               >
                 <div className="footer-title">
-                  <h4 className="title">{t("menu.l7")}</h4>
+                  <h4 className="heading">{t("menu.l7")}</h4>
                 </div>
                 <ul className="contact">
                   <li>contact@netopia.ro</li>

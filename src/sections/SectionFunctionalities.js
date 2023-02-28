@@ -13,7 +13,7 @@ const SectionFunctionalities = () => {
     <section id="functionalitati" className="section-area">
       <div className="container">
         <div className="text-center">
-          <h3 className="title">
+          <h3 className="heading">
             <Trans i18nKey="section3.title">
               Acces gratuit <span>la funcționalități cheie</span>
             </Trans>

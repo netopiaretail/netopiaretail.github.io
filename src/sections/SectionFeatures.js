@@ -13,7 +13,7 @@ const SectionFeatures = () => {
         <div className="row mb-5 justify-content-center">
           <div>
             <div className="text-center pb-4">
-              <h3 className="title fw-normal">
+              <h3 className="heading fw-normal">
                 <Trans i18nKey="section1.title">
                   <span className="fw-bold">
                     Softul de gestiune și administrare vânzări NETOPIA Retail{" "}

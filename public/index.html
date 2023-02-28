@@ -22,11 +22,13 @@
     function gtag() {
       dataLayer.push(arguments);
     }
+    gtag("consent", "default", {
+      analytics_storage: "denied",
+    });
     gtag("js", new Date());
-
     gtag("config", "G-LPN1LB5536");
   </script>
-  <body>
+  <body class="theme_funky">
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
 
