@@ -27,6 +27,12 @@ const Header = () => {
 
   return (
     <header className="header-area">
+      <script
+        id="CookieDeclaration"
+        src="https://consent.cookiebot.com/c91b957c-422d-4d53-b119-aafa69f8f758/cd.js"
+        type="text/javascript"
+        async
+      ></script>
       <Navbar
         collapseOnSelect
         expand="lg"
