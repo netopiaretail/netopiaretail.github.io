@@ -1,13 +1,13 @@
+import { useState } from "react";
+import { Alert } from "react-bootstrap";
+import Button from "react-bootstrap/Button";
+import Form from "react-bootstrap/Form";
+import { Trans, useTranslation } from "react-i18next";
+import InputSugesstions from "../components/InputSugesstions";
+import ParticlesComponent from "../components/Particles";
 import img from "../img/contact.svg";
 import logo from "../img/logo-blank.svg";
-import ParticlesComponent from "../components/Particles";
-import { useState } from "react";
-import Form from "react-bootstrap/Form";
-import { useTranslation, Trans } from "react-i18next";
-import InputSugesstions from "../components/InputSugesstions";
 import sendEmail from "../mail";
-import Button from "react-bootstrap/Button";
-import { Alert } from "react-bootstrap";
 
 const FooterArea = () => {
   const { t } = useTranslation();
@@ -196,7 +196,7 @@ const FooterArea = () => {
                   <h4 className="heading">{t("menu.l7")}</h4>
                 </div>
                 <ul className="contact">
-                  <li>contact@netopia.ro</li>
+                  <li>contact@netopia-retail.ro</li>
                   <li>
                     Bd. Dimitrie Pompeiu nr 9-9A, Iride Business Park, Cladirea
                     nr. 24, camera 4A, et. 4, sector 2, 020335 BUCUREȘTI
